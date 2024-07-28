@@ -1,0 +1,432 @@
+<!DOCTYPE html><html><head>
+      <title>easy markdown</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      <link rel="stylesheet" href="file:////Users/wangyumeng/.vscode/extensions/shd101wyy.markdown-preview-enhanced-0.8.13/crossnote/dependencies/katex/katex.min.css">
+      
+      
+      
+      
+      
+      <style>
+      code[class*=language-],pre[class*=language-]{color:#333;background:0 0;font-family:Consolas,"Liberation Mono",Menlo,Courier,monospace;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.4;-moz-tab-size:8;-o-tab-size:8;tab-size:8;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none}pre[class*=language-]{padding:.8em;overflow:auto;border-radius:3px;background:#f5f5f5}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal;background:#f5f5f5}.token.blockquote,.token.comment{color:#969896}.token.cdata{color:#183691}.token.doctype,.token.macro.property,.token.punctuation,.token.variable{color:#333}.token.builtin,.token.important,.token.keyword,.token.operator,.token.rule{color:#a71d5d}.token.attr-value,.token.regex,.token.string,.token.url{color:#183691}.token.atrule,.token.boolean,.token.code,.token.command,.token.constant,.token.entity,.token.number,.token.property,.token.symbol{color:#0086b3}.token.prolog,.token.selector,.token.tag{color:#63a35c}.token.attr-name,.token.class,.token.class-name,.token.function,.token.id,.token.namespace,.token.pseudo-class,.token.pseudo-element,.token.url-reference .token.variable{color:#795da3}.token.entity{cursor:help}.token.title,.token.title .token.punctuation{font-weight:700;color:#1d3e81}.token.list{color:#ed6a43}.token.inserted{background-color:#eaffea;color:#55a532}.token.deleted{background-color:#ffecec;color:#bd2c00}.token.bold{font-weight:700}.token.italic{font-style:italic}.language-json .token.property{color:#183691}.language-markup .token.tag .token.punctuation{color:#333}.language-css .token.function,code.language-css{color:#0086b3}.language-yaml .token.atrule{color:#63a35c}code.language-yaml{color:#183691}.language-ruby .token.function{color:#333}.language-markdown .token.url{color:#795da3}.language-makefile .token.symbol{color:#795da3}.language-makefile .token.variable{color:#183691}.language-makefile .token.builtin{color:#0086b3}.language-bash .token.keyword{color:#0086b3}pre[data-line]{position:relative;padding:1em 0 1em 3em}pre[data-line] .line-highlight-wrapper{position:absolute;top:0;left:0;background-color:transparent;display:block;width:100%}pre[data-line] .line-highlight{position:absolute;left:0;right:0;padding:inherit 0;margin-top:1em;background:hsla(24,20%,50%,.08);background:linear-gradient(to right,hsla(24,20%,50%,.1) 70%,hsla(24,20%,50%,0));pointer-events:none;line-height:inherit;white-space:pre}pre[data-line] .line-highlight:before,pre[data-line] .line-highlight[data-end]:after{content:attr(data-start);position:absolute;top:.4em;left:.6em;min-width:1em;padding:0 .5em;background-color:hsla(24,20%,50%,.4);color:#f4f1ef;font:bold 65%/1.5 sans-serif;text-align:center;vertical-align:.3em;border-radius:999px;text-shadow:none;box-shadow:0 1px #fff}pre[data-line] .line-highlight[data-end]:after{content:attr(data-end);top:auto;bottom:.4em}html body{font-family:'Helvetica Neue',Helvetica,'Segoe UI',Arial,freesans,sans-serif;font-size:16px;line-height:1.6;color:#333;background-color:#fff;overflow:initial;box-sizing:border-box;word-wrap:break-word}html body>:first-child{margin-top:0}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{line-height:1.2;margin-top:1em;margin-bottom:16px;color:#000}html body h1{font-size:2.25em;font-weight:300;padding-bottom:.3em}html body h2{font-size:1.75em;font-weight:400;padding-bottom:.3em}html body h3{font-size:1.5em;font-weight:500}html body h4{font-size:1.25em;font-weight:600}html body h5{font-size:1.1em;font-weight:600}html body h6{font-size:1em;font-weight:600}html body h1,html body h2,html body h3,html body h4,html body h5{font-weight:600}html body h5{font-size:1em}html body h6{color:#5c5c5c}html body strong{color:#000}html body del{color:#5c5c5c}html body a:not([href]){color:inherit;text-decoration:none}html body a{color:#08c;text-decoration:none}html body a:hover{color:#00a3f5;text-decoration:none}html body img{max-width:100%}html body>p{margin-top:0;margin-bottom:16px;word-wrap:break-word}html body>ol,html body>ul{margin-bottom:16px}html body ol,html body ul{padding-left:2em}html body ol.no-list,html body ul.no-list{padding:0;list-style-type:none}html body ol ol,html body ol ul,html body ul ol,html body ul ul{margin-top:0;margin-bottom:0}html body li{margin-bottom:0}html body li.task-list-item{list-style:none}html body li>p{margin-top:0;margin-bottom:0}html body .task-list-item-checkbox{margin:0 .2em .25em -1.8em;vertical-align:middle}html body .task-list-item-checkbox:hover{cursor:pointer}html body blockquote{margin:16px 0;font-size:inherit;padding:0 15px;color:#5c5c5c;background-color:#f0f0f0;border-left:4px solid #d6d6d6}html body blockquote>:first-child{margin-top:0}html body blockquote>:last-child{margin-bottom:0}html body hr{height:4px;margin:32px 0;background-color:#d6d6d6;border:0 none}html body table{margin:10px 0 15px 0;border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}html body table th{font-weight:700;color:#000}html body table td,html body table th{border:1px solid #d6d6d6;padding:6px 13px}html body dl{padding:0}html body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:700}html body dl dd{padding:0 16px;margin-bottom:16px}html body code{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:.85em;color:#000;background-color:#f0f0f0;border-radius:3px;padding:.2em 0}html body code::after,html body code::before{letter-spacing:-.2em;content:'\00a0'}html body pre>code{padding:0;margin:0;word-break:normal;white-space:pre;background:0 0;border:0}html body .highlight{margin-bottom:16px}html body .highlight pre,html body pre{padding:1em;overflow:auto;line-height:1.45;border:#d6d6d6;border-radius:3px}html body .highlight pre{margin-bottom:0;word-break:normal}html body pre code,html body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}html body pre code:after,html body pre code:before,html body pre tt:after,html body pre tt:before{content:normal}html body blockquote,html body dl,html body ol,html body p,html body pre,html body ul{margin-top:0;margin-bottom:16px}html body kbd{color:#000;border:1px solid #d6d6d6;border-bottom:2px solid #c7c7c7;padding:2px 4px;background-color:#f0f0f0;border-radius:3px}@media print{html body{background-color:#fff}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{color:#000;page-break-after:avoid}html body blockquote{color:#5c5c5c}html body pre{page-break-inside:avoid}html body table{display:table}html body img{display:block;max-width:100%;max-height:100%}html body code,html body pre{word-wrap:break-word;white-space:pre}}.markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview ul{list-style:disc}.markdown-preview ul ul{list-style:circle}.markdown-preview ul ul ul{list-style:square}.markdown-preview ol{list-style:decimal}.markdown-preview ol ol,.markdown-preview ul ol{list-style-type:lower-roman}.markdown-preview ol ol ol,.markdown-preview ol ul ol,.markdown-preview ul ol ol,.markdown-preview ul ul ol{list-style-type:lower-alpha}.markdown-preview .newpage,.markdown-preview .pagebreak{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center!important}.markdown-preview:not([data-for=preview]) .code-chunk .code-chunk-btn-group{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .status{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .output-div{margin-bottom:16px}.markdown-preview .md-toc{padding:0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link div,.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}.markdown-preview .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0;min-height:100vh}@media screen and (min-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px + 2em)}}@media screen and (max-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{font-size:14px!important;padding:1em}}@media print{html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc{padding:0 16px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link div,html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% - 300px);padding:2em calc(50% - 457px - 300px / 2);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none}
+/* Please visit the URL below for more information: */
+/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+
+      </style>
+      <!-- The content below will be included at the end of the <head> element. --><script type="text/javascript">
+  document.addEventListener("DOMContentLoaded", function () {
+    // your code here
+  });
+</script></head><body for="html-export">
+    
+    
+      <div class="crossnote markdown-preview  ">
+      <div>
+<h1 id="easy-markdown">Easy markdown </h1>
+<blockquote>
+<p>本篇文章的定位是掌握markdown的大致所有的语法（非扩展版本的），如果想要涉猎更加高妙的用法，例如快捷键等等，请参见beautiful markdown.<br>
+本篇文章的参考资料源于<a href="https://markdownguide.org">此处</a>。</p>
+</blockquote>
+<h2 id="beginning">Markdown 标题语法 </h2>
+<pre data-role="codeBlock" data-info="C++" class="language-cpp C++"><code><span class="token macro property"><span class="token directive-hash">#</span> <span class="token directive keyword">heading</span> <span class="token expression">level1</span></span>
+
+## heading level2
+
+### heading level3
+
+#### heading level4
+
+##### heading level5
+
+###### heading level6
+</code></pre><blockquote>
+<p>NOtice：标题与正文之间需要保持一行的空格<br>
+语法规范：并且一级标题下面里面需要有二级标题，才能使用正常的标题</p>
+</blockquote>
+<h2 id="markdown-段落-换行语法">Markdown 段落、换行语法 </h2>
+<p>要创建段落，请使用空白行将文本分割。</p>
+<p>比如这样，与上一句话实现了分割。</p>
+<p>注意，不要这样：</p>
+<pre data-role="codeBlock" data-info="C++" class="language-cpp C++"><code>    <span class="token comment">//使用缩进Tab，空格Space都无效</span>
+    I like math<span class="token comment">//其实并没有实际效果！在预览种无效果</span>
+</code></pre><p>如果你想实现换行而不是新建一个段落，你可以执行的操作：</p>
+<pre data-role="codeBlock" data-info="C++" class="language-cpp C++"><code>    <span class="token comment">//way1</span>
+    I like math<span class="token punctuation">.</span>  <span class="token comment">//两个空格+换行</span>
+    <span class="token operator">and</span> I like English<span class="token punctuation">.</span>
+
+    <span class="token comment">//way2</span>
+    I like math<span class="token punctuation">.</span><span class="token operator">&lt;</span>br<span class="token operator">&gt;</span><span class="token comment">//使用html的标签</span>
+    <span class="token operator">and</span> I like English<span class="token punctuation">.</span>
+</code></pre><h2 id="markdown-强调语法">Markdown 强调语法 </h2>
+<h3 id="粗体">粗体 </h3>
+<table>
+<thead>
+<tr>
+<th>Markdown</th>
+<th>Html</th>
+<th>Preview</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>I just love <code>**bold text**</code></td>
+<td>I just love <code>&lt;strong&gt;bold text&lt;/strong&gt;</code></td>
+<td>I just love <strong>bold text</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="斜体">斜体 </h3>
+<table>
+<thead>
+<tr>
+<th>Markdown</th>
+<th>Html</th>
+<th>Preview</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A <code>*cat*</code> meow</td>
+<td>A <code>&lt;em&gt;cat&lt;/em&gt;</code> meow</td>
+<td>A <em>cat</em> meow</td>
+</tr>
+</tbody>
+</table>
+<h3 id="粗体和斜体的混合使用">粗体和斜体的混合使用 </h3>
+<table>
+<thead>
+<tr>
+<th>Markdown</th>
+<th>Html</th>
+<th>Preview</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>I like <code>***markdown***</code></td>
+<td>I like <code>&lt;strong&gt;&lt;em&gt;markdown&lt;/em&gt;&lt;/strong&gt;</code></td>
+<td>I like <em><strong>markdown</strong></em></td>
+</tr>
+</tbody>
+</table>
+<h2 id="markdown-引用语法又称块引用">Markdown 引用语法（又称块引用） </h2>
+<h3 id="单引用">单引用 </h3>
+<pre data-role="codeBlock" data-info="C++" class="language-cpp C++"><code><span class="token operator">&gt;</span>Whatever happened<span class="token punctuation">,</span>I like markdown<span class="token operator">!</span>
+</code></pre><p>预览效果如下：</p>
+<blockquote>
+<p>Whatever happened,I like markdown!</p>
+</blockquote>
+<h3 id="多引用">多引用 </h3>
+<pre data-role="codeBlock" data-info="C++" class="language-cpp C++"><code><span class="token comment">//如果引用块需要包含多个段落，可以在句子之间添加一个“&gt;”</span>
+<span class="token operator">&gt;</span>I like markdown<span class="token operator">!</span>
+<span class="token operator">&gt;</span>
+<span class="token operator">&gt;</span>who like markdown except you<span class="token operator">!</span>
+</code></pre><p>预览效果如下：</p>
+<blockquote>
+<p>I like markdown!</p>
+<p>who like markdown except you!</p>
+</blockquote>
+<h3 id="嵌套引用">嵌套引用 </h3>
+<pre data-role="codeBlock" data-info="C++" class="language-cpp C++"><code><span class="token comment">//如果是嵌套引用，可以在需要嵌套的句子前面添加一个“&gt;&gt;”</span>
+<span class="token operator">&gt;</span>I like markdown<span class="token operator">!</span>
+<span class="token operator">&gt;</span>
+<span class="token operator">&gt;&gt;</span>who like markdown except you<span class="token operator">!</span>
+</code></pre><p>预览效果如下：</p>
+<blockquote>
+<p>I like markdown!</p>
+<blockquote>
+<p>who like markdown except you!</p>
+</blockquote>
+</blockquote>
+<h3 id="带有其他元素的引用">带有其他元素的引用 </h3>
+<pre data-role="codeBlock" data-info="C++" class="language-cpp C++"><code><span class="token comment">//块引用 可以包含几乎所有的markdown元素</span>
+<span class="token operator">&gt;</span> <span class="token operator">-</span> Revenue was off the chart<span class="token punctuation">.</span>
+<span class="token operator">&gt;</span> <span class="token operator">-</span> Profits were higher than ever<span class="token punctuation">.</span>
+<span class="token operator">&gt;</span>
+<span class="token operator">&gt;</span>  <span class="token operator">*</span>Everything<span class="token operator">*</span> is going according to <span class="token operator">*</span><span class="token operator">*</span>plan<span class="token operator">*</span><span class="token operator">*</span><span class="token punctuation">.</span>
+</code></pre><p>预览效果如下：</p>
+<blockquote>
+<ul>
+<li>Revenue was off the chart.</li>
+<li>Profits were higher than ever.</li>
+</ul>
+<p><em>Everything</em> is going according to <strong>plan</strong>.</p>
+</blockquote>
+<h2 id="markdown-列表语法">Markdown 列表语法 </h2>
+<h3 id="有序列表">有序列表 </h3>
+<table>
+<thead>
+<tr>
+<th>Markdown</th>
+<th>Html</th>
+<th>Preview</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>1. first thing</code><br><code>2. second thing</code></td>
+<td><code>&lt;ol&gt;&lt;li&gt;1. first thing &lt;/li&gt;&lt;li&gt;2. second thing&lt;/li&gt;&lt;/ol&gt;</code></td>
+<td>1. first thing <br> 2. second thing</td>
+</tr>
+</tbody>
+</table>
+<h3 id="无序列表">无序列表 </h3>
+<blockquote>
+<p>创建无序列表，可以使用减号（-）、加号（+）或者单星号（*）</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Markdown</th>
+<th>Html</th>
+<th>Preview</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>- First thing</code></td>
+<td><code>&lt;ul&gt;&lt;li&gt;First thing &lt;/li&gt;&lt;/ul&gt;</code></td>
+<td>- First thing(表格内无法预览)</td>
+</tr>
+</tbody>
+</table>
+<p>预览效果入下：</p>
+<ul>
+<li>First thing</li>
+</ul>
+<blockquote>
+<p>注意事项：你需要在文本和这种语法句子之间保持空行，以免报错！</p>
+<p>一般地，在vscode里面不会使用（*）（+），而是使用（-）来创建无序列表。</p>
+</blockquote>
+<h3 id="可以在列表中嵌入其他元素">可以在列表中嵌入其他元素 </h3>
+<p>不再过多展示，因为这个真的不要太简单！</p>
+<h2 id="markdown-代码语法">Markdown 代码语法 </h2>
+<h3 id="单词-短语代码">单词、短语代码 </h3>
+<table>
+<thead>
+<tr>
+<th>Markdown</th>
+<th>Html</th>
+<th>Preview</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>I type,supported by <code>`markdown`</code></td>
+<td><code>I type,supported by &lt;code&gt;markdown&lt;/code&gt;</code></td>
+<td>I type,supported by <code>markdown</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="转义反引号">转义反引号 </h3>
+<p>详情请点开本文档的源代码，查看上面的代码。上面的代码使用了转义反引号。</p>
+<h3 id="编程多行代码段">编程多行代码段 </h3>
+<pre data-role="codeBlock" data-info="C++" class="language-cpp C++"><code><span class="token comment">//```(这里添加编程语言)</span>
+<span class="token comment">//多行代码内容</span>
+<span class="token comment">//```</span>
+</code></pre><h2 id="markdown-分割线语法">Markdown 分割线语法 </h2>
+<pre data-role="codeBlock" data-info="C++" class="language-cpp C++"><code><span class="token comment">//可以使用的分割线</span>
+<span class="token operator">*</span><span class="token operator">*</span><span class="token operator">*</span>
+<span class="token operator">--</span><span class="token operator">-</span>
+______<span class="token comment">//推荐，下划线</span>
+</code></pre><p>预览效果如下：</p>
+<blockquote>
+<p>Hello，</p>
+<hr>
+<p>World!</p>
+</blockquote>
+<h2 id="markdown-链接语法">Markdown 链接语法 </h2>
+<h3 id="链接与title">链接与title </h3>
+<table>
+<thead>
+<tr>
+<th>Markdown</th>
+<th>Html</th>
+<th>Preview</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>这是一个链接 [Markdown语法](https://markdown.com.cn)。</code></td>
+<td><code>&lt;a href="超链接地址" title="超链接title"&gt;超链接显示名&lt;/a&gt;</code></td>
+<td>这是一个链接 <a href="https://markdown.com.cn">Markdown语法</a>。</td>
+</tr>
+</tbody>
+</table>
+<h3 id="网址以及email">网址以及email </h3>
+<pre data-role="codeBlock" data-info="C++" class="language-cpp C++"><code><span class="token comment">//&lt;https://markdown.com.cn&gt;</span>
+<span class="token comment">//&lt;fake@example.com&gt;</span>
+</code></pre><p>预览效果如下：</p>
+<p><a href="https://markdown.com.cn">https://markdown.com.cn</a><br>
+<a href="mailto:fake@example.com">fake@example.com</a></p>
+<h2 id="带格式化的链接">带格式化的链接 </h2>
+<pre data-role="codeBlock" data-info="C++" class="language-cpp C++"><code><span class="token comment">//I love supporting the **[EFF](https://eff.org)**.</span>
+<span class="token comment">//This is the *[Markdown Guide](https://www.markdownguide.org)*.</span>
+<span class="token comment">//See the section on [`code`](#code).</span>
+
+<span class="token comment">//要将链接表示为代码，请在方括号中添加反引号。</span>
+</code></pre><p>预览效果如下：<br>
+I love supporting the <strong><a href="https://eff.org">EFF</a></strong>.<br>
+This is the <em><a href="https://www.markdownguide.org">Markdown Guide</a></em>.<br>
+See the section on <a href="#code"><code>code</code></a>.</p>
+<h3 id="引用类型的链接">引用类型的链接 </h3>
+<pre data-role="codeBlock" data-info="C++" class="language-cpp C++"><code><span class="token comment">//链接的第一部分,注意之间需要一个空格（VScode）</span>
+<span class="token punctuation">[</span>name<span class="token punctuation">]</span> <span class="token punctuation">[</span>label1<span class="token punctuation">]</span>
+<span class="token comment">//裂解的第二部分</span>
+<span class="token comment">//一般会放在段落的末尾或者md文档的末尾</span>
+<span class="token punctuation">[</span>label1<span class="token punctuation">]</span><span class="token operator">:</span>https<span class="token operator">:</span><span class="token comment">//www.markdownguide.org</span>
+</code></pre><p>预览效果如下</p>
+<blockquote>
+<p>[markdownguide] <a href="https://www.markdownguide.org">1</a></p>
+</blockquote>
+<h2 id="markdown-图片语法">Markdown 图片语法 </h2>
+<h3 id="一般的图片">一般的图片 </h3>
+<table>
+<thead>
+<tr>
+<th>Markdown</th>
+<th>Html</th>
+<th>Preview</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>![图片alt](图片链接 “图片title”)</code></td>
+<td><code>&lt;img src="picture link" alt="picture alt(format)" title="name" &gt;</code></td>
+<td>略</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>在VScode中，直接把图片复制粘贴在这里就可以，不需要自己手码。</p>
+</blockquote>
+<h3 id="链接图片">链接图片 </h3>
+<pre data-role="codeBlock" data-info="C++" class="language-cpp C++"><code><span class="token comment">//格式参考如下：</span>
+<span class="token punctuation">[</span><span class="token operator">!</span><span class="token punctuation">[</span>图片alt<span class="token punctuation">]</span><span class="token punctuation">(</span>图片链接 “图片title”<span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token punctuation">(</span>网址链接<span class="token punctuation">)</span>
+</code></pre><p>预览效果如下:</p>
+<p><a href="https://markdownguide.org"><img src="hero-1.png" alt="Markdownguide" title="markdown"></a></p>
+<h2 id="markdown-转义字符语法">Markdown 转义字符语法 </h2>
+<h3 id="可做转义的字符">可做转义的字符 </h3>
+<p>要显示原本用于格式化markdown文本的符号，一般使用反斜杠（\）</p>
+<p>下面列出可以转义的符号：<br>
+|<code>\</code>|<code>*</code>|<code>_</code>|<code>{}</code>|<code>[]</code>|<code>()</code>|<code>#</code>|<code>+</code>|<code>-</code>|<code>.</code>|<code>!</code>|</p>
+<h3 id="自动转义的字符">自动转义的字符 </h3>
+<p>在Html文件中，常常对<code>&lt;</code>和<code>&amp;</code>两个符号进行特殊处理，如果你只想要使用这些符号，那么你必须使用实体的形式<br>
+像是<code>&amp;lt;</code>和<code>&amp;amp;</code><br>
+原因是，<code>&lt;</code>常常用作起始标签，<code>&amp;</code>用于标记Html实体。</p>
+<blockquote>
+<p>即使你在markdown中没有用实体的形式写，它也会自动将两个符号转义为html的实体形式</p>
+</blockquote>
+<h2 id="markdown-内嵌html标签">Markdown 内嵌Html标签 </h2>
+<blockquote>
+<p>因为VScode并没有内嵌Html标签，语法系统不支持，所以略去，详情见<a href="https://markdown.com.cn/basic-syntax/htmls.html">Markdown 内嵌html标签</a></p>
+</blockquote>
+<h2 id="markdown-表格">Markdown 表格 </h2>
+<h3 id="一般化表格创建">一般化表格创建 </h3>
+<pre data-role="codeBlock" data-info="C++" class="language-cpp C++"><code><span class="token operator">|</span> Syntax      <span class="token operator">|</span> Description <span class="token operator">|</span>
+<span class="token operator">|</span> <span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">-</span> <span class="token operator">|</span> <span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">-</span> <span class="token operator">|</span><span class="token comment">//使用三个或多个连字符（---）创建每列的标题</span>
+<span class="token operator">|</span> Header      <span class="token operator">|</span> Title       <span class="token operator">|</span>
+<span class="token operator">|</span> Paragraph   <span class="token operator">|</span> Text        <span class="token operator">|</span>
+</code></pre><p>预览效果如下：</p>
+<table>
+<thead>
+<tr>
+<th>Syntax</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Header</td>
+<td>Title</td>
+</tr>
+<tr>
+<td>Paragraph</td>
+<td>Text</td>
+</tr>
+</tbody>
+</table>
+<h3 id="对齐">对齐 </h3>
+<pre data-role="codeBlock" data-info="C++" class="language-cpp C++"><code><span class="token operator">|</span> Syntax      <span class="token operator">|</span> Description <span class="token operator">|</span> Test Text     <span class="token operator">|</span>
+<span class="token operator">|</span> <span class="token operator">:</span><span class="token operator">--</span><span class="token operator">-</span>        <span class="token operator">|</span>    <span class="token operator">:</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">:</span>   <span class="token operator">|</span>          <span class="token operator">--</span><span class="token operator">-</span><span class="token operator">:</span> <span class="token operator">|</span>
+<span class="token operator">|</span> Header      <span class="token operator">|</span> Title       <span class="token operator">|</span> Here<span class="token number">'</span>s <span class="token keyword keyword-this">this</span>   <span class="token operator">|</span>
+<span class="token operator">|</span> Paragraph   <span class="token operator">|</span> Text        <span class="token operator">|</span> And more      <span class="token operator">|</span>
+<span class="token comment">//左对齐         中间对齐          右对齐</span>
+</code></pre><p>预览效果如下：</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Syntax</th>
+<th style="text-align:center">Description</th>
+<th style="text-align:right">Test Text</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">Header</td>
+<td style="text-align:center">Title</td>
+<td style="text-align:right">Here's this</td>
+</tr>
+<tr>
+<td style="text-align:left">Paragraph</td>
+<td style="text-align:center">Text</td>
+<td style="text-align:right">And more</td>
+</tr>
+</tbody>
+</table>
+<h2 id="markdown-脚注语法">Markdown 脚注语法 </h2>
+<pre data-role="codeBlock" data-info="C++" class="language-cpp C++"><code>Here<span class="token number">'</span>s a simple footnote<span class="token punctuation">,</span><span class="token punctuation">[</span><span class="token operator">^</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">and</span> here<span class="token number">'</span>s a longer one<span class="token punctuation">.</span><span class="token punctuation">[</span><span class="token operator">^</span>bignote<span class="token punctuation">]</span>
+
+<span class="token punctuation">[</span><span class="token operator">^</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token operator">:</span> This is the first footnote<span class="token punctuation">.</span>
+
+<span class="token punctuation">[</span><span class="token operator">^</span>bignote<span class="token punctuation">]</span><span class="token operator">:</span> Here<span class="token number">'</span>s one with multiple paragraphs <span class="token operator">and</span> code<span class="token punctuation">.</span>
+</code></pre><p>预览效果如下：<br>
+Here's a simple footnote,<sup class="footnote-ref"><a href="#fn1" id="fnref1">[1]</a></sup> and here's a longer one.<sup class="footnote-ref"><a href="#fn2" id="fnref2">[2]</a></sup></p>
+<h2 id="markdown-删除线语法">Markdown 删除线语法 </h2>
+<p><code>~~世界是平坦的。~~ 我们现在知道世界是圆的</code></p>
+<p>预览效果如下</p>
+<p><s>世界是平坦的。</s> 我们现在知道世界是圆的;</p>
+<h3 id="markdown-标题编号">Markdown 标题编号 </h3>
+<blockquote>
+<p>这个可以方便回访文档的任何一个部分，值得一学。</p>
+</blockquote>
+<p><code>### My Great Heading {#custom-id}</code></p>
+<p>预览效果如下：（配合链接使用）<br>
+<a href="#beginning">go back to beginning</a></p>
+<h2 id="markdown-任务列表语法">Markdown 任务列表语法 </h2>
+<pre data-role="codeBlock" data-info="C++" class="language-cpp C++"><code><span class="token operator">-</span> <span class="token punctuation">[</span>x<span class="token punctuation">]</span> Write the press release 
+<span class="token operator">-</span> <span class="token punctuation">[</span> <span class="token punctuation">]</span> Update the website
+<span class="token operator">-</span> <span class="token punctuation">[</span> <span class="token punctuation">]</span> Contact the media
+</code></pre><p>预览效果如下：</p>
+<ul>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked=""> Write the press release</li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> Update the website</li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> Contact the media</li>
+</ul>
+<hr>
+<blockquote>
+<p>还有一部分本文档并没有涉及，比如markdown的emoji使用等，此处可以参考<a href="https://markdownguide.org">Markdownguide</a></p>
+</blockquote>
+<hr class="footnotes-sep">
+<section class="footnotes">
+<ol class="footnotes-list">
+<li id="fn1" class="footnote-item"><p>This is the first footnote. <a href="#fnref1" class="footnote-backref">↩︎</a></p>
+</li>
+<li id="fn2" class="footnote-item"><p>Here's one with multiple paragraphs and code. <a href="#fnref2" class="footnote-backref">↩︎</a></p>
+</li>
+</ol>
+</section>
+</div>
+      </div>
+      
+      
+    
+    
+    
+    
+    
+    
+  
+    </body></html>
