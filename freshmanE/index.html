@@ -872,36 +872,12 @@
   
 
 
-<script src="https://mozilla.github.io/pdf.js/build/pdf.js"></script>
-
 <h1 id="_1">大一培养方案相关课程经验/资料汇总<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
 <blockquote>
 <p>这个栏目下，我将尽可能地列出大一上下所有的必修专选课程的经验以及相关高质量的资料
 此文章面向NKU工科的所有学生，以及有相关课程的学生</p>
 </blockquote>
-<div style="width: 100%; height: 600px;">
-<canvas id="pdf-canvas" style="border: 1px solid;"></canvas>
-</div>
-
-<script>
-var url = 'https://github.com/Thinking-builder/NoteSite/blob/gh-pages/C++Review2.pdf';
-
-// 使用pdf.js渲染和显示PDF
-pdfjsLib.getDocument(url).promise.then(function(pdfDoc) {
- var canvas = document.getElementById('pdf-canvas');
- var context = canvas.getContext('2d');
-
- // 获取PDF的第一页
- pdfDoc.getPage(1).then(function(page) {
-   var viewport = page.getViewport({scale: 1});
-   canvas.height = viewport.height;
-   canvas.width = viewport.width;
-
-   // 渲染PDF页面到canvas
-   page.render({canvasContext: context, viewport: viewport});
- });
-});
-</script>
+<iframe src="C++Review2.pdf" width="100%" height="600"></iframe>
 
 
 
