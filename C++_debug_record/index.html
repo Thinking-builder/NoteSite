@@ -808,6 +808,27 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../vim/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Vim
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -1112,8 +1133,8 @@
 </blockquote>
 <h2 id="_1">关于<strong>编译器</strong><a class="headerlink" href="#_1" title="Permanent link">¶</a></h2>
 <h3 id="vscode">vscode<a class="headerlink" href="#vscode" title="Permanent link">¶</a></h3>
-<div class="admonition question 编译器报错">
-<p class="admonition-title">Question</p>
+<div class="admonition question">
+<p class="admonition-title">编译器报错</p>
 <p><code>Unable to perform this action because the process is running.</code></p>
 </div>
 <ul>
@@ -1173,8 +1194,8 @@
 </code></pre></div>
 <h2 id="_3">指针使用<a class="headerlink" href="#_3" title="Permanent link">¶</a></h2>
 <h3 id="_4">指针与数组<a class="headerlink" href="#_4" title="Permanent link">¶</a></h3>
-<div class="admonition tip 提示">
-<p class="admonition-title">Tip</p>
+<div class="admonition tip">
+<p class="admonition-title">提示</p>
 <p>这里以二维数组为例子，我们知道数组名就是类似指针。</p>
 </div>
 <p></p>
@@ -1191,8 +1212,8 @@
 
 <span class="w">    </span><span class="n">cout</span><span class="o">&lt;&lt;</span><span class="n">m</span><span class="o">&lt;&lt;</span><span class="s">" "</span><span class="o">&lt;&lt;</span><span class="n">b</span><span class="o">+</span><span class="mi">1</span><span class="p">;</span><span class="c1">//这一点证明二维数组b[0]是一个指针；并且他的数据类型是int（*）并且：b == &amp;b[0];*(b[0]) == b[0][0];</span>
 </code></pre></div>
-<details class="success 拓展">
-<summary>Success</summary>
+<details class="success">
+<summary>拓展</summary>
 <p>如果我们无法确定一个指针的类型，我们该如何打印这个指针？
 </p><div class="highlight"><pre><span></span><code><span class="kt">int</span><span class="w"> </span><span class="n">b</span><span class="p">[</span><span class="mi">3</span><span class="p">][</span><span class="mi">2</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{{</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">},{</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,},{</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">}};</span>
 <span class="n">cout</span><span class="o">&lt;&lt;</span><span class="p">(</span><span class="kt">void</span><span class="o">*</span><span class="p">)</span><span class="n">b</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">&lt;&lt;</span><span class="n">endl</span><span class="p">;</span><span class="c1">//使用强制类型转换（void*）</span>
@@ -1207,8 +1228,8 @@
 
 <span class="w">    </span><span class="c1">//结果是：5 2 9；</span>
 </code></pre></div>
-<div class="admonition abstract 结论">
-<p class="admonition-title">Abstract</p>
+<div class="admonition abstract">
+<p class="admonition-title">结论</p>
 <ul>
 <li>二维数组名是int（<em>）[]类型，b[0]本身是int（</em>）类型</li>
 <li>下标 = <strong>地址偏移量</strong> = 起首地址 + 数字* 单位（即是int[num]或者是int为单位移动）</li>
