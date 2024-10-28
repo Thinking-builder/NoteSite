@@ -520,7 +520,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../src/Note01/" class="md-nav__link">
+      <a href="../Note01/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -541,7 +541,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../src/Note02/" class="md-nav__link">
+      <a href="../Note02/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -562,7 +562,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../src/Note03/" class="md-nav__link">
+      <a href="../Note03/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -583,7 +583,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../src/Note04/" class="md-nav__link">
+      <a href="../Note04/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -604,7 +604,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../src/Note05/" class="md-nav__link">
+      <a href="../Note05/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -625,7 +625,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../src/Note06/" class="md-nav__link">
+      <a href="../Note06/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1134,7 +1134,7 @@
         <li class="md-nav__item">
   <a href="#mathbfc" class="md-nav__link">
     <span class="md-ellipsis">
-      $\mathbf{C}$上多项式的分解
+      \(\mathbf{C}\)上多项式的分解
     </span>
   </a>
   
@@ -1143,7 +1143,7 @@
         <li class="md-nav__item">
   <a href="#mathbfr" class="md-nav__link">
     <span class="md-ellipsis">
-      $\mathbf{R}$上多项式的分解
+      \(\mathbf{R}\)上多项式的分解
     </span>
   </a>
   
@@ -1197,47 +1197,47 @@
 </tbody>
 </table>
 <p>在前置部分，我给出<strong>多项式</strong>在线性代数下面的定义：</p>
-<p>对于函数$p:\mathbf{F} \rightarrow \mathbf{F}$，若存在$a_0,...,a_m \in F$使得对所有的$z \in F$都有</p>
-<p>$$p(z) = a_0 + a_1z+a_2z^2+...+a_mz^m,deg\;p = m$$</p>
-<p>则称函数$p$是系数在$\mathbf{F}$中的多项式，同时多项式的次数记为$deg\;p$</p>
-<p>我们为了保持多项式次数计算公式的唯一性和简洁性($deg(pq) = deg\;p+deg\;q$),我们规定多项式$0$的次数为$-\infty$</p>
+<p>对于函数<span class="arithmatex">\(p:\mathbf{F} \rightarrow \mathbf{F}\)</span>，若存在<span class="arithmatex">\(a_0,...,a_m \in F\)</span>使得对所有的<span class="arithmatex">\(z \in F\)</span>都有</p>
+<div class="arithmatex">\[p(z) = a_0 + a_1z+a_2z^2+...+a_mz^m,deg\;p = m\]</div>
+<p>则称函数<span class="arithmatex">\(p\)</span>是系数在<span class="arithmatex">\(\mathbf{F}\)</span>中的多项式，同时多项式的次数记为<span class="arithmatex">\(deg\;p\)</span></p>
+<p>我们为了保持多项式次数计算公式的唯一性和简洁性(<span class="arithmatex">\(deg(pq) = deg\;p+deg\;q\)</span>),我们规定多项式<span class="arithmatex">\(0\)</span>的次数为<span class="arithmatex">\(-\infty\)</span></p>
 <h2 id="_1">多项式的唯一性<a class="headerlink" href="#_1" title="Permanent link">¶</a></h2>
 <p><strong>多项式的系数是唯一确定的</strong>，换句话说若一个多项式是0函数，那么所有的系数都是0。这个很显然，我们不加以证明。</p>
 <h2 id="_2">多项式的带余除法<a class="headerlink" href="#_2" title="Permanent link">¶</a></h2>
 <p>类比在数论中提及的带余除法，我们不加证明地给出多项式的带余除法：</p>
-<p>设$p,s \in P(\mathbf{F}),s \ne 0$，则存在唯一的多项式$q,r \in P(\mathbf{F})$使得：</p>
-<p>$$p = sq +r$$</p>
-<p>并且$deg\;r &lt;deg\;s$</p>
-<p>如果 $r = 0$，我们一般称 $s$ 是 $p$ 的<strong>因式</strong>。</p>
+<p>设<span class="arithmatex">\(p,s \in P(\mathbf{F}),s \ne 0\)</span>，则存在唯一的多项式<span class="arithmatex">\(q,r \in P(\mathbf{F})\)</span>使得：</p>
+<div class="arithmatex">\[p = sq +r\]</div>
+<p>并且<span class="arithmatex">\(deg\;r &lt;deg\;s\)</span></p>
+<p>如果 <span class="arithmatex">\(r = 0\)</span>，我们一般称 <span class="arithmatex">\(s\)</span> 是 <span class="arithmatex">\(p\)</span> 的<strong>因式</strong>。</p>
 <h2 id="_3">多项式的零点<a class="headerlink" href="#_3" title="Permanent link">¶</a></h2>
 <ul>
 <li><strong>多项式的每个零点都对应一个一次因式</strong></li>
 </ul>
-<p>$$p \in P(\mathbf{F}),\lambda\in\mathbf{F},then\;\;p(\lambda ) = 0 \Leftrightarrow \exists q\in P(\mathbf{F}),\forall z \in \mathbf{F},p(z) = (z-\lambda)q(z)$$</p>
+<div class="arithmatex">\[p \in P(\mathbf{F}),\lambda\in\mathbf{F},then\;\;p(\lambda ) = 0 \Leftrightarrow \exists q\in P(\mathbf{F}),\forall z \in \mathbf{F},p(z) = (z-\lambda)q(z)\]</div>
 <ul>
 <li><strong>多项式零点和数不超过它的次数</strong></li>
 </ul>
-<p>设$p \in P(\mathbf{F})$ 是$m(m \ge 0)$次多项式，则 $p$ 在 $F$中最多有m个互不相同的零点</p>
-<h2 id="mathbfc">$\mathbf{C}$上多项式的分解<a class="headerlink" href="#mathbfc" title="Permanent link">¶</a></h2>
+<p>设<span class="arithmatex">\(p \in P(\mathbf{F})\)</span> 是<span class="arithmatex">\(m(m \ge 0)\)</span>次多项式，则 <span class="arithmatex">\(p\)</span> 在 <span class="arithmatex">\(F\)</span>中最多有m个互不相同的零点</p>
+<h2 id="mathbfc"><span class="arithmatex">\(\mathbf{C}\)</span>上多项式的分解<a class="headerlink" href="#mathbfc" title="Permanent link">¶</a></h2>
 <blockquote>
 <p><strong>代数学基本定理</strong>
-代数学基本定理表明，任何一个非常数的多项式（即次数大于零的多项式）在复数域中至少有一个根。这意味着，所有次数为 $n$ 的多项式都可以被分解为 $n$个一次因子（虽然可能有重根）</p>
+代数学基本定理表明，任何一个非常数的多项式（即次数大于零的多项式）在复数域中至少有一个根。这意味着，所有次数为 <span class="arithmatex">\(n\)</span> 的多项式都可以被分解为 <span class="arithmatex">\(n\)</span>个一次因子（虽然可能有重根）</p>
 </blockquote>
-<p>于是我们可以在$\mathbf{C}$上有对多项式的分解：</p>
-<p>若$p \in P(\mathbf{C})$是非常数多项式，则 $p$ 可以为一分解为</p>
-<p>$$p(z) = c(z-\lambda_1)...(z-\lambda_m)$$</p>
-<p>其中，$c,\lambda_1,...\lambda_n \in \mathbf{C}$</p>
-<h2 id="mathbfr">$\mathbf{R}$上多项式的分解<a class="headerlink" href="#mathbfr" title="Permanent link">¶</a></h2>
+<p>于是我们可以在<span class="arithmatex">\(\mathbf{C}\)</span>上有对多项式的分解：</p>
+<p>若<span class="arithmatex">\(p \in P(\mathbf{C})\)</span>是非常数多项式，则 <span class="arithmatex">\(p\)</span> 可以为一分解为</p>
+<div class="arithmatex">\[p(z) = c(z-\lambda_1)...(z-\lambda_m)\]</div>
+<p>其中，<span class="arithmatex">\(c,\lambda_1,...\lambda_n \in \mathbf{C}\)</span></p>
+<h2 id="mathbfr"><span class="arithmatex">\(\mathbf{R}\)</span>上多项式的分解<a class="headerlink" href="#mathbfr" title="Permanent link">¶</a></h2>
 <p>在实系数多项式上有如下特点：</p>
 <ul>
 <li>实系数多项式的非实零点总是成对出现</li>
 </ul>
-<p>若$\lambda \in \mathbf{C}$ 是 $p$ 的零点，那么 $\bar{\lambda} $ 是也 $p$ 的零点</p>
-<p>回想二次实系数多项式的分解$x^2 +bx+c = (x-\lambda_1)(x-\lambda_2),b^2 \ge 4c$</p>
-<p>于是我们有 $\mathbf{R}$ 上多项式的分解：</p>
-<p>若$p \in P(\mathbf{R})$是非常数多项式，则 $p$ 可以为一分解为</p>
-<p>$$p(x) = c(x-\lambda_1)...(x-\lambda_m)(x^2+b_1x+c_1)...(x^2+b_Mx+c_M)$$</p>
-<p>其中，$c,\lambda_1,...\lambda_n,b_1,...,b_M,c_1,...c_M \in \mathbf{R}$，并且对于每个 $j$ 均有 $b_j^2 &lt; 4c_j $</p></div>
+<p>若<span class="arithmatex">\(\lambda \in \mathbf{C}\)</span> 是 <span class="arithmatex">\(p\)</span> 的零点，那么 $\bar{\lambda} $ 是也 <span class="arithmatex">\(p\)</span> 的零点</p>
+<p>回想二次实系数多项式的分解<span class="arithmatex">\(x^2 +bx+c = (x-\lambda_1)(x-\lambda_2),b^2 \ge 4c\)</span></p>
+<p>于是我们有 <span class="arithmatex">\(\mathbf{R}\)</span> 上多项式的分解：</p>
+<p>若<span class="arithmatex">\(p \in P(\mathbf{R})\)</span>是非常数多项式，则 <span class="arithmatex">\(p\)</span> 可以为一分解为</p>
+<div class="arithmatex">\[p(x) = c(x-\lambda_1)...(x-\lambda_m)(x^2+b_1x+c_1)...(x^2+b_Mx+c_M)\]</div>
+<p>其中，<span class="arithmatex">\(c,\lambda_1,...\lambda_n,b_1,...,b_M,c_1,...c_M \in \mathbf{R}\)</span>，并且对于每个 <span class="arithmatex">\(j\)</span> 均有 $b_j^2 &lt; 4c_j $</p></div>
 
 
 

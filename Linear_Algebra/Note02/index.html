@@ -8,28 +8,28 @@
       
       
       
-        <link rel="canonical" href="https://note.thinkingbuilder.cc/Linear_Algebra/src/Note06/">
+        <link rel="canonical" href="https://note.thinkingbuilder.cc/Linear_Algebra/Note02/">
       
       
-        <link rel="prev" href="../Note05/">
+        <link rel="prev" href="../Note01/">
       
       
-        <link rel="next" href="../../../easy%20markdown/">
+        <link rel="next" href="../Note03/">
       
       
-      <link rel="icon" href="../../../img/favicon.ico">
+      <link rel="icon" href="../../img/favicon.ico">
       <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.11">
     
     
       
-        <title>A6 内积 - T&B's NoteBook</title>
+        <title>A2 线性映射 - T&B's NoteBook</title>
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.7e359304.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.7e359304.min.css">
       
         
-        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -48,7 +48,7 @@
       
     
     
-    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -74,7 +74,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#note06" class="md-skip">
+        <a href="#note02" class="md-skip">
           Skip to content
         </a>
       
@@ -88,7 +88,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../../.." title="T&amp;B&#39;s NoteBook" class="md-header__button md-logo" aria-label="T&B's NoteBook" data-md-component="logo">
+    <a href="../.." title="T&amp;B&#39;s NoteBook" class="md-header__button md-logo" aria-label="T&B's NoteBook" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -108,7 +108,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              A6 内积
+              A2 线性映射
             
           </span>
         </div>
@@ -178,7 +178,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../../Introduction/" class="md-tabs__link">
+      <a href="../../Introduction/" class="md-tabs__link">
         
   
     
@@ -207,7 +207,7 @@
     
     
       <li class="md-tabs__item md-tabs__item--active">
-        <a href="../../../CS_basical_knowledge/" class="md-tabs__link">
+        <a href="../../CS_basical_knowledge/" class="md-tabs__link">
           
   
   CS Tech
@@ -228,7 +228,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../freshmanE/" class="md-tabs__link">
+        <a href="../../freshmanE/" class="md-tabs__link">
           
   
   Experience
@@ -246,7 +246,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../EasyGit/" class="md-tabs__link">
+        <a href="../../EasyGit/" class="md-tabs__link">
           
   
   Tools
@@ -264,7 +264,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../Photo/" class="md-tabs__link">
+        <a href="../../Photo/" class="md-tabs__link">
           
   
   Hobby Field
@@ -297,7 +297,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../.." title="T&amp;B&#39;s NoteBook" class="md-nav__button md-logo" aria-label="T&B's NoteBook" data-md-component="logo">
+    <a href="../.." title="T&amp;B&#39;s NoteBook" class="md-nav__button md-logo" aria-label="T&B's NoteBook" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -327,7 +327,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../Introduction/" class="md-nav__link">
+      <a href="../../Introduction/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -428,7 +428,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../CS_basical_knowledge/" class="md-nav__link">
+      <a href="../../CS_basical_knowledge/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -555,10 +555,30 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../Note02/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    A2 线性映射
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -567,6 +587,125 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#part1" class="md-nav__link">
+    <span class="md-ellipsis">
+      PART1 线性映射与向量空间
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="PART1 线性映射与向量空间">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#lvw" class="md-nav__link">
+    <span class="md-ellipsis">
+      \(L(V,W)\)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nulltranget" class="md-nav__link">
+    <span class="md-ellipsis">
+      \(Null(T)、Range(T)\)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#part2" class="md-nav__link">
+    <span class="md-ellipsis">
+      PART2 具象化的线性映射
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="PART2 具象化的线性映射">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      线性映射表示线性方程组
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      线性映射的矩阵
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#part3" class="md-nav__link">
+    <span class="md-ellipsis">
+      PART3 不同的线性映射
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="PART3 不同的线性映射">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#-" class="md-nav__link">
+    <span class="md-ellipsis">
+      可逆 - 同构映射
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#-_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      自身映射 - 算子
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -639,19 +778,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../Note06/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -660,7 +790,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -727,7 +856,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../easy%20markdown/" class="md-nav__link">
+      <a href="../../easy%20markdown/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -748,7 +877,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../mkdocs_2/" class="md-nav__link">
+      <a href="../../mkdocs_2/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -807,7 +936,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../Cplusplus/" class="md-nav__link">
+      <a href="../../Cplusplus/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -828,7 +957,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../C%2B%2B_debug_record/" class="md-nav__link">
+      <a href="../../C%2B%2B_debug_record/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -849,7 +978,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../C%2B%2B_primer/" class="md-nav__link">
+      <a href="../../C%2B%2B_primer/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -931,7 +1060,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../freshmanE/" class="md-nav__link">
+      <a href="../../freshmanE/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -997,7 +1126,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../EasyGit/" class="md-nav__link">
+      <a href="../../EasyGit/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1018,7 +1147,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../vim/" class="md-nav__link">
+      <a href="../../vim/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1084,7 +1213,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../Photo/" class="md-nav__link">
+      <a href="../../Photo/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1125,6 +1254,113 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#part1" class="md-nav__link">
+    <span class="md-ellipsis">
+      PART1 线性映射与向量空间
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="PART1 线性映射与向量空间">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#lvw" class="md-nav__link">
+    <span class="md-ellipsis">
+      \(L(V,W)\)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nulltranget" class="md-nav__link">
+    <span class="md-ellipsis">
+      \(Null(T)、Range(T)\)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#part2" class="md-nav__link">
+    <span class="md-ellipsis">
+      PART2 具象化的线性映射
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="PART2 具象化的线性映射">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      线性映射表示线性方程组
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      线性映射的矩阵
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#part3" class="md-nav__link">
+    <span class="md-ellipsis">
+      PART3 不同的线性映射
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="PART3 不同的线性映射">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#-" class="md-nav__link">
+    <span class="md-ellipsis">
+      可逆 - 同构映射
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#-_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      自身映射 - 算子
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1141,17 +1377,13 @@
   
 
 
-<div><h1 id="note06">Note06 内积空间<a class="headerlink" href="#note06" title="Permanent link">¶</a></h1>
+<div><h1 id="note02">Note02 线性映射<a class="headerlink" href="#note02" title="Permanent link">¶</a></h1>
 <blockquote>
 <p>本笔记完全参考《Linear Algebra Done Right》，所有记录的相关知识以及总结思考均来自该书的启发。本笔记只是面向个人作为深入学习理解线性代数的垫脚石，解释性质不高，而且没有例子，但是高度凝练，<strong>适合复习的时候审阅核对梳理主干</strong>。</p>
 </blockquote>
 <ul>
-<li>
-<p>个人认为线性代数分为<strong>3</strong>部分：<strong>矩阵论、向量空间论、算子论</strong>，目前本笔记章节位于向量空间论的末尾部分.</p>
-</li>
-<li>
-<p>本笔记覆盖的范围 - <strong>6.A～6.C</strong>（参考第三版：《Linear Algebra Done Right，3E》）</p>
-</li>
+<li>个人认为线性代数分为<strong>3</strong>部分：<strong>矩阵论、向量空间论、算子论</strong>，目前本笔记章节位于向量空间论。<strong>注意，本部分并不会重视矩阵的理解，同时我们会省略取矩阵乘法的理解，矩阵的秩。后续我们会在矩阵论部分详细说明</strong></li>
+<li>本笔记覆盖的范围 - <strong>3.A ～ 3.D</strong>（参考第三版：《Linear Algebra Done Right，3E》）</li>
 </ul>
 <p>我假设你已经有一定高等数学基础，我列出我略去的概念：</p>
 <table>
@@ -1160,6 +1392,8 @@
 <th style="text-align: center;">线性映射的定义</th>
 <th style="text-align: center;">单射、满射</th>
 <th style="text-align: center;">线性组合</th>
+<th style="text-align: center;">矩阵的加法、标量乘法</th>
+<th style="text-align: center;">可逆、逆</th>
 </tr>
 </thead>
 <tbody>
@@ -1167,9 +1401,172 @@
 <td></td>
 <td></td>
 <td></td>
+<td></td>
+<td></td>
 </tr>
 </tbody>
-</table></div>
+</table>
+<h2 id="part1">PART1 线性映射与向量空间<a class="headerlink" href="#part1" title="Permanent link">¶</a></h2>
+<div class="admonition question">
+<p class="admonition-title">为什么我们能够把线性映射抽象出向量空间这个概念</p>
+<p>这个问题，换言之：“为什么<span class="arithmatex">\(L(V,W)\)</span>上有许多的线性映射？”
+我们考察一个简单的例子<span class="arithmatex">\(L(V,V)\)</span>：
+这个向量空间的含义是，我们考量V这个空间自己映射到自己的一些线性映射，我们很容易想到有<strong>恒等映射</strong><span class="arithmatex">\((I)\)</span>，<strong>平移映射</strong>等。
+还有一个比较简单的案例<span class="arithmatex">\(L(P(R),P(R))\)</span>：
+基于多项式上的线性映射，我们也很容易想到：<strong>乘以<span class="arithmatex">\(x^2\)</span></strong>、<strong>微分映射</strong>等</p>
+</div>
+<h3 id="lvw"><span class="arithmatex">\(L(V,W)\)</span><a class="headerlink" href="#lvw" title="Permanent link">¶</a></h3>
+<p>我们设<span class="arithmatex">\(S,T \in L(V,W),\lambda \in F，\forall v \in V\)</span>，给出线性映射之间的基本运算：加法、标量乘法:</p>
+<ul>
+<li>加<span class="arithmatex">\((S+T)(v) = Sv +Tv\)</span></li>
+<li>标量乘法<span class="arithmatex">\((\lambda T)(v) = \lambda (Tv)\)</span></li>
+</ul>
+<p>基于上面定义的加法和标量乘法，我们可以证明<span class="arithmatex">\(L(V,W)\)</span><strong>是向量空间</strong></p>
+<p>其实不难理解，线性映射是一种函数，那么函数我们很容易联想到复合函数。类似地，我们于是在线性映射空间中定义<strong>乘积（product of linear maps）</strong>：</p>
+<ul>
+<li>若<span class="arithmatex">\(T \in L(U,V),S \in L(V,W),ST \in L(U,W): \forall u \in U,(ST)(u) = S(Tu)\)</span></li>
+</ul>
+<p>我们通过类比能够得到乘积的代数性质：</p>
+<ol>
+<li><strong>结合性</strong> <span class="arithmatex">\((T_1T_2)T_3 = T_1(T_2T_3)\)</span></li>
+<li><strong>单位元</strong> <span class="arithmatex">\(TI_V = I_WT = T\)</span></li>
+<li><strong>左右分配性质</strong> <span class="arithmatex">\((S_1+S_2)T = S_1T+S_2T,S(T_1+T_2) = ST_1+ST_2\)</span></li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">线性映射向量空间上的一些二级结论</p>
+<p>我们不加严格证明地给出一些结论，完整严格证明推荐读者自行完成：
++ <strong>V的子空间上的线性映射可以扩张成V上的线性映射</strong>
+显然，我们可以通过之前在Note01中的结论（V子空间上的一组基可以扩展成为V上的一组基）
++ <strong>线性映射如何判等/不等 等价于 函数判等/不等</strong>
+参考书中的P46，3.A 14</p>
+</div>
+<h3 id="nulltranget"><span class="arithmatex">\(Null(T)、Range(T)\)</span><a class="headerlink" href="#nulltranget" title="Permanent link">¶</a></h3>
+<p>在本节讨论之前，我们通过函数理解下我们为什么引入这个零空间、象空间；我们考虑函数映射的一般性质时，我们会首先考虑函数映射的单射性、满射性，而你参考下高等数学中对这两个东西的描述，你会发现我们在线性代数中也就是从空间的范畴上给出具体的界定。</p>
+<p><img alt="线性映射的核心观点" src="../img/ker-Im.png"></p>
+<ul>
+<li><strong>关于线性映射的单射性（单性、injective）等价于零空间为{0}</strong></li>
+</ul>
+<p>我们给出零空间的定义、单射性的定义就不证自明了：
+<span class="arithmatex">\(<span class="arithmatex">\(null\; T = \{v\in V:Tv = 0 \}\)</span>\)</span></p>
+<div class="arithmatex">\[Injective:Tu = Tv \rightarrow u = v\]</div>
+<ul>
+<li>关于线性映射的满射性（<strong>线性映射的值域是象空间 - W的子空间</strong>）</li>
+</ul>
+<p>我们给出象空间的定义、满射的定义，同样不证自明：
+<span class="arithmatex">\(<span class="arithmatex">\(range\; T = \{Tv:v\in V\}\)</span>\)</span></p>
+<div class="arithmatex">\[Surjective: range\; T = W \]</div>
+<p>至此，我们可以得到线性映射基本定理(<span class="arithmatex">\(V,rangeT\)</span>是有限维)：</p>
+<div class="arithmatex">\[T\in L(V,W),dimV = dim\;null\;T + dim\;range\;T\]</div>
+<div class="admonition tip">
+<p class="admonition-title">对基本定理一个科学通俗的解释</p>
+<p>我们设<span class="arithmatex">\(v_1,v_2,...,v_n \in V\)</span>是<span class="arithmatex">\(V\)</span>的一组基
+无论是什么线性映射（理解成函数），都会有部分基被压缩成0，其他的是正常非0值
+那么我们不妨假设<span class="arithmatex">\(\forall v_i:1 \le i\le n \le m\)</span>
+有<span class="arithmatex">\(Tv_i = 0\)</span>,而其他的基经过<span class="arithmatex">\(T\)</span>不为0.
+现在，<span class="arithmatex">\(V\)</span>中的基被分为了两个部分，前面的<span class="arithmatex">\(v_i\)</span>张成了零空间。
+后面的基经过<span class="arithmatex">\(T\)</span>后显然是象空间的基（书3A：3.5）
+从维度上就可以得到上面的结果。
++ 你可能有这样的疑问，为什么用0来划分？
+<strong>0在向量空间很特殊</strong>，你会发现，V的所有子空间的交就是{0}</p>
+</div>
+<p>于是我们有如下重要推论：</p>
+<ul>
+<li><strong>到更小维度的向量空间的线性映射不是单的</strong></li>
+<li><strong>到更大维数向量空间的线性映射不是满的</strong></li>
+</ul>
+<h2 id="part2">PART2 具象化的线性映射<a class="headerlink" href="#part2" title="Permanent link">¶</a></h2>
+<h3 id="_1">线性映射表示线性方程组<a class="headerlink" href="#_1" title="Permanent link">¶</a></h3>
+<p>我们尝试使用线性映射对<strong>齐次线性方程组</strong>进行描述，定义<span class="arithmatex">\(T:\mathbf{F}^n \rightarrow \mathbf{F}^m\)</span>：</p>
+<div class="arithmatex">\[
+\left\{\begin{matrix}
+   {\textstyle \sum_{k=1}^{n}A_{1,k}x_k} = 0  \\ ... \\
+  {\textstyle \sum_{k=1}^{n}A_{m,k}x_k} = 0
+\end{matrix}\right.
+\Leftrightarrow
+T(x_1,...,x_n) = ({\textstyle \sum_{k=1}^{n}A_{1,k}x_k},...,{\textstyle \sum_{k=1}^{n}A_{m,k}x_k})
+\]</div>
+<p>上述方程是含有<span class="arithmatex">\(n\)</span>个变量<span class="arithmatex">\(x_1,...,x_n\)</span>和<span class="arithmatex">\(m\)</span>个方程的齐次线性方程组，与此相对应的事<span class="arithmatex">\(T:\mathbf{F}^n \rightarrow \mathbf{F}^m\)</span>,上面一个小节最后一个结论，到更小维度的向量空间的线性映射不是单的。所以当<span class="arithmatex">\(n&gt;m\)</span>,也即是说<strong>当变量多于方程时，齐次线性方程组必有非零解</strong>。</p>
+<p>以同样的方式我们可以考虑非齐次线性方程组，但是我们要考虑的问题是：</p>
+<div class="arithmatex">\[
+\left\{\begin{matrix}
+   {\textstyle \sum_{k=1}^{n}A_{1,k}x_k} = c_1  \\ ... \\
+  {\textstyle \sum_{k=1}^{n}A_{m,k}x_k} = c_m
+\end{matrix}\right.(1)
+\]</div>
+<p>现在是否存在某些常数<span class="arithmatex">\(c_1,...,c_k\in \mathbf{F}\)</span>使得上述方程组无解。</p>
+<div class="arithmatex">\[T(x_1,...,x_n) = (c_1,...,c_m)\quad (2)\]</div>
+<p>方程(2)与方程组(1)是一样的。问题其实等价于是否在<span class="arithmatex">\(\mathbf{F}^m\)</span>中是否是满的，如果不是满的，说明有一组<span class="arithmatex">\((c_1,...,c_m)\)</span>使得上面方程(1)不成立。由于上面一个小节最后一个结论，到更大维度的向量空间的线性映射不是满的。所以当<span class="arithmatex">\(n&lt;m\)</span>,也即是说<strong>当方程多于变量时，必有一组常数项式的相应的非齐次线性方程组无解</strong>。</p>
+<h3 id="_2">线性映射的矩阵<a class="headerlink" href="#_2" title="Permanent link">¶</a></h3>
+<p>设<span class="arithmatex">\(T \in L(V,W)\)</span>，并设<span class="arithmatex">\(v_1,...,v_n\)</span>是<span class="arithmatex">\(V\)</span>的基，<span class="arithmatex">\(w_1,...,w_m\)</span>是<span class="arithmatex">\(W\)</span>的基。规定<span class="arithmatex">\(T\)</span>关于这些基的矩阵为<span class="arithmatex">\(m \times n\)</span>矩阵<span class="arithmatex">\(M(T)\)</span>，其中<span class="arithmatex">\(A_{j,k}\)</span>满足：</p>
+<div class="arithmatex">\[T_{v_k} = A_{1,k}w_1+...+A_{m,k}w_m\]</div>
+<p></p><div align="center" style="display: flex; justify-content: center;">
+    <div style="text-align: center; margin: 0 10px;">
+        <img src="./img/02_01.png" width="300" height="130">
+    </div>
+</div>
+<p>我们给出线性映射矩阵的运算性质：</p>
+<ol>
+<li><span class="arithmatex">\(S,T \in L(V,W),M(S+T) = M(S)+M(T)\)</span></li>
+<li><span class="arithmatex">\(\lambda \in \mathbf{F},T \in L(V,W):M(\lambda T) = \lambda M(T)\)</span></li>
+<li><span class="arithmatex">\(T \in L(U,V),S\in L(V,W):M(ST) = M(S)M(T)\)</span></li>
+</ol>
+<p>我们发现这个线性映射矩阵很类似我们第一次接触的矩阵，在此我们给出所有<span class="arithmatex">\(m \times n\)</span>矩阵的集合，记做<span class="arithmatex">\(\mathbf{F}^{m,n}\)</span></p>
+<p>按照上面定义的矩阵的加法和标量乘法，我们容易证明知道，<span class="arithmatex">\(\mathbf{F}^{m,n}\)</span>是一个向量空间。而这个向量空间的维数：</p>
+<div class="arithmatex">\[dim\;\mathbf{F}^{m,n} = mn\]</div>
+<ul>
+<li><strong>将线性映射视为矩阵乘法</strong></li>
+</ul>
+<p>我将用两个观点来说明这个事情，此点需要结合下面PART03部分的不同线性映射的同构。</p>
+<ol>
+<li>线性映射的作用十分类似矩阵乘法</li>
+</ol>
+<p>我们已经定义了关于线性映射的矩阵<span class="arithmatex">\(M(T)\)</span>，现在我们定义向量的矩阵<span class="arithmatex">\(M(v)\)</span>,设<span class="arithmatex">\(v\in V\)</span>，设<span class="arithmatex">\(v_1,...,v_n\)</span>是 <span class="arithmatex">\(V\)</span> 的基。那么<span class="arithmatex">\(M(v)\)</span>：</p>
+<div class="arithmatex">\[M(v) = \begin{pmatrix}  
+  c_1\\  
+  \vdots\\  
+ c_n  
+\end{pmatrix} \]</div>
+<p>这里<span class="arithmatex">\(c_1,...,c_n\)</span>是使得下面式子成立的标量:</p>
+<div class="arithmatex">\[v = c_1v_1+ ... + c_nv_n\]</div>
+<p>根据上面的定义，我们能得到一个很重要的定理「<span class="arithmatex">\(M(T)\)</span>的第k列等于<span class="arithmatex">\(M(Tv_k)\)</span>」：</p>
+<div class="arithmatex">\[M(T)_{\cdot,k} = M(Tv_k)\]</div>
+<p>综上所述，我们有：</p>
+<div class="arithmatex">\[\because Tv = c_1Tv_1+...+c_nTv_n\]</div>
+<div class="arithmatex">\[\therefore M(Tv) = c_1M(Tv_1)+...+c_nM(Tv_n) \\=c_1M(T)_{\cdot,1}+...+c_nM(T)_{\cdot,n} \\  = M(T)M(v)\]</div>
+<p>上述结论说明了一件事情，如果我们可以把问题化成我们熟悉的矩阵，然后我们便可以从矩阵的角度给出线性映射的内容。也即是线性映射的作用类似于矩阵乘</p>
+<ol>
+<li><span class="arithmatex">\(L(V,W) \cong F^{m,n}\)</span></li>
+</ol>
+<p>我们其实很容易得到两个空间的存在的一个自然同构<span class="arithmatex">\(M\)</span>，<span class="arithmatex">\(M\)</span>就是之前定义在线性映射的矩阵、向量矩阵中的<span class="arithmatex">\(M\)</span>。于是我们知道<strong>线性映射的矩阵空间和线性映射空间是同构的</strong>。</p>
+<p>P.s <span class="arithmatex">\(dim\;L(V,W) = (dim\;V)(dim\;W)\)</span></p>
+<h2 id="part3">PART3 不同的线性映射<a class="headerlink" href="#part3" title="Permanent link">¶</a></h2>
+<blockquote>
+<p>本模块着重介绍两种映射：同构、算子（简单介绍）</p>
+</blockquote>
+<h3 id="-">可逆 - 同构映射<a class="headerlink" href="#-" title="Permanent link">¶</a></h3>
+<p>我们在声明部分虽然说了忽略线性映射的可逆和逆，但是我们还是给出比较重的事情：</p>
+<ol>
+<li>可逆性等价于单性和慢性</li>
+<li>可逆的线性映射有唯一的基</li>
+</ol>
+<p>我们在可逆的基础上引入同构。可逆性预示着两个向量空间之间存在一一对应的关系，就像笛卡尔坐标系和几何图形其实是本质一样，在线性代数中，<strong>我们刻画出了元素的名字之外本质上相同的两个向量空间为同构的</strong></p>
+<ul>
+<li>
+<p>当两个向量空间存在一个同构（也就是可逆映射），则两个向量空间是同构的</p>
+</li>
+<li>
+<p><span class="arithmatex">\(\mathbf{F}\)</span><strong>上两个有限维向量空间同构当且仅当维数相同</strong></p>
+</li>
+</ul>
+<h3 id="-_1">自身映射 - 算子<a class="headerlink" href="#-_1" title="Permanent link">¶</a></h3>
+<p>向量空间到滋生的线性映射十分重要，这个重要性会在算子论的讲解中逐渐明了。我们称，向量空间到自身的线性映射是<strong>算子</strong>。同时记<span class="arithmatex">\(L(V)\)</span>表示<span class="arithmatex">\(V\)</span>上全体算子所组成的集合。</p>
+<div class="admonition note">
+<p class="admonition-title">算子的优美性质</p>
+<p><strong>存在有限维的情况，单性等价于满性</strong>
+设V是有限维，并且设<span class="arithmatex">\(T \in L(V)\)</span>，则下列称述等价：
+（a）T是可逆的（b）T是单的（c）T是满的</p>
+</div>
+<p>最后的最后，我想提醒一下读者，在使用上述定理时候，<strong>请注意是否是在有限维的情况下</strong></p></div>
 
 
 
@@ -1216,10 +1613,10 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "../../..", "features": ["search.highlight", "navigation.tabs"], "search": "../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["search.highlight", "navigation.tabs"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.8fd75fb4.min.js"></script>
+      <script src="../../assets/javascripts/bundle.8fd75fb4.min.js"></script>
       
     
   </body>

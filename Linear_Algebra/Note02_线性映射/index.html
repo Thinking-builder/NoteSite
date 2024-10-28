@@ -520,7 +520,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../src/Note01/" class="md-nav__link">
+      <a href="../Note01/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -541,7 +541,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../src/Note02/" class="md-nav__link">
+      <a href="../Note02/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -562,7 +562,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../src/Note03/" class="md-nav__link">
+      <a href="../Note03/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -583,7 +583,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../src/Note04/" class="md-nav__link">
+      <a href="../Note04/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -604,7 +604,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../src/Note05/" class="md-nav__link">
+      <a href="../Note05/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -625,7 +625,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../src/Note06/" class="md-nav__link">
+      <a href="../Note06/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1117,7 +1117,7 @@
           <li class="md-nav__item">
   <a href="#lvw" class="md-nav__link">
     <span class="md-ellipsis">
-      $L(V,W)$
+      \(L(V,W)\)
     </span>
   </a>
   
@@ -1126,7 +1126,7 @@
           <li class="md-nav__item">
   <a href="#nulltranget" class="md-nav__link">
     <span class="md-ellipsis">
-      $Null(T)、Range(T)$
+      \(Null(T)、Range(T)\)
     </span>
   </a>
   
@@ -1253,28 +1253,28 @@
 <h2 id="part1">PART1 线性映射与向量空间<a class="headerlink" href="#part1" title="Permanent link">¶</a></h2>
 <div class="admonition question">
 <p class="admonition-title">为什么我们能够把线性映射抽象出向量空间这个概念</p>
-<p>这个问题，换言之：“为什么$L(V,W)$上有许多的线性映射？”
-我们考察一个简单的例子$L(V,V)$：
-这个向量空间的含义是，我们考量V这个空间自己映射到自己的一些线性映射，我们很容易想到有<strong>恒等映射</strong>$(I)$，<strong>平移映射</strong>等。
-还有一个比较简单的案例$L(P(R),P(R))$：
-基于多项式上的线性映射，我们也很容易想到：<strong>乘以$x^2$</strong>、<strong>微分映射</strong>等</p>
+<p>这个问题，换言之：“为什么<span class="arithmatex">\(L(V,W)\)</span>上有许多的线性映射？”
+我们考察一个简单的例子<span class="arithmatex">\(L(V,V)\)</span>：
+这个向量空间的含义是，我们考量V这个空间自己映射到自己的一些线性映射，我们很容易想到有<strong>恒等映射</strong><span class="arithmatex">\((I)\)</span>，<strong>平移映射</strong>等。
+还有一个比较简单的案例<span class="arithmatex">\(L(P(R),P(R))\)</span>：
+基于多项式上的线性映射，我们也很容易想到：<strong>乘以<span class="arithmatex">\(x^2\)</span></strong>、<strong>微分映射</strong>等</p>
 </div>
-<h3 id="lvw">$L(V,W)$<a class="headerlink" href="#lvw" title="Permanent link">¶</a></h3>
-<p>我们设$S,T \in L(V,W),\lambda \in F，\forall v \in V$，给出线性映射之间的基本运算：加法、标量乘法:</p>
+<h3 id="lvw"><span class="arithmatex">\(L(V,W)\)</span><a class="headerlink" href="#lvw" title="Permanent link">¶</a></h3>
+<p>我们设<span class="arithmatex">\(S,T \in L(V,W),\lambda \in F，\forall v \in V\)</span>，给出线性映射之间的基本运算：加法、标量乘法:</p>
 <ul>
-<li>加$(S+T)(v) = Sv +Tv$</li>
-<li>标量乘法$(\lambda T)(v) = \lambda (Tv)$</li>
+<li>加<span class="arithmatex">\((S+T)(v) = Sv +Tv\)</span></li>
+<li>标量乘法<span class="arithmatex">\((\lambda T)(v) = \lambda (Tv)\)</span></li>
 </ul>
-<p>基于上面定义的加法和标量乘法，我们可以证明$L(V,W)$<strong>是向量空间</strong></p>
+<p>基于上面定义的加法和标量乘法，我们可以证明<span class="arithmatex">\(L(V,W)\)</span><strong>是向量空间</strong></p>
 <p>其实不难理解，线性映射是一种函数，那么函数我们很容易联想到复合函数。类似地，我们于是在线性映射空间中定义<strong>乘积（product of linear maps）</strong>：</p>
 <ul>
-<li>若$T \in L(U,V),S \in L(V,W),ST \in L(U,W): \forall u \in U,(ST)(u) = S(Tu)$</li>
+<li>若<span class="arithmatex">\(T \in L(U,V),S \in L(V,W),ST \in L(U,W): \forall u \in U,(ST)(u) = S(Tu)\)</span></li>
 </ul>
 <p>我们通过类比能够得到乘积的代数性质：</p>
 <ol>
-<li><strong>结合性</strong> $(T_1T_2)T_3 = T_1(T_2T_3)$</li>
-<li><strong>单位元</strong> $TI_V = I_WT = T$</li>
-<li><strong>左右分配性质</strong> $(S_1+S_2)T = S_1T+S_2T,S(T_1+T_2) = ST_1+ST_2$</li>
+<li><strong>结合性</strong> <span class="arithmatex">\((T_1T_2)T_3 = T_1(T_2T_3)\)</span></li>
+<li><strong>单位元</strong> <span class="arithmatex">\(TI_V = I_WT = T\)</span></li>
+<li><strong>左右分配性质</strong> <span class="arithmatex">\((S_1+S_2)T = S_1T+S_2T,S(T_1+T_2) = ST_1+ST_2\)</span></li>
 </ol>
 <div class="admonition note">
 <p class="admonition-title">线性映射向量空间上的一些二级结论</p>
@@ -1284,31 +1284,31 @@
 + <strong>线性映射如何判等/不等 等价于 函数判等/不等</strong>
 参考书中的P46，3.A 14</p>
 </div>
-<h3 id="nulltranget">$Null(T)、Range(T)$<a class="headerlink" href="#nulltranget" title="Permanent link">¶</a></h3>
+<h3 id="nulltranget"><span class="arithmatex">\(Null(T)、Range(T)\)</span><a class="headerlink" href="#nulltranget" title="Permanent link">¶</a></h3>
 <p>在本节讨论之前，我们通过函数理解下我们为什么引入这个零空间、象空间；我们考虑函数映射的一般性质时，我们会首先考虑函数映射的单射性、满射性，而你参考下高等数学中对这两个东西的描述，你会发现我们在线性代数中也就是从空间的范畴上给出具体的界定。</p>
 <p><img alt="线性映射的核心观点" src="../img/ker-Im.png"></p>
 <ul>
 <li><strong>关于线性映射的单射性（单性、injective）等价于零空间为{0}</strong></li>
 </ul>
 <p>我们给出零空间的定义、单射性的定义就不证自明了：
-$$null\; T = {v\in V:Tv = 0 }$$</p>
-<p>$$Injective:Tu = Tv \rightarrow u = v$$</p>
+<span class="arithmatex">\(<span class="arithmatex">\(null\; T = \{v\in V:Tv = 0 \}\)</span>\)</span></p>
+<div class="arithmatex">\[Injective:Tu = Tv \rightarrow u = v\]</div>
 <ul>
 <li>关于线性映射的满射性（<strong>线性映射的值域是象空间 - W的子空间</strong>）</li>
 </ul>
 <p>我们给出象空间的定义、满射的定义，同样不证自明：
-$$range\; T = {Tv:v\in V}$$</p>
-<p>$$Surjective: range\; T = W $$</p>
-<p>至此，我们可以得到线性映射基本定理($V,rangeT$是有限维)：</p>
-<p>$$T\in L(V,W),dimV = dim\;null\;T + dim\;range\;T$$</p>
+<span class="arithmatex">\(<span class="arithmatex">\(range\; T = \{Tv:v\in V\}\)</span>\)</span></p>
+<div class="arithmatex">\[Surjective: range\; T = W \]</div>
+<p>至此，我们可以得到线性映射基本定理(<span class="arithmatex">\(V,rangeT\)</span>是有限维)：</p>
+<div class="arithmatex">\[T\in L(V,W),dimV = dim\;null\;T + dim\;range\;T\]</div>
 <div class="admonition tip">
 <p class="admonition-title">对基本定理一个科学通俗的解释</p>
-<p>我们设$v_1,v_2,...,v_n \in V$是$V$的一组基
+<p>我们设<span class="arithmatex">\(v_1,v_2,...,v_n \in V\)</span>是<span class="arithmatex">\(V\)</span>的一组基
 无论是什么线性映射（理解成函数），都会有部分基被压缩成0，其他的是正常非0值
-那么我们不妨假设$\forall v_i:1 \le i\le n \le m$
-有$Tv_i = 0$,而其他的基经过$T$不为0.
-现在，$V$中的基被分为了两个部分，前面的$v_i$张成了零空间。
-后面的基经过$T$后显然是象空间的基（书3A：3.5）
+那么我们不妨假设<span class="arithmatex">\(\forall v_i:1 \le i\le n \le m\)</span>
+有<span class="arithmatex">\(Tv_i = 0\)</span>,而其他的基经过<span class="arithmatex">\(T\)</span>不为0.
+现在，<span class="arithmatex">\(V\)</span>中的基被分为了两个部分，前面的<span class="arithmatex">\(v_i\)</span>张成了零空间。
+后面的基经过<span class="arithmatex">\(T\)</span>后显然是象空间的基（书3A：3.5）
 从维度上就可以得到上面的结果。
 + 你可能有这样的疑问，为什么用0来划分？
 <strong>0在向量空间很特殊</strong>，你会发现，V的所有子空间的交就是{0}</p>
@@ -1320,29 +1320,29 @@ $$range\; T = {Tv:v\in V}$$</p>
 </ul>
 <h2 id="part2">PART2 具象化的线性映射<a class="headerlink" href="#part2" title="Permanent link">¶</a></h2>
 <h3 id="_1">线性映射表示线性方程组<a class="headerlink" href="#_1" title="Permanent link">¶</a></h3>
-<p>我们尝试使用线性映射对<strong>齐次线性方程组</strong>进行描述，定义$T:\mathbf{F}^n \rightarrow \mathbf{F}^m$：</p>
-<p>$$
-\left{\begin{matrix}
-   {\textstyle \sum_{k=1}^{n}A_{1,k}x_k} = 0  \ ... \
+<p>我们尝试使用线性映射对<strong>齐次线性方程组</strong>进行描述，定义<span class="arithmatex">\(T:\mathbf{F}^n \rightarrow \mathbf{F}^m\)</span>：</p>
+<div class="arithmatex">\[
+\left\{\begin{matrix}
+   {\textstyle \sum_{k=1}^{n}A_{1,k}x_k} = 0  \\ ... \\
   {\textstyle \sum_{k=1}^{n}A_{m,k}x_k} = 0
 \end{matrix}\right.
 \Leftrightarrow
 T(x_1,...,x_n) = ({\textstyle \sum_{k=1}^{n}A_{1,k}x_k},...,{\textstyle \sum_{k=1}^{n}A_{m,k}x_k})
-$$</p>
-<p>上述方程是含有$n$个变量$x_1,...,x_n$和$m$个方程的齐次线性方程组，与此相对应的事$T:\mathbf{F}^n \rightarrow \mathbf{F}^m$,上面一个小节最后一个结论，到更小维度的向量空间的线性映射不是单的。所以当$n&gt;m$,也即是说<strong>当变量多于方程时，齐次线性方程组必有非零解</strong>。</p>
+\]</div>
+<p>上述方程是含有<span class="arithmatex">\(n\)</span>个变量<span class="arithmatex">\(x_1,...,x_n\)</span>和<span class="arithmatex">\(m\)</span>个方程的齐次线性方程组，与此相对应的事<span class="arithmatex">\(T:\mathbf{F}^n \rightarrow \mathbf{F}^m\)</span>,上面一个小节最后一个结论，到更小维度的向量空间的线性映射不是单的。所以当<span class="arithmatex">\(n&gt;m\)</span>,也即是说<strong>当变量多于方程时，齐次线性方程组必有非零解</strong>。</p>
 <p>以同样的方式我们可以考虑非齐次线性方程组，但是我们要考虑的问题是：</p>
-<p>$$
-\left{\begin{matrix}
-   {\textstyle \sum_{k=1}^{n}A_{1,k}x_k} = c_1  \ ... \
+<div class="arithmatex">\[
+\left\{\begin{matrix}
+   {\textstyle \sum_{k=1}^{n}A_{1,k}x_k} = c_1  \\ ... \\
   {\textstyle \sum_{k=1}^{n}A_{m,k}x_k} = c_m
 \end{matrix}\right.(1)
-$$</p>
-<p>现在是否存在某些常数$c_1,...,c_k\in \mathbf{F}$使得上述方程组无解。</p>
-<p>$$T(x_1,...,x_n) = (c_1,...,c_m)\quad (2)$$</p>
-<p>方程(2)与方程组(1)是一样的。问题其实等价于是否在$\mathbf{F}^m$中是否是满的，如果不是满的，说明有一组$(c_1,...,c_m)$使得上面方程(1)不成立。由于上面一个小节最后一个结论，到更大维度的向量空间的线性映射不是满的。所以当$n&lt;m$,也即是说<strong>当方程多于变量时，必有一组常数项式的相应的非齐次线性方程组无解</strong>。</p>
+\]</div>
+<p>现在是否存在某些常数<span class="arithmatex">\(c_1,...,c_k\in \mathbf{F}\)</span>使得上述方程组无解。</p>
+<div class="arithmatex">\[T(x_1,...,x_n) = (c_1,...,c_m)\quad (2)\]</div>
+<p>方程(2)与方程组(1)是一样的。问题其实等价于是否在<span class="arithmatex">\(\mathbf{F}^m\)</span>中是否是满的，如果不是满的，说明有一组<span class="arithmatex">\((c_1,...,c_m)\)</span>使得上面方程(1)不成立。由于上面一个小节最后一个结论，到更大维度的向量空间的线性映射不是满的。所以当<span class="arithmatex">\(n&lt;m\)</span>,也即是说<strong>当方程多于变量时，必有一组常数项式的相应的非齐次线性方程组无解</strong>。</p>
 <h3 id="_2">线性映射的矩阵<a class="headerlink" href="#_2" title="Permanent link">¶</a></h3>
-<p>设$T \in L(V,W)$，并设$v_1,...,v_n$是$V$的基，$w_1,...,w_m$是$W$的基。规定$T$关于这些基的矩阵为$m \times n$矩阵$M(T)$，其中$A_{j,k}$满足：</p>
-<p>$$T_{v_k} = A_{1,k}w_1+...+A_{m,k}w_m$$</p>
+<p>设<span class="arithmatex">\(T \in L(V,W)\)</span>，并设<span class="arithmatex">\(v_1,...,v_n\)</span>是<span class="arithmatex">\(V\)</span>的基，<span class="arithmatex">\(w_1,...,w_m\)</span>是<span class="arithmatex">\(W\)</span>的基。规定<span class="arithmatex">\(T\)</span>关于这些基的矩阵为<span class="arithmatex">\(m \times n\)</span>矩阵<span class="arithmatex">\(M(T)\)</span>，其中<span class="arithmatex">\(A_{j,k}\)</span>满足：</p>
+<div class="arithmatex">\[T_{v_k} = A_{1,k}w_1+...+A_{m,k}w_m\]</div>
 <p></p><div align="center" style="display: flex; justify-content: center;">
     <div style="text-align: center; margin: 0 10px;">
         <img src="./img/02_01.png" width="300" height="130">
@@ -1350,13 +1350,13 @@ $$</p>
 </div>
 <p>我们给出线性映射矩阵的运算性质：</p>
 <ol>
-<li>$S,T \in L(V,W),M(S+T) = M(S)+M(T)$</li>
-<li>$\lambda \in \mathbf{F},T \in L(V,W):M(\lambda T) = \lambda M(T)$</li>
-<li>$T \in L(U,V),S\in L(V,W):M(ST) = M(S)M(T)$</li>
+<li><span class="arithmatex">\(S,T \in L(V,W),M(S+T) = M(S)+M(T)\)</span></li>
+<li><span class="arithmatex">\(\lambda \in \mathbf{F},T \in L(V,W):M(\lambda T) = \lambda M(T)\)</span></li>
+<li><span class="arithmatex">\(T \in L(U,V),S\in L(V,W):M(ST) = M(S)M(T)\)</span></li>
 </ol>
-<p>我们发现这个线性映射矩阵很类似我们第一次接触的矩阵，在此我们给出所有$m \times n$矩阵的集合，记做$\mathbf{F}^{m,n}$</p>
-<p>按照上面定义的矩阵的加法和标量乘法，我们容易证明知道，$\mathbf{F}^{m,n}$是一个向量空间。而这个向量空间的维数：</p>
-<p>$$dim\;\mathbf{F}^{m,n} = mn$$</p>
+<p>我们发现这个线性映射矩阵很类似我们第一次接触的矩阵，在此我们给出所有<span class="arithmatex">\(m \times n\)</span>矩阵的集合，记做<span class="arithmatex">\(\mathbf{F}^{m,n}\)</span></p>
+<p>按照上面定义的矩阵的加法和标量乘法，我们容易证明知道，<span class="arithmatex">\(\mathbf{F}^{m,n}\)</span>是一个向量空间。而这个向量空间的维数：</p>
+<div class="arithmatex">\[dim\;\mathbf{F}^{m,n} = mn\]</div>
 <ul>
 <li><strong>将线性映射视为矩阵乘法</strong></li>
 </ul>
@@ -1364,25 +1364,25 @@ $$</p>
 <ol>
 <li>线性映射的作用十分类似矩阵乘法</li>
 </ol>
-<p>我们已经定义了关于线性映射的矩阵$M(T)$，现在我们定义向量的矩阵$M(v)$,设$v\in V$，设$v_1,...,v_n$是 $V$ 的基。那么$M(v)$：</p>
-<p>$$M(v) = \begin{pmatrix}<br>
-  c_1\<br>
-  \vdots\<br>
- c_n<br>
-\end{pmatrix} $$</p>
-<p>这里$c_1,...,c_n$是使得下面式子成立的标量:</p>
-<p>$$v = c_1v_1+ ... + c_nv_n$$</p>
-<p>根据上面的定义，我们能得到一个很重要的定理「$M(T)$的第k列等于$M(Tv_k)$」：</p>
-<p>$$M(T)_{\cdot,k} = M(Tv_k)$$</p>
+<p>我们已经定义了关于线性映射的矩阵<span class="arithmatex">\(M(T)\)</span>，现在我们定义向量的矩阵<span class="arithmatex">\(M(v)\)</span>,设<span class="arithmatex">\(v\in V\)</span>，设<span class="arithmatex">\(v_1,...,v_n\)</span>是 <span class="arithmatex">\(V\)</span> 的基。那么<span class="arithmatex">\(M(v)\)</span>：</p>
+<div class="arithmatex">\[M(v) = \begin{pmatrix}  
+  c_1\\  
+  \vdots\\  
+ c_n  
+\end{pmatrix} \]</div>
+<p>这里<span class="arithmatex">\(c_1,...,c_n\)</span>是使得下面式子成立的标量:</p>
+<div class="arithmatex">\[v = c_1v_1+ ... + c_nv_n\]</div>
+<p>根据上面的定义，我们能得到一个很重要的定理「<span class="arithmatex">\(M(T)\)</span>的第k列等于<span class="arithmatex">\(M(Tv_k)\)</span>」：</p>
+<div class="arithmatex">\[M(T)_{\cdot,k} = M(Tv_k)\]</div>
 <p>综上所述，我们有：</p>
-<p>$$\because Tv = c_1Tv_1+...+c_nTv_n$$</p>
-<p>$$\therefore M(Tv) = c_1M(Tv_1)+...+c_nM(Tv_n) \=c_1M(T)<em _cdot_n="\cdot,n">{\cdot,1}+...+c_nM(T)</em> \  = M(T)M(v)$$</p>
+<div class="arithmatex">\[\because Tv = c_1Tv_1+...+c_nTv_n\]</div>
+<div class="arithmatex">\[\therefore M(Tv) = c_1M(Tv_1)+...+c_nM(Tv_n) \\=c_1M(T)_{\cdot,1}+...+c_nM(T)_{\cdot,n} \\  = M(T)M(v)\]</div>
 <p>上述结论说明了一件事情，如果我们可以把问题化成我们熟悉的矩阵，然后我们便可以从矩阵的角度给出线性映射的内容。也即是线性映射的作用类似于矩阵乘</p>
 <ol>
-<li>$L(V,W) \cong F^{m,n}$</li>
+<li><span class="arithmatex">\(L(V,W) \cong F^{m,n}\)</span></li>
 </ol>
-<p>我们其实很容易得到两个空间的存在的一个自然同构$M$，$M$就是之前定义在线性映射的矩阵、向量矩阵中的$M$。于是我们知道<strong>线性映射的矩阵空间和线性映射空间是同构的</strong>。</p>
-<p>P.s $dim\;L(V,W) = (dim\;V)(dim\;W)$</p>
+<p>我们其实很容易得到两个空间的存在的一个自然同构<span class="arithmatex">\(M\)</span>，<span class="arithmatex">\(M\)</span>就是之前定义在线性映射的矩阵、向量矩阵中的<span class="arithmatex">\(M\)</span>。于是我们知道<strong>线性映射的矩阵空间和线性映射空间是同构的</strong>。</p>
+<p>P.s <span class="arithmatex">\(dim\;L(V,W) = (dim\;V)(dim\;W)\)</span></p>
 <h2 id="part3">PART3 不同的线性映射<a class="headerlink" href="#part3" title="Permanent link">¶</a></h2>
 <blockquote>
 <p>本模块着重介绍两种映射：同构、算子（简单介绍）</p>
@@ -1399,15 +1399,15 @@ $$</p>
 <p>当两个向量空间存在一个同构（也就是可逆映射），则两个向量空间是同构的</p>
 </li>
 <li>
-<p>$\mathbf{F}$<strong>上两个有限维向量空间同构当且仅当维数相同</strong></p>
+<p><span class="arithmatex">\(\mathbf{F}\)</span><strong>上两个有限维向量空间同构当且仅当维数相同</strong></p>
 </li>
 </ul>
 <h3 id="-_1">自身映射 - 算子<a class="headerlink" href="#-_1" title="Permanent link">¶</a></h3>
-<p>向量空间到滋生的线性映射十分重要，这个重要性会在算子论的讲解中逐渐明了。我们称，向量空间到自身的线性映射是<strong>算子</strong>。同时记$L(V)$表示$V$上全体算子所组成的集合。</p>
+<p>向量空间到滋生的线性映射十分重要，这个重要性会在算子论的讲解中逐渐明了。我们称，向量空间到自身的线性映射是<strong>算子</strong>。同时记<span class="arithmatex">\(L(V)\)</span>表示<span class="arithmatex">\(V\)</span>上全体算子所组成的集合。</p>
 <div class="admonition note">
 <p class="admonition-title">算子的优美性质</p>
 <p><strong>存在有限维的情况，单性等价于满性</strong>
-设V是有限维，并且设$T \in L(V)$，则下列称述等价：
+设V是有限维，并且设<span class="arithmatex">\(T \in L(V)\)</span>，则下列称述等价：
 （a）T是可逆的（b）T是单的（c）T是满的</p>
 </div>
 <p>最后的最后，我想提醒一下读者，在使用上述定理时候，<strong>请注意是否是在有限维的情况下</strong></p></div>

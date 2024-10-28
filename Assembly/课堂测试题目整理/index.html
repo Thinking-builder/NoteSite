@@ -520,7 +520,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Linear_Algebra/src/Note01/" class="md-nav__link">
+      <a href="../../Linear_Algebra/Note01/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -541,7 +541,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Linear_Algebra/src/Note02/" class="md-nav__link">
+      <a href="../../Linear_Algebra/Note02/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -562,7 +562,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Linear_Algebra/src/Note03/" class="md-nav__link">
+      <a href="../../Linear_Algebra/Note03/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -583,7 +583,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Linear_Algebra/src/Note04/" class="md-nav__link">
+      <a href="../../Linear_Algebra/Note04/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -604,7 +604,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Linear_Algebra/src/Note05/" class="md-nav__link">
+      <a href="../../Linear_Algebra/Note05/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -625,7 +625,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Linear_Algebra/src/Note06/" class="md-nav__link">
+      <a href="../../Linear_Algebra/Note06/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1164,10 +1164,10 @@
 <p><strong>题目一</strong>：<code>ECX = 0</code>时LOOP循环执行次数是多少？</p>
 <div class="highlight"><pre><span></span><code>
 </code></pre></div>
-<p>$$Solution:\;\; The\;\; answer\;\; is\;\; 2^{32}$$</p>
+<div class="arithmatex">\[Solution:\;\; The\;\; answer\;\; is\;\; 2^{32}\]</div>
 <p><strong>题目二</strong>：数组求和程序书写</p>
 <p>给出一个数组<code>array DWORD 100h,200h,300h,400h</code></p>
-<p>$$Solution:\;\; The\;\; anwer \;\;is\;\;below$$</p>
+<div class="arithmatex">\[Solution:\;\; The\;\; anwer \;\;is\;\;below\]</div>
 <div class="highlight"><pre><span></span><code><span class="na">.data</span>
 <span class="w">  </span><span class="nf">array</span><span class="w"> </span><span class="no">DWORD</span><span class="w"> </span><span class="mi">100</span><span class="no">h</span><span class="p">,</span><span class="mi">200</span><span class="no">h</span><span class="p">,</span><span class="mi">300</span><span class="no">h</span><span class="p">,</span><span class="mi">400</span><span class="no">h</span>
 <span class="na">.code</span>
@@ -1181,7 +1181,7 @@
 </code></pre></div>
 <p><strong>题目三</strong>：字符串赋值程序书写</p>
 <p>给出一个字符串<code>str BYTE "Hello Word",0DH,0AH,0</code></p>
-<p>$$Solution:\;\; The\;\; anwer \;\;is\;\;below$$</p>
+<div class="arithmatex">\[Solution:\;\; The\;\; anwer \;\;is\;\;below\]</div>
 <div class="highlight"><pre><span></span><code><span class="na">.data</span>
 <span class="w">  </span><span class="nf">src</span><span class="w"> </span><span class="no">BYTE</span><span class="w"> </span><span class="err">"</span><span class="no">Hello</span><span class="w"> </span><span class="no">Word</span><span class="err">"</span><span class="p">,</span><span class="mi">0</span><span class="no">DH</span><span class="p">,</span><span class="mi">0</span><span class="no">AH</span><span class="p">,</span><span class="mi">0</span>
 <span class="w">  </span><span class="nf">dst</span><span class="w"> </span><span class="no">BYTE</span><span class="w"> </span><span class="no">SIZEOF</span><span class="w"> </span><span class="no">srcDUP</span><span class="p">(</span><span class="mi">0</span><span class="p">),</span><span class="mi">0</span>
@@ -1208,7 +1208,7 @@
 <span class="w">  </span><span class="nf">LOOP</span><span class="w"> </span><span class="no">L1</span>
 </code></pre></div>
 <p><strong>题目五</strong>：如何访问下面数组<code>var1 DWORD 100h,200h,300h</code>中的内存值<code>200h</code>?</p>
-<p>$$Solution:\;\; The\;\; anwer \;\;is\;\;below$$</p>
+<div class="arithmatex">\[Solution:\;\; The\;\; anwer \;\;is\;\;below\]</div>
 <div class="highlight"><pre><span></span><code><span class="na">.code</span>
 <span class="w">  </span><span class="nf">mov</span><span class="w"> </span><span class="no">eax</span><span class="p">,[</span><span class="no">var1</span><span class="w"> </span><span class="err">+</span><span class="w"> </span><span class="mi">4</span><span class="p">]</span><span class="w"> </span><span class="c1">;注意这里是4而不是1！注意数据类型宽度</span>
 </code></pre></div>
@@ -1228,7 +1228,7 @@
 <div class="highlight"><pre><span></span><code><span class="nf">INC</span><span class="w"> </span><span class="no">DWORD</span><span class="w"> </span><span class="no">PTR</span><span class="w"> </span><span class="p">[</span><span class="no">eax</span><span class="p">]</span>
 </code></pre></div>
 <p><strong>题目七</strong>：内存地址指针的尺寸大小</p>
-<p>$Solution:$只要不是段寄存器，我们认为无论指针指向什么类型的数据，指针的尺寸都是<code>4 BYTE</code></p>
+<p><span class="arithmatex">\(Solution:\)</span>只要不是段寄存器，我们认为无论指针指向什么类型的数据，指针的尺寸都是<code>4 BYTE</code></p>
 <h2 id="_3">第五章 汇编过程<a class="headerlink" href="#_3" title="Permanent link">¶</a></h2>
 <p><strong>题目一</strong>：<code>Include</code>和<code>Includelib</code>的区别</p>
 <p><strong><code>INCLUDE</code></strong>：</p>

@@ -520,7 +520,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Linear_Algebra/src/Note01/" class="md-nav__link">
+      <a href="../../Linear_Algebra/Note01/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -541,7 +541,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Linear_Algebra/src/Note02/" class="md-nav__link">
+      <a href="../../Linear_Algebra/Note02/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -562,7 +562,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Linear_Algebra/src/Note03/" class="md-nav__link">
+      <a href="../../Linear_Algebra/Note03/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -583,7 +583,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Linear_Algebra/src/Note04/" class="md-nav__link">
+      <a href="../../Linear_Algebra/Note04/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -604,7 +604,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Linear_Algebra/src/Note05/" class="md-nav__link">
+      <a href="../../Linear_Algebra/Note05/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -625,7 +625,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Linear_Algebra/src/Note06/" class="md-nav__link">
+      <a href="../../Linear_Algebra/Note06/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1135,11 +1135,11 @@
 <p>在探讨线性神经网络部分中，我们需要重点关注整个训练网络建立、训练流程：
 大致上可以描述为：建立线性数学模型 - 给定随机初始值并且学习率 - 使用基础优化算法减小MSE</p>
 <p>而对于线性神经网络来说，最重要的是基础的优化算法，而线性数学模型是是十分显而易见的：</p>
-<p>$$y = w_1x_1 + w_2x_2 +...+w_nx_n + b$$</p>
-<p>$$y = W^T x + b$$</p>
+<div class="arithmatex">\[y = w_1x_1 + w_2x_2 +...+w_nx_n + b\]</div>
+<div class="arithmatex">\[y = W^T x + b\]</div>
 <p>而我们需要评估我们训练优化出来的线性模型的准确性，我们考察其MSE结果：</p>
-<p>$$L(\mathbf{w}, b) =\frac{1}{n}\sum_{i=1}^n l^{(i)}(\mathbf{w}, b) =\frac{1}{n} \sum_{i=1}^n \frac{1}{2}\left(\mathbf{w}^\top \mathbf{x}^{(i)} + b - y^{(i)}\right)^2.$$</p>
-<p>常数$\frac{1}{2}$不会带来本质的差别，但这样在形式上稍微简单一些（因为当我们对损失函数求导后常数系数为1）。</p>
+<div class="arithmatex">\[L(\mathbf{w}, b) =\frac{1}{n}\sum_{i=1}^n l^{(i)}(\mathbf{w}, b) =\frac{1}{n} \sum_{i=1}^n \frac{1}{2}\left(\mathbf{w}^\top \mathbf{x}^{(i)} + b - y^{(i)}\right)^2.\]</div>
+<p>常数<span class="arithmatex">\(\frac{1}{2}\)</span>不会带来本质的差别，但这样在形式上稍微简单一些（因为当我们对损失函数求导后常数系数为1）。</p>
 <p>线性回归模型过于简单的原因大部分是因为线性回归模型存在解析解。</p>
 <h2 id="_2">随机梯度下降算法<a class="headerlink" href="#_2" title="Permanent link">¶</a></h2>
 <p>我们一般会采用小批量随机梯度下降算法</p></div>

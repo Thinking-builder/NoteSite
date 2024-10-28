@@ -151,7 +151,17 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://note.thinkingbuilder.cc/Linear_Algebra/Note01/</loc>
+         <lastmod>2024-10-28</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://note.thinkingbuilder.cc/Linear_Algebra/Note01_%E5%90%91%E9%87%8F%E7%A9%BA%E9%97%B4/</loc>
+         <lastmod>2024-10-28</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://note.thinkingbuilder.cc/Linear_Algebra/Note02/</loc>
          <lastmod>2024-10-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -161,7 +171,17 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://note.thinkingbuilder.cc/Linear_Algebra/Note03/</loc>
+         <lastmod>2024-10-28</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://note.thinkingbuilder.cc/Linear_Algebra/Note03_%E7%A9%BA%E9%97%B4%E7%9A%84%E4%BA%A4%E6%8D%A2%E5%9B%BE/</loc>
+         <lastmod>2024-10-28</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://note.thinkingbuilder.cc/Linear_Algebra/Note04/</loc>
          <lastmod>2024-10-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -171,42 +191,22 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://note.thinkingbuilder.cc/Linear_Algebra/Note05/</loc>
+         <lastmod>2024-10-28</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://note.thinkingbuilder.cc/Linear_Algebra/Note05_%E6%9C%AC%E5%BE%81/</loc>
          <lastmod>2024-10-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://note.thinkingbuilder.cc/Linear_Algebra/Note06/</loc>
+         <lastmod>2024-10-28</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://note.thinkingbuilder.cc/Linear_Algebra/Note06_%E5%86%85%E7%A7%AF%E7%A9%BA%E9%97%B4/</loc>
-         <lastmod>2024-10-28</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://note.thinkingbuilder.cc/Linear_Algebra/src/Note01/</loc>
-         <lastmod>2024-10-28</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://note.thinkingbuilder.cc/Linear_Algebra/src/Note02/</loc>
-         <lastmod>2024-10-28</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://note.thinkingbuilder.cc/Linear_Algebra/src/Note03/</loc>
-         <lastmod>2024-10-28</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://note.thinkingbuilder.cc/Linear_Algebra/src/Note04/</loc>
-         <lastmod>2024-10-28</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://note.thinkingbuilder.cc/Linear_Algebra/src/Note05/</loc>
-         <lastmod>2024-10-28</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://note.thinkingbuilder.cc/Linear_Algebra/src/Note06/</loc>
          <lastmod>2024-10-28</lastmod>
          <changefreq>daily</changefreq>
     </url>

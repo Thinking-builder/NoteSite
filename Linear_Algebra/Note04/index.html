@@ -8,28 +8,28 @@
       
       
       
-        <link rel="canonical" href="https://note.thinkingbuilder.cc/Linear_Algebra/src/Note01/">
+        <link rel="canonical" href="https://note.thinkingbuilder.cc/Linear_Algebra/Note04/">
       
       
-        <link rel="prev" href="../../../CS_basical_knowledge/">
+        <link rel="prev" href="../Note03/">
       
       
-        <link rel="next" href="../Note02/">
+        <link rel="next" href="../Note05/">
       
       
-      <link rel="icon" href="../../../img/favicon.ico">
+      <link rel="icon" href="../../img/favicon.ico">
       <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.11">
     
     
       
-        <title>A1 向量空间 - T&B's NoteBook</title>
+        <title>A4 多项式 - T&B's NoteBook</title>
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.7e359304.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.7e359304.min.css">
       
         
-        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -48,7 +48,7 @@
       
     
     
-    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -74,7 +74,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#note01" class="md-skip">
+        <a href="#note04" class="md-skip">
           Skip to content
         </a>
       
@@ -88,7 +88,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../../.." title="T&amp;B&#39;s NoteBook" class="md-header__button md-logo" aria-label="T&B's NoteBook" data-md-component="logo">
+    <a href="../.." title="T&amp;B&#39;s NoteBook" class="md-header__button md-logo" aria-label="T&B's NoteBook" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -108,7 +108,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              A1 向量空间
+              A4 多项式
             
           </span>
         </div>
@@ -178,7 +178,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../../Introduction/" class="md-tabs__link">
+      <a href="../../Introduction/" class="md-tabs__link">
         
   
     
@@ -207,7 +207,7 @@
     
     
       <li class="md-tabs__item md-tabs__item--active">
-        <a href="../../../CS_basical_knowledge/" class="md-tabs__link">
+        <a href="../../CS_basical_knowledge/" class="md-tabs__link">
           
   
   CS Tech
@@ -228,7 +228,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../freshmanE/" class="md-tabs__link">
+        <a href="../../freshmanE/" class="md-tabs__link">
           
   
   Experience
@@ -246,7 +246,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../EasyGit/" class="md-tabs__link">
+        <a href="../../EasyGit/" class="md-tabs__link">
           
   
   Tools
@@ -264,7 +264,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../Photo/" class="md-tabs__link">
+        <a href="../../Photo/" class="md-tabs__link">
           
   
   Hobby Field
@@ -297,7 +297,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../.." title="T&amp;B&#39;s NoteBook" class="md-nav__button md-logo" aria-label="T&B's NoteBook" data-md-component="logo">
+    <a href="../.." title="T&amp;B&#39;s NoteBook" class="md-nav__button md-logo" aria-label="T&B's NoteBook" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -327,7 +327,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../Introduction/" class="md-nav__link">
+      <a href="../../Introduction/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -428,7 +428,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../CS_basical_knowledge/" class="md-nav__link">
+      <a href="../../CS_basical_knowledge/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -534,30 +534,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    A1 向量空间
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../Note01/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -566,110 +546,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      最基本的一些定义
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="最基本的一些定义">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#listlength" class="md-nav__link">
-    <span class="md-ellipsis">
-      组（List）,长度（Length）
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#fn" class="md-nav__link">
-    <span class="md-ellipsis">
-      $F^n$
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
-    <span class="md-ellipsis">
-      向量空间
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
-    <span class="md-ellipsis">
-      子空间
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
-    <span class="md-ellipsis">
-      有限维度向量空间是线性代数研究对象
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="有限维度向量空间是线性代数研究对象">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#1" class="md-nav__link">
-    <span class="md-ellipsis">
-      描述1:张成空间
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#2" class="md-nav__link">
-    <span class="md-ellipsis">
-      描述2:基与维数
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -721,10 +597,30 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../Note04/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    A4 多项式
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -733,6 +629,71 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      多项式的唯一性
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      多项式的带余除法
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      多项式的零点
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mathbfc" class="md-nav__link">
+    <span class="md-ellipsis">
+      \(\mathbf{C}\)上多项式的分解
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mathbfr" class="md-nav__link">
+    <span class="md-ellipsis">
+      \(\mathbf{R}\)上多项式的分解
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -841,7 +802,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../easy%20markdown/" class="md-nav__link">
+      <a href="../../easy%20markdown/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -862,7 +823,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../mkdocs_2/" class="md-nav__link">
+      <a href="../../mkdocs_2/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -921,7 +882,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../Cplusplus/" class="md-nav__link">
+      <a href="../../Cplusplus/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -942,7 +903,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../C%2B%2B_debug_record/" class="md-nav__link">
+      <a href="../../C%2B%2B_debug_record/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -963,7 +924,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../C%2B%2B_primer/" class="md-nav__link">
+      <a href="../../C%2B%2B_primer/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1045,7 +1006,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../freshmanE/" class="md-nav__link">
+      <a href="../../freshmanE/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1111,7 +1072,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../EasyGit/" class="md-nav__link">
+      <a href="../../EasyGit/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1132,7 +1093,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../vim/" class="md-nav__link">
+      <a href="../../vim/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1198,7 +1159,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../Photo/" class="md-nav__link">
+      <a href="../../Photo/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1248,84 +1209,45 @@
         <li class="md-nav__item">
   <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
-      最基本的一些定义
+      多项式的唯一性
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="最基本的一些定义">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#listlength" class="md-nav__link">
-    <span class="md-ellipsis">
-      组（List）,长度（Length）
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#fn" class="md-nav__link">
-    <span class="md-ellipsis">
-      $F^n$
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
-    <span class="md-ellipsis">
-      向量空间
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
-    <span class="md-ellipsis">
-      子空间
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
+  <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
-      有限维度向量空间是线性代数研究对象
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="有限维度向量空间是线性代数研究对象">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#1" class="md-nav__link">
-    <span class="md-ellipsis">
-      描述1:张成空间
+      多项式的带余除法
     </span>
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#2" class="md-nav__link">
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
-      描述2:基与维数
+      多项式的零点
     </span>
   </a>
   
 </li>
-        
-      </ul>
-    </nav>
+      
+        <li class="md-nav__item">
+  <a href="#mathbfc" class="md-nav__link">
+    <span class="md-ellipsis">
+      \(\mathbf{C}\)上多项式的分解
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mathbfr" class="md-nav__link">
+    <span class="md-ellipsis">
+      \(\mathbf{R}\)上多项式的分解
+    </span>
+  </a>
   
 </li>
       
@@ -1347,22 +1269,25 @@
   
 
 
-<div><h1 id="note01">Note01 向量空间初步<a class="headerlink" href="#note01" title="Permanent link">¶</a></h1>
+<div><h1 id="note04">Note04 多项式<a class="headerlink" href="#note04" title="Permanent link">¶</a></h1>
 <blockquote>
 <p>本笔记完全参考《Linear Algebra Done Right》，所有记录的相关知识以及总结思考均来自该书的启发。本笔记只是面向个人作为深入学习理解线性代数的垫脚石，解释性质不高，而且没有例子，但是高度凝练，<strong>适合复习的时候审阅核对梳理主干</strong>。</p>
 </blockquote>
 <ul>
-<li>个人认为线性代数分为<strong>3</strong>部分：<strong>矩阵论、向量空间论、算子论</strong>，目前本笔记章节位于向量空间论。</li>
-<li>本笔记覆盖的范围 - <strong>1.A ～ 2.C</strong>（参考第三版：《Linear Algebra Done Right，3E》）</li>
+<li>
+<p>个人认为线性代数分为<strong>3</strong>部分：<strong>矩阵论、向量空间论、算子论</strong>，目前本笔记章节位于向量空间论的末尾部分，作为讨论算子论的材料。本章节的许多定理不要求证明，因为涉及到过于复杂的数学分析、实分析等理论。</p>
+</li>
+<li>
+<p>本笔记覆盖的范围 - <strong>4</strong>（参考第三版：《Linear Algebra Done Right，3E》）</p>
+</li>
 </ul>
-<p>在学习《Linear Algebra Done Right》之前，我十分推荐大家参考浙江大学的佬们对这本书以及这门课程制作的一本教辅资料（《LALU》,详情见于浙江大学竺可桢辅学平台）。我建议大家不妨先了解基本的代数结构（群、环、域）然后再看此书，便不会有太多困难。</p>
-<p>我们列出我们略去的概念</p>
+<p>我假设你已经有一定高等数学和线性代数基础，我列出我略去的概念：</p>
 <table>
 <thead>
 <tr>
-<th style="text-align: center;">线性相关</th>
-<th style="text-align: center;">线性无关</th>
-<th style="text-align: center;">线性组合</th>
+<th style="text-align: center;">多项式的零点</th>
+<th style="text-align: center;">复数的性质</th>
+<th style="text-align: center;">复数共轭</th>
 </tr>
 </thead>
 <tbody>
@@ -1373,138 +1298,48 @@
 </tr>
 </tbody>
 </table>
-<h2 id="_1">最基本的一些定义<a class="headerlink" href="#_1" title="Permanent link">¶</a></h2>
-<p>我们从熟悉的实数$R$出发,适当推广后有复数$C$,为了统筹考虑，我们将$R$以及$C$统一抽象为符号$F$,如果你了解数域（Field），那么就很容易理解这种抽象。而现实世界中我们有$R^2,R^3···R^n$,所以对应的，我们需要定义出来$F^n$完善这个数学体系。</p>
-<h3 id="listlength">组（List）,长度（Length）<a class="headerlink" href="#listlength" title="Permanent link">¶</a></h3>
-<p>设$n$是非负整数，<strong>长度</strong>为$n$的<strong>组</strong>是$n$个<strong>有顺序的</strong>元素，一个n元组($n$-turple)有如下的形式:
-$$(x_1,...,x_n)$$</p>
-<p>特别的，我们定义<strong>组</strong>$0$：
-$$0 = (0,..,0)$$</p>
-<h3 id="fn">$F^n$<a class="headerlink" href="#fn" title="Permanent link">¶</a></h3>
-<p>$F^n$ 是$F$中元素组成长度为n的组的集合
-$$F^n = {(x_1,...,x_n):x_j \in F, j = 1,2,...,n }$$</p>
-<p>$F^n$的运算性质：（其实就一句话，$F^n$<strong>是域，具有域的运算性质</strong>）</p>
-<table>
-<thead>
-<tr>
-<th style="text-align: center;">运算</th>
-<th style="text-align: center;">定义</th>
-<th style="text-align: center;">性质</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: center;">加法</td>
-<td style="text-align: center;">$(x_1,...,x_n)+(y_1,...,y_n) = (x_1+y_1,...,x_n,y_n)$</td>
-<td style="text-align: center;"><strong>交换性</strong>: $x+y = y+x$ <br><strong>结合性</strong> <br> <strong>存在加法逆元、加法单位元</strong></td>
-</tr>
-<tr>
-<td style="text-align: center;">标量乘法</td>
-<td style="text-align: center;">$\lambda \in F, \lambda(x_1,...,x_n) = (\lambda x_1,...,\lambda x_n)$</td>
-<td style="text-align: center;">具有结合性</td>
-</tr>
-</tbody>
-</table>
-<h3 id="_2">向量空间<a class="headerlink" href="#_2" title="Permanent link">¶</a></h3>
-<p>我们基于$F^n$上的加法以及标量乘法的性质，定义带有这样加法和标量乘法的集合V为向量空间。有如下性质：</p>
-<ol>
-<li>$<v:>$是Abel交换群</v:></li>
-<li>$<v:>$是含幺半群</v:></li>
-<li>标量乘法对加法运算有左右分配性质</li>
-</ol>
-<p>可以进一步有如下推论性质：</p>
-<ol>
-<li>加法单位元唯一，就是元$0$</li>
-<li>加法逆元唯一，用$-v$标识$v$的加法逆元</li>
-</ol>
-<div class="admonition note">
-<p class="admonition-title">关于向量空间的三个备注</p>
+<p>在前置部分，我给出<strong>多项式</strong>在线性代数下面的定义：</p>
+<p>对于函数<span class="arithmatex">\(p:\mathbf{F} \rightarrow \mathbf{F}\)</span>，若存在<span class="arithmatex">\(a_0,...,a_m \in F\)</span>使得对所有的<span class="arithmatex">\(z \in F\)</span>都有</p>
+<div class="arithmatex">\[p(z) = a_0 + a_1z+a_2z^2+...+a_mz^m,deg\;p = m\]</div>
+<p>则称函数<span class="arithmatex">\(p\)</span>是系数在<span class="arithmatex">\(\mathbf{F}\)</span>中的多项式，同时多项式的次数记为<span class="arithmatex">\(deg\;p\)</span></p>
+<p>我们为了保持多项式次数计算公式的唯一性和简洁性(<span class="arithmatex">\(deg(pq) = deg\;p+deg\;q\)</span>),我们规定多项式<span class="arithmatex">\(0\)</span>的次数为<span class="arithmatex">\(-\infty\)</span></p>
+<h2 id="_1">多项式的唯一性<a class="headerlink" href="#_1" title="Permanent link">¶</a></h2>
+<p><strong>多项式的系数是唯一确定的</strong>，换句话说若一个多项式是0函数，那么所有的系数都是0。这个很显然，我们不加以证明。</p>
+<h2 id="_2">多项式的带余除法<a class="headerlink" href="#_2" title="Permanent link">¶</a></h2>
+<p>类比在数论中提及的带余除法，我们不加证明地给出多项式的带余除法：</p>
+<p>设<span class="arithmatex">\(p,s \in P(\mathbf{F}),s \ne 0\)</span>，则存在唯一的多项式<span class="arithmatex">\(q,r \in P(\mathbf{F})\)</span>使得：</p>
+<div class="arithmatex">\[p = sq +r\]</div>
+<p>并且<span class="arithmatex">\(deg\;r &lt;deg\;s\)</span></p>
+<p>如果 <span class="arithmatex">\(r = 0\)</span>，我们一般称 <span class="arithmatex">\(s\)</span> 是 <span class="arithmatex">\(p\)</span> 的<strong>因式</strong>。</p>
+<h2 id="_3">多项式的零点<a class="headerlink" href="#_3" title="Permanent link">¶</a></h2>
 <ul>
-<li><strong>线性空间VS向量空间</strong>:一般来说，线性空间是更加抽象的概念，包含向量空间、矩阵空间等</li>
-<li>向量空间的标量乘法依赖于$F$，我们会说，<strong>$V$是$F$上的向量空间</strong>，而不是简单地说$V$是向量空间</li>
-<li>参考<strong>环</strong>的定义，为什么向量空间不定义为向量环？</li>
+<li><strong>多项式的每个零点都对应一个一次因式</strong></li>
 </ul>
-</div>
-<h3 id="_3">子空间<a class="headerlink" href="#_3" title="Permanent link">¶</a></h3>
-<p>子空间一共需要理清楚三件事情：</p>
-<div class="highlight"><pre><span></span><code>graph TD
-    A["子空间"]--&gt;B["子空间的判定条件"]
-    A--&gt;C["子空间的和"]
-    A--&gt;D["子空间的直和"]
-</code></pre></div>
-<p><strong>子空间的判定条件</strong> - 大前提，是$V$的子集，并且有加法单位元、关于加法以及标量乘法封闭。</p>
-<p><strong>子空间的和</strong> - 设$U_1,...,U_m$都是$V$的子空间
-$$U_1 + ... + U_m = {u_1+...+u_m:u_1 \in U_1,...,u_m \in U_m }$$</p>
+<div class="arithmatex">\[p \in P(\mathbf{F}),\lambda\in\mathbf{F},then\;\;p(\lambda ) = 0 \Leftrightarrow \exists q\in P(\mathbf{F}),\forall z \in \mathbf{F},p(z) = (z-\lambda)q(z)\]</div>
 <ul>
-<li>容易证明，$U_1 + ... + U_m$是$V$的包含$U_1,...U_m$的<strong>最小子空间</strong>。</li>
+<li><strong>多项式零点和数不超过它的次数</strong></li>
 </ul>
-<p><strong>子空间的直和</strong> - 如果$U_1+...+U_m$中的每个元素都可以唯一地表示为$u_1+...+u_m$,那么有$U_1 \oplus ... \oplus U_m$(子空间的和是直和)</p>
-<div class="admonition note">
-<p class="admonition-title">直和的条件</p>
-<p>结合已有的数学理解基础，我们知道其实就是这些子空间“<strong>线性无关</strong>”</p>
+<p>设<span class="arithmatex">\(p \in P(\mathbf{F})\)</span> 是<span class="arithmatex">\(m(m \ge 0)\)</span>次多项式，则 <span class="arithmatex">\(p\)</span> 在 <span class="arithmatex">\(F\)</span>中最多有m个互不相同的零点</p>
+<h2 id="mathbfc"><span class="arithmatex">\(\mathbf{C}\)</span>上多项式的分解<a class="headerlink" href="#mathbfc" title="Permanent link">¶</a></h2>
+<blockquote>
+<p><strong>代数学基本定理</strong>
+代数学基本定理表明，任何一个非常数的多项式（即次数大于零的多项式）在复数域中至少有一个根。这意味着，所有次数为 <span class="arithmatex">\(n\)</span> 的多项式都可以被分解为 <span class="arithmatex">\(n\)</span>个一次因子（虽然可能有重根）</p>
+</blockquote>
+<p>于是我们可以在<span class="arithmatex">\(\mathbf{C}\)</span>上有对多项式的分解：</p>
+<p>若<span class="arithmatex">\(p \in P(\mathbf{C})\)</span>是非常数多项式，则 <span class="arithmatex">\(p\)</span> 可以为一分解为</p>
+<div class="arithmatex">\[p(z) = c(z-\lambda_1)...(z-\lambda_m)\]</div>
+<p>其中，<span class="arithmatex">\(c,\lambda_1,...\lambda_n \in \mathbf{C}\)</span></p>
+<h2 id="mathbfr"><span class="arithmatex">\(\mathbf{R}\)</span>上多项式的分解<a class="headerlink" href="#mathbfr" title="Permanent link">¶</a></h2>
+<p>在实系数多项式上有如下特点：</p>
 <ul>
-<li>“$U_1 + ... + U_m$是直和”当且仅当“0表示成$u_1+...+u_m$（其中每个$u_j \in U_j$）的唯一方式就是每个$u_j$都等于0”</li>
-<li>特别地，两个子空间的直和的条件就是两个子空间的交集是{0}:
-$$U\oplus W \Leftrightarrow U\cap W = {0}$$</li>
-<li>(2.34) $V$的每个子空间都是$V$的直和项：
-$$V=span(v_1,...,v_n),U\subseteq V,\exists W \subseteq W,st.V = V \oplus W$$</li>
+<li>实系数多项式的非实零点总是成对出现</li>
 </ul>
-</div>
-<h2 id="_4">有限维度向量空间是线性代数研究对象<a class="headerlink" href="#_4" title="Permanent link">¶</a></h2>
-<div class="admonition question">
-<p class="admonition-title">为什么有限维度向量空间是研究对象?</p>
-<p>参考《Linear Algebra Done Right，3E》3.67的说法，线性代数中最重要、最深刻的内容就是研究<strong>算子</strong>，而在有限维度情形下，我们算子的性质十分良好：<strong>单性等价于满性</strong>。</p>
-</div>
-<p>我们在此处强调，<strong>我们引入张成空间的概念，就是为了描述有限维向量空间</strong>，那么可知无限维向量空间就是不可以被张成空间描述。张成空间其实就是我们很熟悉的东西，就是$V$中一组向量所有的线性组合所构成的集合。</p>
-<p>下面我们给出张成空间的定义，以及它能够精确描述有限维度向量空间的原因。</p>
-<h3 id="1">描述1:张成空间<a class="headerlink" href="#1" title="Permanent link">¶</a></h3>
-<p>$$span(v_1,...,v_m) = {a_1 v_1 + ... + a_m v_m : a_1,...,a_m \in F }$$
-特别地，空向量组$( )$的张成空间定义为{0}.</p>
-<p>容易证明，<strong>张成空间是包含这组向量的最小子空间</strong>。这也是它能够恰到好处地描述有限维向量空间的原因。</p>
-<div class="highlight"><pre><span></span><code>graph TD
-    A["张成描述特征"]--&gt;B["线性相关"]
-    A--&gt;C["线性无关"]
-    B--&gt;E["线性相关性引理"]
-    C--&gt;D["线性无关组的长度引理"]
-</code></pre></div>
-<h3 id="2">描述2:基与维数<a class="headerlink" href="#2" title="Permanent link">¶</a></h3>
-<p>若$V$中一个向量组既线性无关又可以张成$V$,则称之为$V$的<strong>基</strong></p>
-<p>为什么我们使用基描述$V$，因为$V$的基可以使得$\forall v \in V,v = a_1 v_1 + ... + a_n v_n, with \quad a_1,...a_n \in F$（这同样也是<strong>基的判定准则</strong>）.</p>
-<ul>
-<li>基也十分容易得来，这也使得我们喜欢基描述$V$。</li>
-</ul>
-<div class="highlight"><pre><span></span><code>graph TD
-    A["基的得出"]--&gt;B["张成组含有基"]
-    B--&gt;C["每个有限维向量空间都有基"]
-    A--&gt;D["线性无关组可以扩充为基"]
-</code></pre></div>
-<ul>
-<li>并且基的长度不依赖于基的选取，<strong>有限维向量空间的任一两个基的长度相同</strong>。基于此，我们定义$$dim V = length(V_{basis})$$</li>
-</ul>
-<p>很快我们能够有一些<strong>二级结论</strong>补充基的得出</p>
-<div class="highlight"><pre><span></span><code>graph TD
-    A["基的得出"]--&gt;B["具有适当长度（dimV）的线性无关组是基"]
-    A--&gt;D["具有适当长度（dimV）的张成组是基"]
-</code></pre></div>
-<p><strong>对于子空间的维数</strong>：($V$是有限维度)
-$$U \subseteq V,st.dim U \le dim V$$</p>
-<p><strong>和空间的维数</strong>：
-$$U_1,U_2 \subseteq V,dim(U_1+U_2) = dimU_1 + dimU_2 - dim(U_1 \cap U_2)$$</p>
-<p>推广(证明见3.78)：
-$$dim(U_1 \oplus ... \oplus Um) = dimU_1+...+dimU_2$$</p>
-<p><strong>积空间的维数</strong>：
-$$dim(V_1 \times V_2 \times ...\times V_m) = dimV_1 + ... + dim V_m$$</p>
-<div class="admonition summary">
-<p class="admonition-title">本章升华 - 有限维度空间和基</p>
-<p>我个人以为，前两章节在定义好向量空间和子空间的概念后，传递的一个最重要的信息就是，有限维空间是线性代数研究的中心。并且有限维空间最核心的东西就是<strong>基</strong>，基可以唯一地描述空间的任意向量，同时也代表了空间的维数。解决向量空间的基本问题，我觉得一定会需要从<strong>基</strong>的角度出发（<strong>技巧</strong>：从V的子空间的基扩充到V是很实用的技巧，如下面的第一个例子）。
-为了加强这种体会，我推荐你可以试试以下试题：
-1. （线性映射基本定理）证明：$dimV = dim(null T)+dim(rangeT)$
-2. （3A12）设V是有限维的，并且$dimV&gt;0$，再设W是无限维的，证明$L(V,W)$是无限维的
-3. 思考我们该如何判定两个子空间相等（只需要思路就可以，但是逻辑需要完整</p>
-<p>同样地，你会发现随着学习的深入，从基这个比较本质的角度思考问题，很多东西都很简单，比如说，你从基的基角度看线性映射下的矩阵$$M(T):T(v_k) = A_{1,k}w_1+...+A_{m,k}w_m$$ 那么你会发现从矩阵的内容里直接从基的角度理解了这个大概什么样的线性映射（一眼看出来该线性映射的零空间）。</p>
-<p>提醒你，在后续的章节中，从基的角度你能快速的证明或者理解：
-（1）<strong>对偶基</strong> - $V = U_1 \oplus U_2 ,s.t. V^{*} = {U_1}^{0}\oplus {U_2}^{0}$ </p>
-</div></div>
+<p>若<span class="arithmatex">\(\lambda \in \mathbf{C}\)</span> 是 <span class="arithmatex">\(p\)</span> 的零点，那么 $\bar{\lambda} $ 是也 <span class="arithmatex">\(p\)</span> 的零点</p>
+<p>回想二次实系数多项式的分解<span class="arithmatex">\(x^2 +bx+c = (x-\lambda_1)(x-\lambda_2),b^2 \ge 4c\)</span></p>
+<p>于是我们有 <span class="arithmatex">\(\mathbf{R}\)</span> 上多项式的分解：</p>
+<p>若<span class="arithmatex">\(p \in P(\mathbf{R})\)</span>是非常数多项式，则 <span class="arithmatex">\(p\)</span> 可以为一分解为</p>
+<div class="arithmatex">\[p(x) = c(x-\lambda_1)...(x-\lambda_m)(x^2+b_1x+c_1)...(x^2+b_Mx+c_M)\]</div>
+<p>其中，<span class="arithmatex">\(c,\lambda_1,...\lambda_n,b_1,...,b_M,c_1,...c_M \in \mathbf{R}\)</span>，并且对于每个 <span class="arithmatex">\(j\)</span> 均有 $b_j^2 &lt; 4c_j $</p></div>
 
 
 
@@ -1551,10 +1386,10 @@ $$dim(V_1 \times V_2 \times ...\times V_m) = dimV_1 + ... + dim V_m$$</p>
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "../../..", "features": ["search.highlight", "navigation.tabs"], "search": "../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["search.highlight", "navigation.tabs"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.8fd75fb4.min.js"></script>
+      <script src="../../assets/javascripts/bundle.8fd75fb4.min.js"></script>
       
     
   </body>
