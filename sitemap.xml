@@ -2,92 +2,212 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://note.thinkingbuilder.cc/</loc>
-         <lastmod>2024-09-01</lastmod>
+         <lastmod>2024-10-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://note.thinkingbuilder.cc/C%2B%2B_debug_record/</loc>
-         <lastmod>2024-09-01</lastmod>
+         <lastmod>2024-10-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://note.thinkingbuilder.cc/C%2B%2B_primer/</loc>
-         <lastmod>2024-09-01</lastmod>
+         <lastmod>2024-10-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://note.thinkingbuilder.cc/CS_basical_knowledge/</loc>
-         <lastmod>2024-09-01</lastmod>
+         <lastmod>2024-10-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://note.thinkingbuilder.cc/Data_Graph_AI/</loc>
-         <lastmod>2024-09-01</lastmod>
+         <lastmod>2024-10-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://note.thinkingbuilder.cc/EasyGit/</loc>
-         <lastmod>2024-09-01</lastmod>
+         <lastmod>2024-10-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://note.thinkingbuilder.cc/Introduction/</loc>
-         <lastmod>2024-09-01</lastmod>
+         <lastmod>2024-10-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://note.thinkingbuilder.cc/Photo/</loc>
-         <lastmod>2024-09-01</lastmod>
+         <lastmod>2024-10-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://note.thinkingbuilder.cc/Qt-C%2B%2B%E5%9B%BE%E5%BD%A2%E5%8C%96%E7%95%8C%E9%9D%A2%E5%BC%80%E5%8F%91/</loc>
-         <lastmod>2024-09-01</lastmod>
+         <lastmod>2024-10-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://note.thinkingbuilder.cc/easy%20markdown/</loc>
-         <lastmod>2024-09-01</lastmod>
+         <lastmod>2024-10-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://note.thinkingbuilder.cc/freshmanE/</loc>
-         <lastmod>2024-09-01</lastmod>
+         <lastmod>2024-10-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://note.thinkingbuilder.cc/mkdocs_2/</loc>
-         <lastmod>2024-09-01</lastmod>
+         <lastmod>2024-10-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://note.thinkingbuilder.cc/shell/</loc>
-         <lastmod>2024-09-01</lastmod>
+         <lastmod>2024-10-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://note.thinkingbuilder.cc/vim/</loc>
-         <lastmod>2024-09-01</lastmod>
+         <lastmod>2024-10-28</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://note.thinkingbuilder.cc/Assembly/1/</loc>
+         <lastmod>2024-10-28</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://note.thinkingbuilder.cc/Assembly/%E6%95%B0%E6%8D%AE%E4%BC%A0%E9%80%81%E4%B8%8E%E8%BF%90%E7%AE%97/</loc>
+         <lastmod>2024-10-28</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://note.thinkingbuilder.cc/Assembly/%E6%B1%87%E7%BC%96%E5%9F%BA%E7%A1%80/</loc>
+         <lastmod>2024-10-28</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://note.thinkingbuilder.cc/Assembly/%E6%B1%87%E7%BC%96%E8%AF%AD%E8%A8%80/</loc>
+         <lastmod>2024-10-28</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://note.thinkingbuilder.cc/Assembly/%E8%AF%BE%E5%A0%82%E6%B5%8B%E8%AF%95%E9%A2%98%E7%9B%AE%E6%95%B4%E7%90%86/</loc>
+         <lastmod>2024-10-28</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://note.thinkingbuilder.cc/Assembly/%E8%BF%87%E7%A8%8B/</loc>
+         <lastmod>2024-10-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://note.thinkingbuilder.cc/Cplusplus/</loc>
-         <lastmod>2024-09-01</lastmod>
+         <lastmod>2024-10-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://note.thinkingbuilder.cc/Cplusplus/C%2B%2Bcompiler/</loc>
-         <lastmod>2024-09-01</lastmod>
+         <lastmod>2024-10-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://note.thinkingbuilder.cc/Cplusplus/C%2B%2Blinker/</loc>
-         <lastmod>2024-09-01</lastmod>
+         <lastmod>2024-10-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://note.thinkingbuilder.cc/Cplusplus/Pointer/</loc>
-         <lastmod>2024-09-01</lastmod>
+         <lastmod>2024-10-28</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://note.thinkingbuilder.cc/Deep%20Learning/Linear_network/</loc>
+         <lastmod>2024-10-28</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://note.thinkingbuilder.cc/Deep%20Learning/PreKnowleadge/</loc>
+         <lastmod>2024-10-28</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://note.thinkingbuilder.cc/ISmath/%E5%8E%9F%E6%A0%B9%E5%92%8C%E6%8C%87%E6%95%B0/</loc>
+         <lastmod>2024-10-28</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://note.thinkingbuilder.cc/ISmath/%E5%90%8C%E4%BD%99/</loc>
+         <lastmod>2024-10-28</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://note.thinkingbuilder.cc/ISmath/%E5%90%8C%E4%BD%99%E6%96%B9%E7%A8%8B/</loc>
+         <lastmod>2024-10-28</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://note.thinkingbuilder.cc/ISmath/%E6%95%B4%E9%99%A4/</loc>
+         <lastmod>2024-10-28</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://note.thinkingbuilder.cc/Linear_Algebra/Note01_%E5%90%91%E9%87%8F%E7%A9%BA%E9%97%B4/</loc>
+         <lastmod>2024-10-28</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://note.thinkingbuilder.cc/Linear_Algebra/Note02_%E7%BA%BF%E6%80%A7%E6%98%A0%E5%B0%84/</loc>
+         <lastmod>2024-10-28</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://note.thinkingbuilder.cc/Linear_Algebra/Note03_%E7%A9%BA%E9%97%B4%E7%9A%84%E4%BA%A4%E6%8D%A2%E5%9B%BE/</loc>
+         <lastmod>2024-10-28</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://note.thinkingbuilder.cc/Linear_Algebra/Note04_%E5%A4%9A%E9%A1%B9%E5%BC%8F/</loc>
+         <lastmod>2024-10-28</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://note.thinkingbuilder.cc/Linear_Algebra/Note05_%E6%9C%AC%E5%BE%81/</loc>
+         <lastmod>2024-10-28</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://note.thinkingbuilder.cc/Linear_Algebra/Note06_%E5%86%85%E7%A7%AF%E7%A9%BA%E9%97%B4/</loc>
+         <lastmod>2024-10-28</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://note.thinkingbuilder.cc/Linear_Algebra/src/Note01/</loc>
+         <lastmod>2024-10-28</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://note.thinkingbuilder.cc/Linear_Algebra/src/Note02/</loc>
+         <lastmod>2024-10-28</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://note.thinkingbuilder.cc/Linear_Algebra/src/Note03/</loc>
+         <lastmod>2024-10-28</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://note.thinkingbuilder.cc/Linear_Algebra/src/Note04/</loc>
+         <lastmod>2024-10-28</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://note.thinkingbuilder.cc/Linear_Algebra/src/Note05/</loc>
+         <lastmod>2024-10-28</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://note.thinkingbuilder.cc/Linear_Algebra/src/Note06/</loc>
+         <lastmod>2024-10-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>

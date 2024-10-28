@@ -1,0 +1,1726 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://note.thinkingbuilder.cc/Linear_Algebra/src/Note03/">
+      
+      
+        <link rel="prev" href="../Note02/">
+      
+      
+        <link rel="next" href="../Note04/">
+      
+      
+      <link rel="icon" href="../../../img/favicon.ico">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.11">
+    
+    
+      
+        <title>A3 空间的交换图 - T&B's NoteBook</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.7e359304.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="white" data-md-color-accent="light-blue">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#note03" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="T&amp;B&#39;s NoteBook" class="md-header__button md-logo" aria-label="T&B's NoteBook" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            T&B's NoteBook
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              A3 空间的交换图
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="white" data-md-color-accent="light-blue"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="deep-purple"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/Thinking-builder/NoteSite" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    NoteSite
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../Introduction/" class="md-tabs__link">
+        
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../../CS_basical_knowledge/" class="md-tabs__link">
+          
+  
+  CS Tech
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../freshmanE/" class="md-tabs__link">
+          
+  
+  Experience
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../EasyGit/" class="md-tabs__link">
+          
+  
+  Tools
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../Photo/" class="md-tabs__link">
+          
+  
+  Hobby Field
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="T&amp;B&#39;s NoteBook" class="md-nav__button md-logo" aria-label="T&B's NoteBook" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    T&B's NoteBook
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/Thinking-builder/NoteSite" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    NoteSite
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Introduction/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    CS Tech
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            CS Tech
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_1" id="__nav_2_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    CS overview
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_1">
+            <span class="md-nav__icon md-icon"></span>
+            CS overview
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../CS_basical_knowledge/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    CS Crash Course
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Math
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            Math
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2_1" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2_2_1" id="__nav_2_2_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Linear Algebra
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_2_1_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_2_1">
+            <span class="md-nav__icon md-icon"></span>
+            Linear Algebra
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Note01/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    A1 向量空间
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Note02/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    A2 线性映射
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    A3 空间的交换图
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    A3 空间的交换图
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#part01" class="md-nav__link">
+    <span class="md-ellipsis">
+      PART01 对偶观点
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="PART01 对偶观点">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#v-r" class="md-nav__link">
+    <span class="md-ellipsis">
+      V-R图（对偶空间研究）
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#v-w" class="md-nav__link">
+    <span class="md-ellipsis">
+      V-W交换图（对偶映射研究）
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      矩阵可视化（对偶映射的再具像）
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      零化子理论（引入）
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      对偶映射的零空间和像空间
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#part02" class="md-nav__link">
+    <span class="md-ellipsis">
+      PART02 商空间
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="PART02 商空间">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      等价类
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      分划的观点*
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Note04/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    A4 多项式
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Note05/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    A5 本征
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Note06/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    A6 内积
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Programming Language
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            Programming Language
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../easy%20markdown/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    easy markdown
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../mkdocs_2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    mkdocs_start
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_3_3" id="__nav_2_3_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    C++
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_3_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3_3">
+            <span class="md-nav__icon md-icon"></span>
+            C++
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Cplusplus/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    C++ Learning Guide
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../C%2B%2B_debug_record/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    C++ tip
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../C%2B%2B_primer/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    C++ 进阶
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Experience
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Experience
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../freshmanE/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    FreshMan Course
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Tools
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Tools
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../EasyGit/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Git
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../vim/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Vim
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Hobby Field
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Hobby Field
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Photo/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    手机摄影
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#part01" class="md-nav__link">
+    <span class="md-ellipsis">
+      PART01 对偶观点
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="PART01 对偶观点">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#v-r" class="md-nav__link">
+    <span class="md-ellipsis">
+      V-R图（对偶空间研究）
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#v-w" class="md-nav__link">
+    <span class="md-ellipsis">
+      V-W交换图（对偶映射研究）
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      矩阵可视化（对偶映射的再具像）
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      零化子理论（引入）
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      对偶映射的零空间和像空间
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#part02" class="md-nav__link">
+    <span class="md-ellipsis">
+      PART02 商空间
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="PART02 商空间">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      等价类
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      分划的观点*
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+<div><h1 id="note03">Note03 空间的交换图<a class="headerlink" href="#note03" title="Permanent link">¶</a></h1>
+<blockquote>
+<p>本笔记完全参考《Linear Algebra Done Right》，所有记录的相关知识以及总结思考均来自该书的启发。本笔记只是面向个人作为深入学习理解线性代数的垫脚石，解释性质不高，而且没有例子，但是高度凝练，<strong>适合复习的时候审阅核对梳理主干</strong>。</p>
+</blockquote>
+<ul>
+<li>本笔记覆盖的范围 - <strong>3.E ～ 3.F</strong>（参考第三版：《Linear Algebra Done Right，3E》）</li>
+<li>本笔记同时参考了浙江大学竺可桢辅学的教辅《LALU》（第十章）</li>
+</ul>
+<p>我们假设你有了前面线性代数的基础，我们这里列出我们省略的概念（很容易查到）：</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">向量空间的积</th>
+<th style="text-align: center;">向量空间积的维数</th>
+<th style="text-align: center;">线性泛函</th>
+<th style="text-align: center;">Kronecker记号</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>本章节会十分的抽象，笔者搜集汇聚了很多观点，现在我从“<strong>交换图</strong>”和Note01中我提出的“<strong>基</strong>”的视角，希望能够帮助你看明白多个空间之间的映射关系。</p>
+<h2 id="part01">PART01 对偶观点<a class="headerlink" href="#part01" title="Permanent link">¶</a></h2>
+<blockquote>
+<p>对偶在我们的生活实际中应用广泛，很多事物都会存在对偶关系，尤其是数学上。
+我们从点和面这些基本几何出发，开始理解我们的对偶。
+在这里我引用《LALU》经典的例子："</p>
+<ol>
+<li>两点确定一条直线；</li>
+<li>两条线一定交于一点（这需要由给平行直线补上无穷远处的交点来实现）.</li>
+</ol>
+<p>在如上两条陈述中，点和线就构成了一组对偶的对象：我们把两点翻译成两条线，一条直线翻译成一点，确定翻译成交于——这与诗词中的对偶手法似乎也有些类似. 再考虑三维情形，三个点确定一个平面，三个平面确定一个点（同样补上无穷远处的点），这就构成了点与平面的对偶. 以此类推，一个点作为一个零维的对象总是与一个比总空间维数少 1（我们一般直接将其称作“余一维”）的对象对偶。</p>
+</blockquote>
+<p>那我们根据上面的引入，我们可不可以实现进一步的抽象，就是对于任意一个有限维的向量空间$V$,那么它的余一维对象也和他对偶，而判定他们对偶就是两个空间本质相同（联想并运用“同构”）。</p>
+<h3 id="v-r">V-R图（对偶空间研究）<a class="headerlink" href="#v-r" title="Permanent link">¶</a></h3>
+<p>显然，我们可以快速地构造这样的余一维对象：</p>
+<div align="center"> <img src="./img/03_1.png" width="100" height="70"> </div>
+
+<p>可以发现，线性泛函组成的空间（易证是向量空间），我们称之为<strong>对偶空间</strong>（记做$V^{*}$）</p>
+<p>关于对偶空间这样一个向量空间，我们最紧要的是先研究清楚他的<strong>基</strong>（我们称之为<strong>对偶基</strong>）：</p>
+<ul>
+<li>对偶基</li>
+</ul>
+<p>我们知道，在对偶空间中都是对于$V$的线性泛函，研究新的被对偶出来的空间的基，我们需要原空间的一组基$V：v_1，...,v_n$，然后我们给出一组线性泛函$f_1,...f_n$，并且：</p>
+<p>$$f_i(v_j) = \delta_{ij} = \left{\begin{matrix} 
+  1 ,i = j\
+ 0,i\ne j
+\end{matrix}\right. $$</p>
+<p>下面我们可以证明这一组线性泛函是$V^*$的一组基</p>
+<p>任取$v \in V:v = \lambda_1v_1+...+\lambda_nv_n$</p>
+<p>那么 $f_i(v) = f_i(\lambda_1v_1+...+\lambda_nv_n) = \lambda_i$</p>
+<p>于是我们可以有$f(v) = f(f_1(v)v_1)+...+f(f_n(v)v_n) = (f(v_1)f_1+ ...f(v_n)f_n)(v)$</p>
+<p>我们$f$是$f_i$的线性组合，并且长度合适（等于 $dim\;L(V,R) = dim \;V$）,综上，上述$f_i$就是一组好的<strong>对偶基</strong>。</p>
+<ul>
+<li>$V \cong V^*$</li>
+</ul>
+<p>我们根据上面的叙述，我们很容易去验证$V$对偶空间$V^*$同构，因为他们的维数是相同的。并且其实也很容易构造一个同构映射$\phi$，满足单满性。</p>
+<ul>
+<li>$V = V^{**}$</li>
+</ul>
+<div align="center" style="display: flex; justify-content: center;">
+    <div style="text-align: center; margin: 0 10px;">
+        <img src="./img/03_6.png" width="200" height="155">
+        <p>「4」多对偶</p>
+    </div>
+</div>
+
+<p>我们根据这个交换图，其实很容易构造一个自然同构$\psi = \varphi' \circ \varphi$。</p>
+<h3 id="v-w">V<em>-W</em>交换图（对偶映射研究）<a class="headerlink" href="#v-w" title="Permanent link">¶</a></h3>
+<div class="admonition note">
+<p class="admonition-title">交换图（参考LALU，P239）</p>
+<p>我们首先定义什么是一个图（diagram）. 一个图可以视为以一个代数结构（例如线性空间）为顶点，以某种映射（例如线性映射）为边的图，例如：</p>
+<p></p><div align="center"> <img src="./img/03_2.png" width="150" height="105"> </div>
+<p>如果我们称一个图是<strong>交换的（commutative）</strong>，则意味着对于图中的任意两个顶点间的任意两条有向路径，路径上映射的复合结果相同. 例如上图中，我们考察从 V1 到V3 的两条路径，则如果 σ2 ◦ σ1 = σ3，这个图是交换的.</p>
+</div>
+<p>现在我们不加严格证明地给出了向量空间 - 对偶空间的交换图（具体思路就是观察任意一个元素从出发点沿着不同路径到结尾点的结果是否相同）</p>
+<div align="center" style="display: flex; justify-content: center;">
+    <div style="text-align: center; margin: 0 10px;">
+        <img src="./img/03_3.png" width="150" height="105">
+        <p>「1」实际对偶交换图</p>
+    </div>
+    <div style="text-align: center; margin: 0 10px;">
+        <img src="./img/03_4.png" width="150" height="105">
+        <p>「2」对偶映射示意图</p>
+    </div>
+</div>
+
+<p>现在我们聚焦于对偶映射$f^*$，为什么研究对偶映射这么重要？结合之前我在序言里面提及的“点和线是一组对偶的对象”，注意“两点确定一条直线”和“两条直线交于一点”表述中对于动词“确定”和“交”，我们现在的工作就是怎么把“确定”通过一个原则翻译为“交”。</p>
+<p>结合「2」示意图，容易知道图中的$f^<em>$是我们想知道的对偶映射，但是示意图中的$V \rightarrow V^</em>$的的对偶没发具像化，那么我们就结合$W$的线性泛函$\varphi $创建左边的「1」实际对偶交换图。根据交换图的性质，那么我们自然而然有下面的定义：</p>
+<div class="admonition note">
+<p class="admonition-title">对偶映射的定义</p>
+<p>由上面交换图，从$V$出发，有：
+$$f^*(\varphi) = \varphi \circ f$$</p>
+<p>给出定义后，我们很容易证明，对偶映射是一个线性映射（因为他的本质上就被结构为线性映射的符合）</p>
+</div>
+<p>然后我们给出对偶映射的几点性质</p>
+<ol>
+<li><strong>反变性</strong>：$(f \circ g)^<em> = g^</em> \circ f^*$ （下面图片最上面修改为$g \circ f$）</li>
+</ol>
+<div align="center"> <img src="./img/03_5.png" width="300" height="300"> <p>「3」反变性交换图证明</p></div>
+
+<ol>
+<li>
+<p><strong>函子性1</strong>：$\forall S,T \in L(V,W),have:(S+T)^<em> = S^</em>+T^*$</p>
+</li>
+<li>
+<p><strong>函子性2</strong>：$\forall T \in L(V,W),have:(\lambda T)^<em> = \lambda T^</em>$</p>
+</li>
+</ol>
+<h3 id="_1">矩阵可视化（对偶映射的再具像）<a class="headerlink" href="#_1" title="Permanent link">¶</a></h3>
+<p>为了进一步研究原映射和线性映射的详细关系，我们使用“基”的观点重新叙述这些事情（“基”是很本质的）：</p>
+<div align="center"> <img src="./img/03_7.png" width="350" height="180"> <p>「4」V，W空间的基、V*，W*空间的对偶基</p></div>
+
+<p>$$T(v_i) = \sum_{j = 1}^{m}A_{j,i}\;w_j$$</p>
+<p>$$T^*(g_i) = \sum_{j = 1}^{n}A'_{j,i}\;f_j$$</p>
+<p>然后，我们利用$T^*(g_i)$的函数结果处理$V$中$v_k$：</p>
+<p>$$T^*(g_i)(v_k) = {A'<em j="1">{k,i} }= g_i \circ f(v_k) = g_i \circ [\sum</em>^{m}A_{j,k}w_j]= {A_{j,k} }$$ </p>
+<p>综上所述，我们得到了一个十分漂亮的结果，设原来$T$的矩阵是$A$，那么我们给出$T$的对偶映射的矩阵$M$：</p>
+<p>$$ M(T^*)= A^T$$</p>
+<h3 id="_2">零化子理论（引入）<a class="headerlink" href="#_2" title="Permanent link">¶</a></h3>
+<p>我们引入零化子理论，定义零化子，是从定义什么样子的线性泛函是$0$开始才能知道对偶映射的零空间。回想一下$V$零映射，就是能够把$V$中所有的$v$都映射为$0$,那么推广之，我们定义"类0线性泛函"，也就是下面的零化子（annihilator）：</p>
+<p>$$U \subset V,U^0 = {\varphi \in V^*: \forall u \in U,\varphi(u) = 0}$$</p>
+<p>注意这里的符号其实不容易理解的，在下面给出的各个结论中，请对应好定义想。并且注意，<strong>零化子是一个向量空间</strong>，而不是向量。</p>
+<ul>
+<li>零化子是对偶空间的子空间（易证明，读者自证）</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">引理 - 对偶空间的结构（也是解构）</p>
+<p>我们之前知道，任一一个向量空间都是它的子空间的直和。
+$$V = U_1 \oplus U_2$$</p>
+<p>那么由上，零化子其实也是子空间，直观上来说，其实就有：
+$$V^* = U_3^0 \oplus U_4^0$$</p>
+<p>但是我们又知道，上面的$U_3,U_4$其实也是取自于$V$,那么会不会可以用$U_1,U_2$去表示$V^*$呢？</p>
+<p>我们既然是解构向量空间，非基不用了。我们从对偶基的角度出发思考这个问题，由熟悉到不熟悉一步步推导,我们先从$U_1,U_2$的基出发：</p>
+<p>$$U_1:v_1,v_2,...,v_m;U_2:v_{m+1},...,v_n$$</p>
+<p>而这些基都是取自于下面：</p>
+<p>$$V:v_1,v_2,...,v_n$$</p>
+<p>那么我们根据对偶基，我们先考虑$V^*$的$f_i,1 \le i \le n $:</p>
+<p>$$f_i(v_j) = \delta_{ij},1\le i,j\le n$$</p>
+<p>然后我们很容易地得到$U_1$的对偶基、$U_2$的对偶基：</p>
+<p>$$U_1^<em>:f_1,f_2,...,f_m,U_2^</em>:f_{m+1},...,f_n$$</p>
+<p>于是我们容易知道：</p>
+<p>$$V^<em> = U_1^</em>+U_2^*$$</p>
+<p>并且由上面的对偶基可以知道，$U_1^<em> \cap U_2^</em> = {0}$，所以：</p>
+<p>$$V^<em> = U_1^</em> \oplus U_2^*$$</p>
+<p>请注意$U_1,U_2$的零化子结构：</p>
+<p>$$U_1^0 = span(f_{m+1},...,f_n),U_2^0  = span(f_1,...,f_m)$$</p>
+<p>显然至此，我们综上所述有如下结论：</p>
+<p>$$if\;\;V = U_1 \oplus U_2,then \;\;V^<em> = U_1^0 \oplus U_2^0\;\;(U_1^0 = U_2^</em>,U_2^0 = U_1^*)$$</p>
+</div>
+<ul>
+<li>零化子的维数$dim\;U^0 = dim\;V - dim\; U$</li>
+</ul>
+<p>结合一下上面的引理，我们很容易地得到上面的结论。</p>
+<ul>
+<li>零化子就是抽象空间的零点集</li>
+</ul>
+<p>我们首先给出一个对偶空间公共零点集的记号，设$U$是$V^*$的子空间：</p>
+<p>$$N(U) = {v \in V : \forall \varphi \in U,\varphi (v) = 0}$$</p>
+<p>含义就是，$V$的一些$v$可以使得所有子空间$U$的线性泛函为0，可以理解为$U$中所有线性泛函的公共的零点。即：</p>
+<p>$$N(U) = \bigcap_{\varphi \in U}^{} ker(\varphi)$$</p>
+<p>结合对偶基的观点想，我们其实很容易理解下面的定理：</p>
+<ol>
+<li>
+<p><strong>如果 $U$ 是 $V^*$ 的子空间，则 $U = N(U)^0$</strong></p>
+<p>$ - Explaination：$ 只要你清楚零化子的概念，U中所有线性泛函的零点的零化子显然是U本身</p>
+</li>
+<li>
+<p><strong>如果 $U$ 是 $V$ 的子空间，则 $U = N(U^0)$</strong></p>
+<p>$ - Explaination：$ 这个需要你设一下U的基，对偶基就很容易得到这个结论，不过确实比较绕一些，不是很直观，但是和上面的结论对称。</p>
+</li>
+</ol>
+<h3 id="_3">对偶映射的零空间和像空间<a class="headerlink" href="#_3" title="Permanent link">¶</a></h3>
+<p>我们已经有了初步的对偶空间结构的理解，也知道了“类0线性泛函”集合也就是零化子的概念，下面我们将直接描述对偶映射的零空间和像空间。</p>
+<div align="center" style="display: flex; justify-content: center;">
+    <div style="text-align: center; margin: 0 10px;">
+        <img src="./img/03_4.png" width="200" height="155">
+        <p>「4」对偶映射</p>
+    </div>
+</div>
+
+<ol>
+<li>
+<p>$null(f^*) = (range\;f)^0$</p>
+<p>根据我们之前的讨论，$f^<em>(\varphi) = \varphi \circ f $，回想一下一般线性映射的定义$null\;T = {v \in V: T(v) = 0}$，我们在上面定义了类0线性泛函，那么现在我们就是想确定$W^</em>$中的哪些$\varphi$被映射到了这些$V^<em>$中的类0线性泛函（也就是零化子）。$f^</em>(\varphi) = \phi $ 而类0线性泛函有一个特点，可以把子空间$U$中的所有向量映射为0，已知$U \subset V$,设$f^*(\varphi)(v) = 0$，有$\varphi \circ fv = 0$,$\varphi(fv) = 0$,现在我们便知道，这就是可以把所有$fv$变成0的$\varphi$,所有$fv$张成$range\; f$，于是我们得到如上结论</p>
+</li>
+<li>
+<p>$range\;f^* = (null\;f)^0$</p>
+</li>
+</ol>
+<p>现在我们来讨论${\phi \in V:\phi = f^<em>(\varphi),\varphi \in W^</em> }$,我们考虑$W^<em>$中所有的对偶基$W^</em>:\varphi_1,...,\varphi_n$，取任一$\varphi_i:f^<em>(\varphi_i)(v) = \varphi_i \circ (fv)$，我们再考虑$fv$,我们知道$fv$张成的向量空间$range\;f$也只是$W$的子空间，不必含有$W$所有基。设$range\;f = span(w_1,...w_m),m\le n$，于是这组基扩张后$w_1,w_2,...w_m,...w_n$也是$W$的一组基，其实不妨设$\varphi_i(w_j) = \delta _{ij}$(Kronecker 记号)，而令$fv = \lambda_1 w_1 + ... + \lambda_m w_m$ 那么$\varphi_i \circ (fv) = \lambda_i ,1 \le i \le m$，而当$m+1 \le i \le n$ 时，$\varphi_i(fv) = 0$（一定）等价于$(\varphi \circ f) (v)= 0$「1」，那么现在可以确定$null\;f$中的所有向量都是「1」式的零点，显然根据零化子理论，$null\;f$的零化子必然可以将它映射为0，所以：
+   有$range\;f^</em> = (null\;f)^0$</p>
+<p>根据上面我们提出所有理论，我么可以清晰地得到下面<strong>关于对偶映射零空间和像空间的维数</strong>的一些结论：</p>
+<p>$$dim\;null\;f^* = dim\;(range\;f)^0  =  dim\;W - dim\;range\;f \= dim\;W - (dim\;V - dim\;null f) \ = dim\;null\;\;f + dim\;W - dim\;V$$</p>
+<p>$$dim\;range\;f^* = dim\;(null\;f)^0 = dim\;V - dim\;null\;f \
+ = dim\;range\;f+dim\;V - dim\;V = dim\;range\;f$$</p>
+<p>有了上面这些关系，我们可以清楚地去判断原来的映射的单满性：</p>
+<p>设$V,W$是有限维度的向量空间，$\sigma \in L(V,W)$,则</p>
+<ol>
+<li>$\sigma$是单射当且仅当$\sigma^*$是满射</li>
+<li>$\sigma$是单射当且仅当$\sigma^*$是单射</li>
+</ol>
+<p>综上所述，我们已经完成了对于所有关于对偶空间中零空间和像空间的所有叙述。你会惊讶地发现，上述的所有结论其实都是具有<strong>高度的对成性的</strong>。</p>
+<h2 id="part02">PART02 商空间<a class="headerlink" href="#part02" title="Permanent link">¶</a></h2>
+<p>我们通过介绍<strong>向量之间的等价关系</strong>，你就能十分迅速理解这些奇怪的性质了。</p>
+<blockquote>
+<p>我们引入《抽象代数》中的叙述，设群$(H,\cdot)$ 为 $(G,\cdot)$的子群，我们确定 $G$ 上的一个关系 "$\equiv$"，$a \equiv b \Leftrightarrow a^{-1}\cdot b \in H$，这个关系叫$G$上关于$H$的左陪集关系，而在抽象代数中，这个<strong>左陪集关系是一种等价关系。</strong>
+同时，群$(G,\cdot)$ 的子群 $(H,\cdot)$所确定的左陪集关系对G进行划分等价类，我们将下面的等价类叫做以$\alpha$为代表元的等价类，记做：
+$$[a] = {x|x \in G \wedge a \equiv x}$$
+无论在抽象代数，还是一般数域中数论问题，等价类尤其是同余类，所有元素都在这些类中，就相当于<strong>被研究的系统的一组基</strong>（二次剩余问题中的缩系就很像一组基，同余方程问题中缩系也很像一组基），个人觉得，“基”就是一种很好用的工具，可以解构抽象的事物。</p>
+</blockquote>
+<p>对于向量 $v_1$ 和 $v_2 \in V$，如果它们的差 $v_1 - v_2$（$-v_2$是$v_2$的逆元，相当于$(v_2)^{-1}\cdot v_1 \in W$）落在一个子空间 $W$ 中（即 $v_1 - v_2 \in W$），我们就说它们“等价”。这意味着，$v_1$ 和 $v_2$ 之间的差异完全由 $W$ 中的向量表示。因此，它们被看作是同一类向量的不同表示。</p>
+<p>等价类是一种将向量分组的方法。给定子空间 $W$，我们把 $V$ 中所有与某个向量 $v_1$ 差异属于 $W$ 的向量集合，称为 $v_1$ 的等价类。形式上，$v_2$ 与 $v_1$ 等价当且仅当 $v_1 - v_2 \in W$。</p>
+<p>于是我们利用这个等价类划分的思想，尝试对一般的向量空间进行划分：</p>
+<p>(在这里，我稍微说一些前置的思想，就是商空间其实可以理解为被某个“标准或原则”处理后的向量空间，这个划分处理的标准就是除数位置的子向量空间)</p>
+<h3 id="_4">等价类<a class="headerlink" href="#_4" title="Permanent link">¶</a></h3>
+<p>我们首先先定义出向量空间的“等价类”（仿射子集）：</p>
+<p>$v_1 - v_2 \in U$，$U$ 是 $V$ 的子空间，按照上面的讨论 $v$ 和 $u$ 等价。</p>
+<p>那么我们这么定义，取诸多等价向量中的一个代表元$v:v_i - v \in U$：</p>
+<p>$$v+ U = {v+u:u\in U}$$</p>
+<p>于是上面这个定义便是“<strong>在一定标准下的向量空间$V$</strong>”（后面我们会知道这个空间被定义为商空间）的一个等价类。</p>
+<p>我们一般会有一个说法：仿射子集 $v+U$ 平行于 $U$，这个源自于几何上的直观（二维向量空间你可以举例，不赘述）</p>
+<div class="admonition note">
+<p class="admonition-title">平行于U的两个仿射子集或相等或不相交</p>
+<p>设$U$是$V$的子空间，$v,w\in V$，则以下陈述等价：
+（1）$v - w \in U$
+（2）$v+ U = w+U$
+（3）$(v+U) \cap (w+U) \ne \emptyset $
+你用上面等价类的思想，这些结论的等价性是不言而喻的。</p>
+</div>
+<p>那么所有等价类构成的就是这样一个“<strong>在一定标准下的向量空间$V$</strong>”，但是请记住，它已经不再是原来的向量空间$V$。于是我们给出一个新的空间——<strong>商空间</strong>：</p>
+<p>$$V/U = {v+U:v\in V}$$</p>
+<p>我们给出这个空间上的加法和标量乘法的定义，使得这个商空间成为向量空间：</p>
+<p>$$(v+U)+(w+U) = (v+w)+U$$</p>
+<p>$$\lambda(v+U) = (\lambda v) + U$$</p>
+<p>同时我们对之前在该部分引入所说的“<em>商空间其实可以理解为被某个‘标准或原则’处理后的向量空间</em>”的处理进行具像的定义：</p>
+<p>设$U$是$V$的子空间。商映射$\pi$是如下定义的线性映射$\pi:V \rightarrow V/U，\forall v \in V:$</p>
+<p>$$\pi(v) = v + U$$</p>
+<p>容易验证，商映射是一种线性映射。</p>
+<p><strong>现在我们研究商映射的零空间和像空间：</strong></p>
+<p>$$\because \pi(v) = v+U,\pi(w) = w + U\therefore \pi(v - w) = (v-w)+U$$</p>
+<p>若$v \equiv w$，那么$\pi(v-w) = (0) + W = [0]$（$[0]$是指0等价类），并且此事$v-w \in U$
+那么可以知道： $U \subset null\;\pi$</p>
+<p>反之，我们取 $v \in null\;\pi$,容易知道，$v \in U$
+那么可以有：$null\;\pi \subset U$</p>
+<ul>
+<li>$null\;\pi  = U$</li>
+</ul>
+<p>显然我们知道$\pi$的像空间是：</p>
+<ul>
+<li>$range\;\pi = V/U$ </li>
+</ul>
+<p>于此，结合线性映射基本定理，用上面这两个结论置换零空间和像空间，我们可以很快得出<strong>商空间的维数</strong>：$dim\; V/U = dim\;V - dim\;U$</p>
+<h3 id="_5">分划的观点*<a class="headerlink" href="#_5" title="Permanent link">¶</a></h3>
+<blockquote>
+<p>之前我们在Note01中提出了从基观察向量空间$V$,并且有效处理了很多向量空间的问题。而现在有一个很类似的思想，通过商空间的各个等价类也就是仿射子集分划原本抽象的向量空间$V$，一般是多次分类讨论解决相应的问题。(可以追溯到数论中同余观点解决了很多问题)</p>
+</blockquote>
+<p>我先提前列出几个很令人惊讶的结论：</p>
+<ol>
+<li>任何子空间都是线性映射的零空间</li>
+<li>$V/(null\;f) \cong range\;f\;;\;(V/W)^* = W^0$</li>
+</ol>
+<p>考虑分划的思想一般从结果域出发，从结果上考虑如何对原来的集合进行划分。我们先从线性泛函$\varphi \in L(V,R)$入手：</p>
+<p>我们已经知道了$null\;\varphi$，这个东西可以看做$\varphi^{-1}(0)$,现在我们想知道 $\varphi^{-1}(\lambda)$是什么，我们考虑下面的一个引理($\forall r\in \mathbf{R}$)：</p>
+<p>$$\forall v' \in \varphi^{-1}(r),v\in null\;\varphi,have\;: v'+v \in \varphi^{-1}(r) $$</p>
+<p>借此，我们不难推导出下面的一个结构：</p>
+<p>$$\varphi^{-1}(r) = v' + null\;\varphi,\forall v' \in  \varphi^{-1}(r)$$</p>
+<p>你会发现这个名字东西十分类似我们之前定义的<strong>仿射子集</strong></p>
+<p>于是我们可以不局限在线性泛函上面，把上面的结果推广到一般的线性映射上$f:V \rightarrow W$,则：</p>
+<p>$$f^{-1}(w) = v_0+null\; f,w\in W,v_0\in f^{-1}(w)$$</p>
+<p>上面的结果说明了一件事情：我们可以从 $f$ 映射的对象$W$上，反过来对$V$进行划分考虑，这样的考虑我们详细分析一下： 比如说$w_1$对应过来的是$v_1 \in V$，那么说明在$V$中 $v_1+null\;f$这个仿射子集经过 $f$ 一定是 $w_1$ 。以此类推来划分 $V$,我们能够通过分类的方式快速判断某个 $v$ 属于 $V$ 中的那一个等价类来推到出经过 $f$ 的结果。</p>
+<p>于是我们自然而然地通过$null\;f$定义了关于 $V$ 最自然的一个商空间：$V/null\;f$</p>
+<p>再推而广之，我们有$V/W$最一般的商空间的定义。</p>
+<p>我们考虑一个新的映射 $\widetilde{T} : V/null(T) \rightarrow W$</p>
+<div align="center" style="display: flex; justify-content: center;">
+    <div style="text-align: center; margin: 0 10px;">
+        <img src="./img/03_8.png" width="200" height="155">
+        <p>「4」新的映射的交换图</p>
+    </div>
+</div>
+
+<p>我们通过交换图有下面这个式子：</p>
+<p>$$\widetilde{T} \circ\pi(v) = T(v)$$</p>
+<p>$$\widetilde{T}(v+null\;T) = Tv$$</p>
+<p>那么显然地，我们知道$range\;{\widetilde{T}} = range\;T,null\;{\widetilde{T}} = {0}$</p>
+<p>于是，$V/null\;T \cong range\;T$ (从商空间的使命上看这其实很直观)</p>
+<p>我们不加证明地给出一个十分重要的引理：</p>
+<ul>
+<li>若 $W$ 是 $V$ 的一个子空间，<strong>考虑 V 的直和分解 V = W ⊕W′ 构造线性映射 f 使得其在 W 上为零映射，在 W′上为恒同映射</strong>。则存在线性映射$V \rightarrow V$,使得在 $W$ 上的点取值为0，在 $W$ 之外取值非0。</li>
+</ul>
+<p>那么我们可以由此得到：<strong>任意子空间都是线性映射的一个核</strong></p>
+<p>于是我们由线性映射基本定理便可以轻松得到：</p>
+<p>$$dim\;V/W = dim\;V - dim\;W$$</p>
+<p>再次考虑 V 的直和分解$V = W \oplus W'$，那么$V^<em> = W^</em>\oplus W'^*$,由维数可知:</p>
+<p>$$dim\;V/W = dimV - dim W = dim\;W'$$</p>
+<p>$$V/W \cong W'$$</p>
+<p>由“引理 - 对偶空间的结构”的结论（$if\;\;V = U_1 \oplus U_2,then \;\;V^<em> = U_1^0 \oplus U_2^0\;\;(U_1^0 = U_2^</em>,U_2^0 = U_1^*)$）有：</p>
+<p>$$(V/W)^* = W^0$$</p>
+<p>你会惊奇地发现，商空间、对偶空间、零化子存在着如此美妙简单的关系！</p></div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["search.highlight", "navigation.tabs"], "search": "../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.8fd75fb4.min.js"></script>
+      
+    
+  </body>
+</html>
