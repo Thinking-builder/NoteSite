@@ -1407,7 +1407,7 @@
 <p>那我们根据上面的引入，我们可不可以实现进一步的抽象，就是对于任意一个有限维的向量空间<span class="arithmatex">\(V\)</span>,那么它的余一维对象也和他对偶，而判定他们对偶就是两个空间本质相同（联想并运用“同构”）。</p>
 <h3 id="v-r">V-R图（对偶空间研究）<a class="headerlink" href="#v-r" title="Permanent link">¶</a></h3>
 <p>显然，我们可以快速地构造这样的余一维对象：</p>
-<div align="center"> <img src="./img/03_1.png" width="100" height="70"> </div>
+<div align="center"> <img src="../img/03_1.png" width="100" height="70"> </div>
 
 <p>可以发现，线性泛函组成的空间（易证是向量空间），我们称之为<strong>对偶空间</strong>（记做<span class="arithmatex">\(V^{*}\)</span>）</p>
 <p>关于对偶空间这样一个向量空间，我们最紧要的是先研究清楚他的<strong>基</strong>（我们称之为<strong>对偶基</strong>）：</p>
@@ -1433,7 +1433,7 @@
 </ul>
 <div align="center" style="display: flex; justify-content: center;">
     <div style="text-align: center; margin: 0 10px;">
-        <img src="./img/03_6.png" width="200" height="155">
+        <img src="../img/03_6.png" width="200" height="155">
         <p>「4」多对偶</p>
     </div>
 </div>
@@ -1443,17 +1443,17 @@
 <div class="admonition note">
 <p class="admonition-title">交换图（参考LALU，P239）</p>
 <p>我们首先定义什么是一个图（diagram）. 一个图可以视为以一个代数结构（例如线性空间）为顶点，以某种映射（例如线性映射）为边的图，例如：</p>
-<p></p><div align="center"> <img src="./img/03_2.png" width="150" height="105"> </div>
+<p></p><div align="center"> <img src="../img/03_2.png" width="150" height="105"> </div>
 <p>如果我们称一个图是<strong>交换的（commutative）</strong>，则意味着对于图中的任意两个顶点间的任意两条有向路径，路径上映射的复合结果相同. 例如上图中，我们考察从 V1 到V3 的两条路径，则如果 σ2 ◦ σ1 = σ3，这个图是交换的.</p>
 </div>
 <p>现在我们不加严格证明地给出了向量空间 - 对偶空间的交换图（具体思路就是观察任意一个元素从出发点沿着不同路径到结尾点的结果是否相同）</p>
 <div align="center" style="display: flex; justify-content: center;">
     <div style="text-align: center; margin: 0 10px;">
-        <img src="./img/03_3.png" width="150" height="105">
+        <img src="../img/03_3.png" width="150" height="105">
         <p>「1」实际对偶交换图</p>
     </div>
     <div style="text-align: center; margin: 0 10px;">
-        <img src="./img/03_4.png" width="150" height="105">
+        <img src="../img/03_4.png" width="150" height="105">
         <p>「2」对偶映射示意图</p>
     </div>
 </div>
@@ -1470,7 +1470,7 @@
 <ol>
 <li><strong>反变性</strong>：<span class="arithmatex">\((f \circ g)^* = g^* \circ f^*\)</span> （下面图片最上面修改为<span class="arithmatex">\(g \circ f\)</span>）</li>
 </ol>
-<div align="center"> <img src="./img/03_5.png" width="300" height="300"> <p>「3」反变性交换图证明</p></div>
+<div align="center"> <img src="../img/03_5.png" width="300" height="300"> <p>「3」反变性交换图证明</p></div>
 
 <ol>
 <li>
@@ -1482,7 +1482,7 @@
 </ol>
 <h3 id="_1">矩阵可视化（对偶映射的再具像）<a class="headerlink" href="#_1" title="Permanent link">¶</a></h3>
 <p>为了进一步研究原映射和线性映射的详细关系，我们使用“基”的观点重新叙述这些事情（“基”是很本质的）：</p>
-<div align="center"> <img src="./img/03_7.png" width="350" height="180"> <p>「4」V，W空间的基、V*，W*空间的对偶基</p></div>
+<div align="center"> <img src="../img/03_7.png" width="350" height="180"> <p>「4」V，W空间的基、V*，W*空间的对偶基</p></div>
 
 <div class="arithmatex">\[T(v_i) = \sum_{j = 1}^{m}A_{j,i}\;w_j\]</div>
 <div class="arithmatex">\[T^*(g_i) = \sum_{j = 1}^{n}A'_{j,i}\;f_j\]</div>
@@ -1547,22 +1547,19 @@
 <p>我们已经有了初步的对偶空间结构的理解，也知道了“类0线性泛函”集合也就是零化子的概念，下面我们将直接描述对偶映射的零空间和像空间。</p>
 <div align="center" style="display: flex; justify-content: center;">
     <div style="text-align: center; margin: 0 10px;">
-        <img src="./img/03_4.png" width="200" height="155">
+        <img src="../img/03_4.png" width="200" height="155">
         <p>「4」对偶映射</p>
     </div>
 </div>
 
 <ol>
-<li>
-<p><span class="arithmatex">\(null(f^*) = (range\;f)^0\)</span></p>
-<p>根据我们之前的讨论，<span class="arithmatex">\(f^*(\varphi) = \varphi \circ f <span class="arithmatex">\(，回想一下一般线性映射的定义\)</span>null\;T = \{v \in V: T(v) = 0\}\)</span>，我们在上面定义了类0线性泛函，那么现在我们就是想确定<span class="arithmatex">\(W^*\)</span>中的哪些<span class="arithmatex">\(\varphi\)</span>被映射到了这些<span class="arithmatex">\(V^*\)</span>中的类0线性泛函（也就是零化子）。$f^*(\varphi) = \phi $ 而类0线性泛函有一个特点，可以把子空间<span class="arithmatex">\(U\)</span>中的所有向量映射为0，已知<span class="arithmatex">\(U \subset V\)</span>,设<span class="arithmatex">\(f^*(\varphi)(v) = 0\)</span>，有<span class="arithmatex">\(\varphi \circ fv = 0\)</span>,<span class="arithmatex">\(\varphi(fv) = 0\)</span>,现在我们便知道，这就是可以把所有<span class="arithmatex">\(fv\)</span>变成0的<span class="arithmatex">\(\varphi\)</span>,所有<span class="arithmatex">\(fv\)</span>张成<span class="arithmatex">\(range\; f\)</span>，于是我们得到如上结论</p>
-</li>
-<li>
-<p><span class="arithmatex">\(range\;f^* = (null\;f)^0\)</span></p>
-</li>
+<li><span class="arithmatex">\(null(f^*) = (range\;f)^0\)</span></li>
 </ol>
-<p>现在我们来讨论<span class="arithmatex">\(\{\phi \in V:\phi = f^*(\varphi),\varphi \in W^* \}\)</span>,我们考虑<span class="arithmatex">\(W^*\)</span>中所有的对偶基<span class="arithmatex">\(W^*:\varphi_1,...,\varphi_n\)</span>，取任一<span class="arithmatex">\(\varphi_i:f^*(\varphi_i)(v) = \varphi_i \circ (fv)\)</span>，我们再考虑<span class="arithmatex">\(fv\)</span>,我们知道<span class="arithmatex">\(fv\)</span>张成的向量空间<span class="arithmatex">\(range\;f\)</span>也只是<span class="arithmatex">\(W\)</span>的子空间，不必含有<span class="arithmatex">\(W\)</span>所有基。设<span class="arithmatex">\(range\;f = span(w_1,...w_m),m\le n\)</span>，于是这组基扩张后<span class="arithmatex">\(w_1,w_2,...w_m,...w_n\)</span>也是<span class="arithmatex">\(W\)</span>的一组基，其实不妨设<span class="arithmatex">\(\varphi_i(w_j) = \delta _{ij}\)</span>(Kronecker 记号)，而令<span class="arithmatex">\(fv = \lambda_1 w_1 + ... + \lambda_m w_m\)</span> 那么<span class="arithmatex">\(\varphi_i \circ (fv) = \lambda_i ,1 \le i \le m\)</span>，而当<span class="arithmatex">\(m+1 \le i \le n\)</span> 时，<span class="arithmatex">\(\varphi_i(fv) = 0\)</span>（一定）等价于<span class="arithmatex">\((\varphi \circ f) (v)= 0\)</span>「1」，那么现在可以确定<span class="arithmatex">\(null\;f\)</span>中的所有向量都是「1」式的零点，显然根据零化子理论，<span class="arithmatex">\(null\;f\)</span>的零化子必然可以将它映射为0，所以：
-   有<span class="arithmatex">\(range\;f^* = (null\;f)^0\)</span></p>
+<p>根据我们之前的讨论，<span class="arithmatex">\(f^*(\varphi) = \varphi \circ f\)</span>，回想一下一般线性映射的定义 <span class="arithmatex">\(null\;T = \{v \in V: T(v) = 0\}\)</span> ，我们在上面定义了类0线性泛函，那么现在我们就是想确定<span class="arithmatex">\(W^*\)</span>中的哪些<span class="arithmatex">\(\varphi\)</span>被映射到了这些<span class="arithmatex">\(V^*\)</span>中的类0线性泛函（也就是零化子）。$f^*(\varphi) = \phi $ 而类0线性泛函有一个特点，可以把子空间<span class="arithmatex">\(U\)</span>中的所有向量映射为0，已知<span class="arithmatex">\(U \subset V\)</span>,设<span class="arithmatex">\(f^*(\varphi)(v) = 0\)</span>，有<span class="arithmatex">\(\varphi \circ fv = 0\)</span>,<span class="arithmatex">\(\varphi(fv) = 0\)</span>,现在我们便知道，这就是可以把所有<span class="arithmatex">\(fv\)</span>变成0的<span class="arithmatex">\(\varphi\)</span>,所有<span class="arithmatex">\(fv\)</span>张成<span class="arithmatex">\(range\; f\)</span>，于是我们得到如上结论</p>
+<ol>
+<li><span class="arithmatex">\(range\;f^* = (null\;f)^0\)</span></li>
+</ol>
+<p>现在我们来讨论<span class="arithmatex">\(\{\phi \in V:\phi = f^*(\varphi),\varphi \in W^* \}\)</span>,我们考虑<span class="arithmatex">\(W^*\)</span>中所有的对偶基<span class="arithmatex">\(W^*:\varphi_1,...,\varphi_n\)</span>，取任一<span class="arithmatex">\(\varphi_i:f^*(\varphi_i)(v) = \varphi_i \circ (fv)\)</span>，我们再考虑<span class="arithmatex">\(fv\)</span>,我们知道<span class="arithmatex">\(fv\)</span>张成的向量空间<span class="arithmatex">\(range\;f\)</span>也只是<span class="arithmatex">\(W\)</span>的子空间，不必含有<span class="arithmatex">\(W\)</span>所有基。设<span class="arithmatex">\(range\;f = span(w_1,...w_m),m\le n\)</span>，于是这组基扩张后<span class="arithmatex">\(w_1,w_2,...w_m,...w_n\)</span>也是<span class="arithmatex">\(W\)</span>的一组基，其实不妨设<span class="arithmatex">\(\varphi_i(w_j) = \delta _{ij}\)</span>(Kronecker 记号)，而令<span class="arithmatex">\(fv = \lambda_1 w_1 + ... + \lambda_m w_m\)</span> 那么<span class="arithmatex">\(\varphi_i \circ (fv) = \lambda_i ,1 \le i \le m\)</span>，而当<span class="arithmatex">\(m+1 \le i \le n\)</span> 时，<span class="arithmatex">\(\varphi_i(fv) = 0\)</span>（一定）等价于<span class="arithmatex">\((\varphi \circ f) (v)= 0\)</span>「1」，那么现在可以确定<span class="arithmatex">\(null\;f\)</span>中的所有向量都是「1」式的零点，显然根据零化子理论，<span class="arithmatex">\(null\;f\)</span>的零化子必然可以将它映射为0.</p>
 <p>根据上面我们提出所有理论，我么可以清晰地得到下面<strong>关于对偶映射零空间和像空间的维数</strong>的一些结论：</p>
 <div class="arithmatex">\[dim\;null\;f^* = dim\;(range\;f)^0  =  dim\;W - dim\;range\;f \\= dim\;W - (dim\;V - dim\;null f) \\ = dim\;null\;\;f + dim\;W - dim\;V\]</div>
 <div class="arithmatex">\[dim\;range\;f^* = dim\;(null\;f)^0 = dim\;V - dim\;null\;f \\
@@ -1647,7 +1644,7 @@
 <p>我们考虑一个新的映射 <span class="arithmatex">\(\widetilde{T} : V/null(T) \rightarrow W\)</span></p>
 <div align="center" style="display: flex; justify-content: center;">
     <div style="text-align: center; margin: 0 10px;">
-        <img src="./img/03_8.png" width="200" height="155">
+        <img src="../img/03_8.png" width="200" height="155">
         <p>「4」新的映射的交换图</p>
     </div>
 </div>
