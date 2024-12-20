@@ -11,10 +11,6 @@
         <link rel="canonical" href="https://note.thinkingbuilder.cc/Assembly/data_alloc/">
       
       
-        <link rel="prev" href="../asmLanguage/">
-      
-      
-        <link rel="next" href="../CourseTests/">
       
       
       <link rel="icon" href="../../img/favicon.ico">
@@ -22,7 +18,7 @@
     
     
       
-        <title>数据类型与寻址 - T&B's NoteBook</title>
+        <title>数据传送与运算 - T&B's NoteBook</title>
       
     
     
@@ -108,7 +104,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              数据类型与寻址
+              数据传送与运算
             
           </span>
         </div>
@@ -220,20 +216,16 @@
         
   
   
-    
-  
   
     
     
       
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
+      <li class="md-tabs__item">
         <a href="../../CS_basical_knowledge/" class="md-tabs__link">
           
   
@@ -588,28 +580,23 @@
       
   
   
-    
   
   
-  
     
     
     
       
-        
-        
-      
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
         
           
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -620,7 +607,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             CS Tech
@@ -895,8 +882,6 @@
                 
   
   
-    
-  
   
   
     
@@ -906,11 +891,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" >
         
           
           <label class="md-nav__link" for="__nav_3_3" id="__nav_3_3_label" tabindex="0">
@@ -924,7 +909,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3_3">
             <span class="md-nav__icon md-icon"></span>
             Assembly
@@ -938,11 +923,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../basicKnoledge/" class="md-nav__link">
+      <a href="../IntroOfASM/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    汇编基础
+    模块简介
   </span>
   
 
@@ -959,11 +944,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../asmLanguage/" class="md-nav__link">
+      <a href="../note_v2/%E6%B1%87%E7%BC%96%E7%8E%AF%E5%A2%83%E5%92%8C%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    汇编语言
+    汇编底层和基础命令
   </span>
   
 
@@ -977,268 +962,123 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    数据类型与寻址
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../note_v2/%E6%B1%87%E7%BC%96%E7%A8%8B%E5%BA%8F%E6%A1%86%E6%9E%B6/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    数据类型与寻址
+    汇编程序框架
   </span>
   
 
       </a>
-      
-        
+    </li>
+  
 
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+              
+            
+              
+                
   
   
   
-    
   
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
-    <span class="md-ellipsis">
-      数据传送指令
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="数据传送指令">
-      <ul class="md-nav__list">
+    <li class="md-nav__item">
+      <a href="../note_v2/%E7%AC%AC%E4%B8%80%E4%B8%AA%E6%B1%87%E7%BC%96%E7%A8%8B%E5%BA%8F/" class="md-nav__link">
         
-          <li class="md-nav__item">
-  <a href="#mov" class="md-nav__link">
-    <span class="md-ellipsis">
-      mov指令
-    </span>
-  </a>
   
-</li>
+  <span class="md-ellipsis">
+    第一个汇编程序
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../note_v2/%E6%BA%90%E7%A8%8B%E5%BA%8F%E7%BC%96%E5%86%99%E5%87%86%E5%A4%87/" class="md-nav__link">
         
-          <li class="md-nav__item">
-  <a href="#lafhsahf" class="md-nav__link">
-    <span class="md-ellipsis">
-      LAFH、SAHF指令
-    </span>
-  </a>
   
-</li>
+  <span class="md-ellipsis">
+    源程序编写准备
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../note_v2/MASM32指令和函数.md" class="md-nav__link">
         
-          <li class="md-nav__item">
-  <a href="#xchg" class="md-nav__link">
-    <span class="md-ellipsis">
-      XCHG指令
-    </span>
-  </a>
   
-</li>
+  <span class="md-ellipsis">
+    MASM32入门_指令函数
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../note_v2/MASM32%E5%9F%BA%E6%9C%AC%E7%A8%8B%E5%BA%8F/" class="md-nav__link">
         
-      </ul>
-    </nav>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
-    <span class="md-ellipsis">
-      算数运算指令
-    </span>
-  </a>
+  <span class="md-ellipsis">
+    MASM32基本程序样例
+  </span>
   
-    <nav class="md-nav" aria-label="算数运算指令">
-      <ul class="md-nav__list">
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../note_v2/MASM32%E7%9A%84%E7%AC%AC%E4%B8%80%E4%B8%AA%E6%B1%87%E7%BC%96%E7%A8%8B%E5%BA%8F/" class="md-nav__link">
         
-          <li class="md-nav__item">
-  <a href="#incdec" class="md-nav__link">
-    <span class="md-ellipsis">
-      INC指令、DEC指令
-    </span>
-  </a>
   
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#addsub" class="md-nav__link">
-    <span class="md-ellipsis">
-      ADD指令、SUB指令
-    </span>
-  </a>
+  <span class="md-ellipsis">
+    MASM32的第一个汇编程序
+  </span>
   
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#neg" class="md-nav__link">
-    <span class="md-ellipsis">
-      NEG指令
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
-    <span class="md-ellipsis">
-      伪指令和操作符
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="伪指令和操作符">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#offset" class="md-nav__link">
-    <span class="md-ellipsis">
-      OFFSET操作符
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#ptr" class="md-nav__link">
-    <span class="md-ellipsis">
-      PTR操作符
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#type" class="md-nav__link">
-    <span class="md-ellipsis">
-      TYPE操作符
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#lengthof" class="md-nav__link">
-    <span class="md-ellipsis">
-      LENGTHOF操作符
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#sizeof" class="md-nav__link">
-    <span class="md-ellipsis">
-      SIZEOF操作符
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#label" class="md-nav__link">
-    <span class="md-ellipsis">
-      LABEL伪指令
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_5" class="md-nav__link">
-    <span class="md-ellipsis">
-      循环语句
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="循环语句">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#cmp" class="md-nav__link">
-    <span class="md-ellipsis">
-      CMP指令
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#loop" class="md-nav__link">
-    <span class="md-ellipsis">
-      LOOP指令
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_6" class="md-nav__link">
-    <span class="md-ellipsis">
-      内存操作数和寻址方式
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="内存操作数和寻址方式">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#_7" class="md-nav__link">
-    <span class="md-ellipsis">
-      间接寻址
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
+
+      </a>
     </li>
   
 
