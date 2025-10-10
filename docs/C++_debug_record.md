@@ -8,7 +8,7 @@
 
 ### vscode
 
-!!! question 编译器报错
+!!! question "编译器报错"
     ``Unable to perform this action because the process is running.``
 
 - Solution:</br>
@@ -74,7 +74,7 @@ void swap_2(int &x,int &y)
 
 ### 指针与数组
 
-!!! tip 提示
+!!! tip "提示"
     这里以二维数组为例子，我们知道数组名就是类似指针。
 </br>
 
@@ -93,7 +93,7 @@ void swap_2(int &x,int &y)
     cout<<m<<" "<<b+1;//这一点证明二维数组b[0]是一个指针；并且他的数据类型是int（*）并且：b == &b[0];*(b[0]) == b[0][0];
 ```
 
-??? success 拓展
+??? success "拓展"
     如果我们无法确定一个指针的类型，我们该如何打印这个指针？
     ```C++
     int b[3][2] = {{0,1},{2,3,},{4,5}};
@@ -111,7 +111,7 @@ void swap_2(int &x,int &y)
     //结果是：5 2 9；
 ```
 
-!!! abstract 结论
+!!! abstract "结论"
     - 二维数组名是int（*）[]类型，b[0]本身是int（*）类型
     - 下标 = **地址偏移量** = 起首地址 + 数字\* 单位（即是int[num]或者是int为单位移动）
 

@@ -1,0 +1,99 @@
+site_name: T&B's NoteBook
+site_url: https://note.thinkingbuilder.cc
+repo_name: NoteSite
+repo_url: https://github.com/Thinking-builder/NoteSite
+site_discription: Thinking_Builder's NoteBook
+site_favicon: favicon.ico
+
+nav:
+  - About Me: Introduction.md
+  - Some Math:
+      - Linear Algebra:
+          - A1 向量空间: Linear_Algebra/Note01.md
+          - A2 线性映射: Linear_Algebra/Note02.md
+          - A3 空间的交换图: Linear_Algebra/Note03.md
+          - A4 多项式: Linear_Algebra/Note04.md
+          - A5 本征: Linear_Algebra/Note05.md
+          - A6 内积: Linear_Algebra/Note06.md
+
+  - CS Tech:
+      - CS overview:
+          - CS Crash Course: CS_basical_knowledge.md
+      - Programming Language:
+          - easy markdown: easy markdown.md
+          - mkdocs_start: mkdocs_2.md
+          - SQL:
+              - Intro: SQL/SQL.md
+              - DQL: SQL/SQL_DQL.md
+              - DDL: SQL/SQL_DDL.md
+              - DML: SQL/SQL_DML.md
+          - C++:
+              - Cplusplus/index.md
+              - C++ tip: C++_debug_record.md
+              - C++ 进阶: C++_primer.md
+      - Assembly:
+          - 模块简介: Assembly/IntroOfASM.md
+          - 汇编底层和基础命令: Assembly/note_v2/汇编环境和基础命令.md
+          - 汇编程序框架: Assembly/note_v2/汇编程序框架.md
+          - 第一个汇编程序: Assembly/note_v2/第一个汇编程序.md
+          - 源程序编写准备: Assembly/note_v2/源程序编写准备.md
+          - MASM32入门_指令函数: Assembly/note_v2/MASM指令和函数.md
+          - MASM32基本程序样例: Assembly/note_v2/MASM32基本程序.md
+          - MASM32的第一个汇编程序: Assembly/note_v2/MASM32的第一个汇编程序.md
+          - 课堂测验汇总: Assembly/CourseTests.md
+
+      - Deep Learning:
+          - 预备知识: Deep_Learning/PreKnowleadge.md
+          - 线性神经网络: Deep_Learning/Linear_network.md
+
+  - Experience:
+      - FreshMan Course: freshmanE.md
+  - Tools:
+      - Git: EasyGit.md
+      - Vim: vim.md
+  - Hobby Field:
+      - 手机摄影: Photo.md
+
+markdown_extensions:
+  - toc:
+      permalink: True
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.arithmatex:
+      generic: true
+  - attr_list
+
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
+plugins:
+  - mkdocs-pdf
+
+theme:
+  name: material
+  favicon: img/favicon.ico
+  features:
+    - search.highlight
+    - navigation.tabs
+
+  palette:
+    # Palette toggle for light mode
+    - scheme: default
+      primary: white
+      accent: light blue
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - scheme: slate
+      primary: black
+      accent: deep purple
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode

@@ -19,11 +19,10 @@ Another reason is below.
 
 > **Overview of Boolean Algebra:**
 > Operations on Boolean algebra includes **AND**,**OR** and **NOT**;
-> </br>
+>
 > |**AND**|**OR**|**NOT**|
 > |:---:|:---:|:---:|
 > |$F = A + B$|$F = A\cdot B$|$F = \overline{A} $|
-</br>
-
+> 
 > More information please view at [Boolean Algebra Basis.THU](http://www.tup.tsinghua.edu.cn/upload/books/yz/102784-01.pdf)
 

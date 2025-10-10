@@ -1,32 +1,28 @@
 
 # Easy Vim
 
-> 本篇文章的主要目的是能够使用简单的语言描述vim的使用。而不是网上的其他教程可能造成的逻辑混乱。
+> This article is aimed to explain what ``vim`` it is. After Readinging ``Easy Vim`` with adequate practice, You will be more likely to choose ``vim`` as your usual developer tools to design your programme.
 
-## level.1 入门编辑
+## level.1 Entry-level
 
-!!! tip 基本页面认知
-    [pic](alt)
+!!! tip "Goal"
+    What you should grasp:
+    - Know **three modes of Vim editor** - Command Mode、Bottom Command Mode、Input Mode and can easily ship from one to another.
+    - Under Bottom Command Mode,you should know how to use basic command.
+    - Under Input Mode, you should know how to edit without any difficulies.
 
-- 必须学会的基本操作流程：
-1. 打开vim：
-   在shell界面下输入``vim <filename>.<format>``
-</br>
-2. 移动光标：
-   | ⬆️  |⬇️  | ⬅️ |➡️  |
-   |:---:|:---:|:---:|:---:|
-   |** k**|**j**|**h**|**l**|
-</br>
-   ｜``0``｜``$``｜``Num``+``Space``｜
-   |:---:|:---:|:---:|
-   |移动到这一行的最前面字符处｜移动到这一行的最后面字符处｜向后移动Num个字符|
-</br>
-!!! tip 快速移动
-    - 数字+ 移动光标键位：``7``+``k`` —— 向上移动7个字符位
-    - 页面移动：|Ctrl/Command+F|Ctrl/Command+B|Ctrl/Commmand+D|Ctrl/Command+U|
-		|:---:|:---:|:---:|:---:|
-		|屏幕**向下**移动一页|屏幕**向上**移动一页|屏幕**向下**移动半页|屏幕**向上**移动半页|
-</br>
-3. 命令模式：
-   点击``:``，然后进入底线命令模式
+### Three Modes
 
+![Three Modes of Vim Editor](./vim-mode.png)
+
+How to wake up or open your Vim?
+
+=== "Windows"
+
+    Windows need to install Vim.
+    After installation, you click ``Cmd`` and input ``vim <filename>`` to open Vim.
+
+=== "Macos"
+
+    As we know, mac is equipped with ``vim``.
+    So You just need to click ``Terminal`` app and input ``$ vim <filename>`` to open Vim
