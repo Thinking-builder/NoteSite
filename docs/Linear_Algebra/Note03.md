@@ -29,7 +29,7 @@
 
 显然，我们可以快速地构造这样的余一维对象：
 
-<div align="center"> <img src="../img/03_1.png" width = 100 height = 70 /> </div>
+<div align="center"> <img src="./img/03_1.png" width = 100 height = 70 /> </div>
 
 可以发现，线性泛函组成的空间（易证是向量空间），我们称之为**对偶空间**（记做$V^{*}$）
 
@@ -62,7 +62,7 @@ $$f_i(v_j) = \delta_{ij} = \left\{\begin{matrix}
 
 <div align="center" style="display: flex; justify-content: center;">
     <div style="text-align: center; margin: 0 10px;">
-        <img src="../img/03_6.png" width="200" height="155" />
+        <img src="./img/03_6.png" width="200" height="155" />
         <p>「4」多对偶</p>
     </div>
 </div>
@@ -74,7 +74,7 @@ $$f_i(v_j) = \delta_{ij} = \left\{\begin{matrix}
 !!! Note "交换图（参考LALU，P239）"
     我们首先定义什么是一个图（diagram）. 一个图可以视为以一个代数结构（例如线性空间）为顶点，以某种映射（例如线性映射）为边的图，例如：
     
-    <div align="center"> <img src="../img/03_2.png" width = 150 height = 105 /> </div>
+    <div align="center"> <img src="./img/03_2.png" width = 150 height = 105 /> </div>
     
     如果我们称一个图是**交换的（commutative）**，则意味着对于图中的任意两个顶点间的任意两条有向路径，路径上映射的复合结果相同. 例如上图中，我们考察从 V1 到V3 的两条路径，则如果 σ2 ◦ σ1 = σ3，这个图是交换的.
 
@@ -82,11 +82,11 @@ $$f_i(v_j) = \delta_{ij} = \left\{\begin{matrix}
 
 <div align="center" style="display: flex; justify-content: center;">
     <div style="text-align: center; margin: 0 10px;">
-        <img src="../img/03_3.png" width="150" height="105" />
+        <img src="./img/03_3.png" width="150" height="105" />
         <p>「1」实际对偶交换图</p>
     </div>
     <div style="text-align: center; margin: 0 10px;">
-        <img src="../img/03_4.png" width="150" height="105" />
+        <img src="./img/03_4.png" width="150" height="105" />
         <p>「2」对偶映射示意图</p>
     </div>
 </div>
@@ -105,7 +105,7 @@ $$f_i(v_j) = \delta_{ij} = \left\{\begin{matrix}
 
 1. **反变性**：$(f \circ g)^* = g^* \circ f^*$ （下面图片最上面修改为$g \circ f$）
 
-<div align="center"> <img src="../img/03_5.png" width =300 height = 300 /> <p>「3」反变性交换图证明</p></div>
+<div align="center"> <img src="./img/03_5.png" width =300 height = 300 /> <p>「3」反变性交换图证明</p></div>
 
 2. **函子性1**：$\forall S,T \in L(V,W),have:(S+T)^* = S^*+T^*$
 
@@ -115,7 +115,7 @@ $$f_i(v_j) = \delta_{ij} = \left\{\begin{matrix}
 
 为了进一步研究原映射和线性映射的详细关系，我们使用“基”的观点重新叙述这些事情（“基”是很本质的）：
 
-<div align="center"> <img src="../img/03_7.png" width =350 height = 180 /> <p>「4」V，W空间的基、V*，W*空间的对偶基</p></div>
+<div align="center"> <img src="./img/03_7.png" width =350 height = 180 /> <p>「4」V，W空间的基、V*，W*空间的对偶基</p></div>
 
 $$T(v_i) = \sum_{j = 1}^{m}A_{j,i}\;w_j$$
 
@@ -210,7 +210,7 @@ $$N(U) = \bigcap_{\varphi \in U}^{} ker(\varphi)$$
 
 <div align="center" style="display: flex; justify-content: center;">
     <div style="text-align: center; margin: 0 10px;">
-        <img src="../img/03_4.png" width="200" height="155" />
+        <img src="./img/03_4.png" width="200" height="155" />
         <p>「4」对偶映射</p>
     </div>
 </div>
@@ -348,7 +348,7 @@ $$f^{-1}(w) = v_0+null\; f,w\in W,v_0\in f^{-1}(w)$$
 
 <div align="center" style="display: flex; justify-content: center;">
     <div style="text-align: center; margin: 0 10px;">
-        <img src="../img/03_8.png" width="200" height="155" />
+        <img src="./img/03_8.png" width="200" height="155" />
         <p>「4」新的映射的交换图</p>
     </div>
 </div>

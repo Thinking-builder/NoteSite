@@ -128,7 +128,7 @@ $$T_{v_k} = A_{1,k}w_1+...+A_{m,k}w_m$$
 
 <div align="center" style="display: flex; justify-content: center;">
     <div style="text-align: center; margin: 0 10px;">
-        <img src="../img/02_01.png" width="300" height="130" />
+        <img src="./img/02_01.png" width="300" height="130" />
     </div>
 </div>
 

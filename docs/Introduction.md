@@ -1,135 +1,45 @@
-<meta charset="UTF-8">
-<div class="chat-container"
-    style="max-width: 700px; margin: auto; background: #ffffff; border-radius: 10px; border: 2px solid #80deea; padding: 30px; position: relative; overflow: hidden;">
-    <h1
-        style="text-align: center; font-family: 'PingFang SC', '微软雅黑', sans-serif; color: #0097a7; margin-bottom: 20px;">
-        Q&A</h1>
+# 站点使命
 
-    <div class="message question"
-        style="margin: 15px 0; padding: 15px; border-radius: 8px; background-color: #b2ebf2; border-left: 5px solid #00bcd4; color: #00796b; animation: slideInLeft 0.5s ease-in; clear: both;">
-        <strong>问：</strong>这个笔记本的用处是什么？
-    </div>
-    <div class="message answer"
-        style="margin: 15px 0; padding: 15px; border-radius: 8px; background-color: #e1f5fe; border-left: 5px solid #81d4fa; color: #01579b; animation: slideInRight 0.5s ease-in; clear: both;">
-        <strong>答：</strong>分享笔者对这些知识和技术自己的理解，同时也建立起自己的知识库。
-    </div>
+## 这个仓库在做什么
 
-    <div class="message question"
-        style="margin: 15px 0; padding: 15px; border-radius: 8px; background-color: #b2ebf2; border-left: 5px solid #00bcd4; color: #00796b; animation: slideInLeft 0.5s ease-in; clear: both;">
-        <strong>问：</strong>为什么有的笔记是纯英文的？
-    </div>
-    <div class="message answer"
-        style="margin: 15px 0; padding: 15px; border-radius: 8px; background-color: #e1f5fe; border-left: 5px solid #81d4fa; color: #01579b; animation: slideInRight 0.5s ease-in; clear: both;">
-        <strong>答：</strong>笔者想要锻炼自己的英文表达，仅此而已。
-    </div>
+这个仓库不是单纯的 Markdown 集合，而是一个面向长期维护的知识站点：
 
-    <div style="text-align: center; font-size: 14px; margin-top: 20px; color: #666;">分享知识，让我们一起学习！</div>
-</div>
+- 用来整理课程笔记、技术理解、经验总结和可下载资料
+- 尽量把零散文件收拢到统一栏目，降低“内容存在但不可见”的问题
+- 让笔记既适合自己复习，也适合他人按专题浏览
 
-<style>
-    @keyframes slideInLeft {
-        from {
-            opacity: 0;
-            transform: translateX(-20px);
-        }
+整个框架参考并建立在 **MkDocs** 与 **Material for MkDocs** 之上，因此信息架构、导航层级、首页和栏目页都按照这套体系来组织。
 
-        to {
-            opacity: 1;
-            transform: translateX(0);
-        }
-    }
+## 现在如何浏览
 
-    @keyframes slideInRight {
-        from {
-            opacity: 0;
-            transform: translateX(20px);
-        }
+### 入口 1：按栏目看
 
-        to {
-            opacity: 1;
-            transform: translateX(0);
-        }
-    }
+- [数学](math/index.md)：线性代数、信息科学数学
+- [计算机与 AI](tech/index.md)：CS 基础、AI 导论、深度学习、编程语言、Assembly 与逆向
+- [工具与实践](practice/index.md)：Git、Vim、Yara
+- [经验与课程](experience/index.md)：课程经验、交流项目记录
 
-    .question {
-        float: left;
-        width: auto;
-        /* 根据字数自动调整宽度 */
-    }
+### 入口 2：按全站索引看
 
-    .answer {
-        float: right;
-        width: auto;
-        /* 根据字数自动调整宽度 */
-    }
-</style>
+如果你更关心“这个站里到底都有什么”，直接看 [全站内容总览](content_catalog.md)。
 
-<div style="border: 2px solid #007BFF; border-radius: 10px; padding: 20px; margin: 20px 0; background-color: #f0f8ff;">
-    <h2 style="font-family: Arial, sans-serif; color: #007BFF; text-align: center;">最近更新</h2>
-    <ul style="list-style-type: none; padding-left: 0;">
-        <li style="padding: 10px 0; border-bottom: 1px solid #ddd;">
-            <strong style="color: #007BFF;">2025年3月3日:</strong> “<span style="font-weight: bold;">CS Tech - Programming Language专栏</span>” 更新上传了SQL的常用的DDL、DML、DCL的知识。
-        </li>
-        <li style="padding: 10px 0; border-bottom: 1px solid #ddd;">
-            <strong style="color: #007BFF;">2024年12月20日:</strong> “<span style="font-weight: bold;">CS Tech - Assembly专栏</span>” 更新上传了汇编语言原理模块4讲和MASM32入门模块3讲。
-        </li>
-        <li style="padding: 10px 0; border-bottom: 1px solid #ddd;">
-            <strong style="color: #007BFF;">2024年10月28日:</strong> 更新了笔记网站内容的布局架构。修正了线性代数笔记的图片不显示、公式错乱问题。
-        </li>
-        <li style="padding: 10px 0; border-bottom: 1px solid #ddd;">
-            <strong style="color: #007BFF;">2024年10月27日:</strong> 上传了 <span style="font-weight: bold;">高级线性代数四讲</span>！ <span style="color: green;">（新）</span>
-        </li>
-        <li style="padding: 10px 0;">
-            <strong style="color: #007BFF;">2024年9月29日:</strong> 添加了 <span style="font-weight: bold;">工科试验班经验分享</span> 栏目，并添加了大一经验分享。
-        </li>
-    </ul>
-</div>
+## 内容风格说明
 
+!!! note "关于中英文混排"
 
+    有一部分笔记使用英文写作，这是为了训练技术表达；也有一部分是中文整理或中英混排。这里统一保留原始写作风格，不强行改写成单一语言。
 
-## How to use this NoteBook
+!!! note "关于完整版与早期简版"
 
-The structure of the NoteBook:
+    线性代数栏目同时保留了“完整版”和“早期简版”。前者更适合作为主阅读入口，后者作为历史稿与补充内容继续保留。
 
-> ``"*"`` is a marker which represent this marked column is under construction.
+## 后续维护原则
 
-```yml
-+ Home
- - Introduction
+1. `docs/` 只放源内容和发布所需资源
+2. `mkdocs.yml` 负责统一导航，不再让内容长期游离在导航之外
+3. 新增内容时同步更新总览页和栏目入口页
+4. `site/` 只作为构建产物，不再进入版本控制
 
-+ Math:
-  - Linear Algebra
- 
+## 联系方式
 
-+ CS Tech:
-  - CS overview:
-    - CS Crash Course: CS_basical_knowledge.md
-  - Programming Language
-  - Assembly
-  - Deep Learning
-
-+ *Experience: To describe the experience of coping with the small tasks
-  - How to build a site
-  - How to prepare a final examination/test
-
-+ Tools: To recommend some useful tools to bring convience to CSer
-  - Shell
-  - Terminal
-  - Git
-  - Vim
-
-+ Hobby Fields: Some Knowledge except the CS knowledge.
-  - Photoing
-
-
-```
-
-## More Info
-
-I'm ready to talk with you if you have any innovative ideas or sinsere improvement advice.
-Listed below is my **email address** and I will check it every day.
-<body><center><p> amorstep7@gmail.com </p></center></body>
-
-<p align = "center">
-<img width="50%" src="https://github-readme-streak-stats.herokuapp.com/?user=Thinking-builder&show_icons=true&locale=en&layout=compact&theme=transparent&line_height=0" />
-</p>
+欢迎对内容、排版和结构提出建议：<amorstep7@gmail.com>

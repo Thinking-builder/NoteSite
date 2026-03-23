@@ -1,70 +1,127 @@
-site_name: T&B's NoteBook
-site_url: https://note.thinkingbuilder.cc
-repo_name: NoteSite
+site_name: Thinking Builder Notes
+site_url: https://thinking-builder.github.io/NoteSite/
+site_description: 个人笔记、课程总结与知识分享
+repo_name: Thinking-builder/NoteSite
 repo_url: https://github.com/Thinking-builder/NoteSite
-site_discription: Thinking_Builder's NoteBook
-site_favicon: favicon.ico
 
 nav:
-  - About Me: Introduction.md
-  - Some Math:
-      - Linear Algebra:
-          - A1 向量空间: Linear_Algebra/Note01.md
-          - A2 线性映射: Linear_Algebra/Note02.md
-          - A3 空间的交换图: Linear_Algebra/Note03.md
-          - A4 多项式: Linear_Algebra/Note04.md
-          - A5 本征: Linear_Algebra/Note05.md
-          - A6 内积: Linear_Algebra/Note06.md
-
-  - CS Tech:
-      - CS overview:
-          - CS Crash Course: CS_basical_knowledge.md
-      - Programming Language:
-          - easy markdown: easy markdown.md
-          - mkdocs_start: mkdocs_2.md
+  - 首页: index.md
+  - 关于本站:
+      - 站点使命: Introduction.md
+      - 仓库结构与文件归属: repository_map.md
+      - 全站内容总览: content_catalog.md
+  - 数学:
+      - 栏目导览: math/index.md
+      - 线性代数:
+          - 向量空间初步（完整版）: Linear_Algebra/Note01_向量空间.md
+          - 线性映射（完整版）: Linear_Algebra/Note02_线性映射.md
+          - 空间的交换图（完整版）: Linear_Algebra/Note03_空间的交换图.md
+          - 多项式（完整版）: Linear_Algebra/Note04_多项式.md
+          - 本征（完整版）: Linear_Algebra/Note05_本征.md
+          - 内积空间（完整版）: Linear_Algebra/Note06_内积空间.md
+      - 线性代数·早期简版:
+          - 向量空间初步: Linear_Algebra/Note01.md
+          - 线性映射: Linear_Algebra/Note02.md
+          - 空间的交换图: Linear_Algebra/Note03.md
+          - 多项式: Linear_Algebra/Note04.md
+          - 本征: Linear_Algebra/Note05.md
+          - 内积空间: Linear_Algebra/Note06.md
+      - 信息科学数学:
+          - 整除: ISmath/整除.md
+          - 同余: ISmath/同余.md
+          - 同余方程: ISmath/同余方程.md
+          - 原根和指数: ISmath/原根和指数.md
+  - 计算机与 AI:
+      - 栏目导览: tech/index.md
+      - 计算机基础:
+          - CS 总览: CS_basical_knowledge.md
+          - Data Graph and AI: Data_Graph_AI.md
+      - AI 导论:
+          - 第一章 绪论: AI _Intro/第一章绪论.md
+          - 第二章 逻辑与推理: AI _Intro/第二章逻辑与推理.md
+          - 第三章 搜索: AI _Intro/第三章搜索.md
+          - 第四章 监督学习: AI _Intro/第四章监督学习.md
+          - 第五章 无监督学习: AI _Intro/第五章无监督学习.md
+          - 第六章 深度学习: AI _Intro/第六章深度学习.md
+      - 深度学习:
+          - 预备知识: Deep_Learning/PreKnowleadge.md
+          - 线性神经网络: Deep_Learning/Linear_network.md
+      - 编程语言与开发:
+          - Easy Markdown: easy markdown.md
+          - MkDocs 安装与初始化: mkdocs_2.md
+          - Shell 入门: shell.md
           - SQL:
-              - Intro: SQL/SQL.md
+              - SQL 简介: SQL/SQL.md
               - DQL: SQL/SQL_DQL.md
               - DDL: SQL/SQL_DDL.md
               - DML: SQL/SQL_DML.md
           - C++:
-              - Cplusplus/index.md
-              - C++ tip: C++_debug_record.md
+              - Learning Guide: Cplusplus/index.md
+              - Pointer: Cplusplus/Pointer.md
+              - Compiler: Cplusplus/C++compiler.md
+              - Linker: Cplusplus/C++linker.md
+              - Debug Record: C++_debug_record.md
               - C++ 进阶: C++_primer.md
-      - Assembly:
-          - 模块简介: Assembly/IntroOfASM.md
-          - 汇编底层和基础命令: Assembly/note_v2/汇编环境和基础命令.md
-          - 汇编程序框架: Assembly/note_v2/汇编程序框架.md
-          - 第一个汇编程序: Assembly/note_v2/第一个汇编程序.md
-          - 源程序编写准备: Assembly/note_v2/源程序编写准备.md
-          - MASM32入门_指令函数: Assembly/note_v2/MASM指令和函数.md
-          - MASM32基本程序样例: Assembly/note_v2/MASM32基本程序.md
-          - MASM32的第一个汇编程序: Assembly/note_v2/MASM32的第一个汇编程序.md
-          - 课堂测验汇总: Assembly/CourseTests.md
-
-      - Deep Learning:
-          - 预备知识: Deep_Learning/PreKnowleadge.md
-          - 线性神经网络: Deep_Learning/Linear_network.md
-
-  - Experience:
-      - FreshMan Course: freshmanE.md
-  - Tools:
+          - Qt 图形界面开发: Qt-C++图形化界面开发.md
+      - 汇编与逆向:
+          - 模块导览: Assembly/IntroOfASM.md
+          - 数据传送与运算: Assembly/data_alloc.md
+          - 实验整理: Assembly/1.md
+          - 课堂测试题目整理: Assembly/CourseTests.md
+          - 测试文档: Assembly/test.md
+          - 基础与原理:
+              - 基础知识: Assembly/note/01basicKnoledge.md
+              - 汇编语言: Assembly/note/02asmLanguage.md
+              - 过程: Assembly/note/04Process.md
+              - 华为鲲鹏处理器体系结构: Assembly/note/05华为鲲鹏处理体系结构.md
+              - 华为鲲鹏处理器汇编编程: Assembly/note/06 HuaWeiKunPeng.md
+          - 逆向工程:
+              - PE 文件结构: Assembly/note/07 PE file.md
+              - 逆向技术: Assembly/note/08 Reverse.md
+              - C 语言逆向分析: Assembly/note/09C语言逆向分析.md
+              - 软件保护基础: Assembly/note/10软件保护技术.md
+              - 动态逆向分析技术: Assembly/note/动态逆向分析技术.md
+          - MASM32 入门:
+              - 编译环境使用: Assembly/note_v2/汇编环境和基础命令.md
+              - 汇编程序框架实现: Assembly/note_v2/汇编程序框架.md
+              - Hello World: Assembly/note_v2/第一个汇编程序.md
+              - 实现第一个源程序: Assembly/note_v2/源程序编写准备.md
+              - MASM 指令和函数: Assembly/note_v2/MASM指令和函数.md
+              - MASM32 基本程序: Assembly/note_v2/MASM32基本程序.md
+              - MASM32 Hello World: Assembly/note_v2/MASM32的第一个汇编程序.md
+  - 工具与实践:
+      - 栏目导览: practice/index.md
       - Git: EasyGit.md
       - Vim: vim.md
-  - Hobby Field:
+      - Yara: Tools/yara.md
+  - 经验与课程:
+      - 栏目导览: experience/index.md
+      - 大一课程经验: freshmanE.md
+      - 交流项目记录: ExchangeCourse.md
+  - 兴趣分享:
       - 手机摄影: Photo.md
+  - 资料附件:
+      - 下载与附件总表: resources/index.md
 
 markdown_extensions:
   - toc:
-      permalink: True
+      permalink: true
+  - tables
+  - attr_list
+  - md_in_html
   - admonition
+  - footnotes
   - pymdownx.details
   - pymdownx.superfences
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
   - pymdownx.tabbed:
       alternate_style: true
   - pymdownx.arithmatex:
       generic: true
-  - attr_list
+
+extra_css:
+  - stylesheets/extra.css
 
 extra_javascript:
   - javascripts/mathjax.js
@@ -72,28 +129,32 @@ extra_javascript:
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
 
 plugins:
+  - search
   - mkdocs-pdf
 
 theme:
   name: material
+  language: zh
   favicon: img/favicon.ico
   features:
-    - search.highlight
     - navigation.tabs
-
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - search.highlight
+    - search.suggest
+    - content.code.copy
+    - toc.follow
   palette:
-    # Palette toggle for light mode
     - scheme: default
-      primary: white
-      accent: light blue
+      primary: teal
+      accent: amber
       toggle:
         icon: material/brightness-7
-        name: Switch to dark mode
-
-    # Palette toggle for dark mode
+        name: 切换到深色模式
     - scheme: slate
-      primary: black
-      accent: deep purple
+      primary: blue grey
+      accent: amber
       toggle:
         icon: material/brightness-4
-        name: Switch to light mode
+        name: 切换到浅色模式

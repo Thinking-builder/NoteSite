@@ -257,7 +257,7 @@ See the section on [`code`](#code).
 
 预览效果如下:  
 
-[![Markdownguide](hero-1.png "markdown")](https://markdownguide.org)
+[![Markdownguide](./Welcome.gif "markdown")](https://markdownguide.org)
 
 ## Markdown 转义字符语法
 
