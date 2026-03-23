@@ -1,0 +1,100 @@
+:root {
+  --tb-ink: #17353a;
+  --tb-accent: #b56a2d;
+  --tb-border: rgba(23, 53, 58, 0.12);
+}
+
+[data-md-color-scheme="default"] {
+  --md-primary-fg-color: #17353a;
+  --md-primary-fg-color--light: #2c565c;
+  --md-primary-fg-color--dark: #0f2629;
+  --md-accent-fg-color: #b56a2d;
+  --md-default-bg-color: #f7f3ea;
+  --md-typeset-a-color: #96501d;
+}
+
+[data-md-color-scheme="slate"] {
+  --md-primary-fg-color: #8ca4a8;
+  --md-accent-fg-color: #ffc27d;
+  --md-default-bg-color: #0f1719;
+  --md-default-fg-color: rgba(255, 255, 255, 0.88);
+  --md-typeset-a-color: #ffc27d;
+}
+
+.tb-hero {
+  padding: 2rem;
+  border: 1px solid var(--tb-border);
+  border-radius: 1.25rem;
+  background:
+    radial-gradient(circle at top right, rgba(181, 106, 45, 0.18), transparent 32%),
+    linear-gradient(135deg, rgba(23, 53, 58, 0.96), rgba(34, 72, 78, 0.92));
+  color: #f7f3ea;
+  box-shadow: 0 20px 45px rgba(23, 53, 58, 0.16);
+}
+
+.tb-eyebrow {
+  margin: 0 0 0.6rem;
+  font-size: 0.75rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: rgba(247, 243, 234, 0.72);
+}
+
+.tb-hero h2 {
+  margin: 0;
+  font-size: clamp(1.8rem, 4vw, 2.8rem);
+  line-height: 1.15;
+  color: #fff;
+}
+
+.tb-hero p {
+  margin-top: 1rem;
+  max-width: 48rem;
+  color: rgba(247, 243, 234, 0.88);
+}
+
+.tb-hero-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1.4rem;
+}
+
+.tb-hero-meta span {
+  padding: 0.45rem 0.8rem;
+  border-radius: 999px;
+  border: 1px solid rgba(247, 243, 234, 0.18);
+  background: rgba(247, 243, 234, 0.08);
+  font-size: 0.88rem;
+}
+
+.md-typeset .grid.cards > ul > li,
+.md-typeset .grid.cards > ol > li {
+  border-radius: 1rem;
+  border: 1px solid var(--tb-border);
+  background: rgba(255, 255, 255, 0.52);
+  box-shadow: 0 12px 30px rgba(23, 53, 58, 0.06);
+}
+
+[data-md-color-scheme="slate"] .md-typeset .grid.cards > ul > li,
+[data-md-color-scheme="slate"] .md-typeset .grid.cards > ol > li {
+  background: rgba(255, 255, 255, 0.03);
+  border-color: rgba(255, 255, 255, 0.08);
+}
+
+.md-typeset h1,
+.md-typeset h2,
+.md-typeset h3 {
+  letter-spacing: -0.02em;
+}
+
+.md-typeset table:not([class]) {
+  border-radius: 0.9rem;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 76.2344em) {
+  .tb-hero {
+    padding: 1.5rem;
+  }
+}
