@@ -1,17 +1,49 @@
 # Thinking Builder Notes
 
 <div class="tb-hero" markdown>
+<div class="tb-hero__copy">
 <p class="tb-eyebrow">Knowledge Base · Notes Site · Long-term Maintenance</p>
-<h2>把零散课程笔记整理成一个可以持续扩展的知识网站</h2>
-<p>
+<p
+  class="tb-typewriter"
+  data-typewriter='["把零散课程笔记整理成一个可以持续扩展的知识网站","让课程总结、技术笔记和经验分享拥有清晰入口","用 MkDocs Material 把内容组织成长期维护的知识系统"]'
+  aria-label="把零散课程笔记整理成一个可以持续扩展的知识网站"
+>
+  <span class="tb-typewriter__text">把零散课程笔记整理成一个可以持续扩展的知识网站</span><span class="tb-typewriter__caret" aria-hidden="true"></span>
+</p>
+<p class="tb-hero__lead">
 这里收录数学、AI、编程语言、汇编与逆向、工具实践、课程经验与兴趣分享。整个站点基于
 <strong>MkDocs</strong> 与 <strong>Material for MkDocs</strong> 组织，目标不是一次性展示，而是长期积累与持续迭代。
 </p>
 <div class="tb-hero-meta">
   <span>68 篇 Markdown 笔记</span>
   <span>11 份 PDF 资料</span>
-  <span>2 个 HTML 示例</span>
   <span>1 个 ZIP 归档</span>
+  <span>长期增量维护</span>
+</div>
+<div class="tb-hero-actions">
+  <a class="md-button md-button--primary" href="content_catalog/">立即浏览全部内容</a>
+  <a class="md-button" href="repository_map/">查看仓库结构</a>
+</div>
+</div>
+
+<div class="tb-hero__art" aria-hidden="true">
+  <div class="tb-orbit tb-orbit--a"></div>
+  <div class="tb-orbit tb-orbit--b"></div>
+  <div class="tb-orbit tb-orbit--c"></div>
+  <div class="tb-signal">
+    <span class="tb-signal__label">Topics</span>
+    <strong>Math · AI · Code · Reverse</strong>
+  </div>
+  <div class="tb-panel tb-panel--top">
+    <span class="tb-panel__kicker">Structure</span>
+    <strong>清晰导航</strong>
+    <small>每篇笔记都有归属</small>
+  </div>
+  <div class="tb-panel tb-panel--bottom">
+    <span class="tb-panel__kicker">Workflow</span>
+    <strong>MkDocs + Material</strong>
+    <small>build / deploy / iterate</small>
+  </div>
 </div>
 </div>
 
