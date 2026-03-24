@@ -5,7 +5,7 @@
 <p class="tb-eyebrow">Knowledge Base · Notes Site · Long-term Maintenance</p>
 <p
   class="tb-typewriter"
-  data-typewriter='["一个可以持续扩展的知识网站","课程、技术、经验有清晰入口","基于 MkDocs Material 的知识系统"]'
+  data-typewriter='["一个可以持续扩展的知识网站","课程、技术、经验有清晰入口","基于 MkDocs Material 构建"]'
   aria-label="把零散课程笔记整理成一个可以持续扩展的知识网站"
 >
   <span class="tb-typewriter__text">把零散课程笔记整理成一个可以持续扩展的知识网站</span><span class="tb-typewriter__caret" aria-hidden="true"></span>
@@ -57,14 +57,14 @@
   <a class="tb-tile tb-tile--intro" href="Introduction/">
     <span class="tb-tile__eyebrow">Start Here</span>
     <h3>先建立地图，再开始阅读</h3>
-    <p>适合第一次进入网站时快速理解使命、浏览方式和维护原则。</p>
+    <p>适合第一次进入网站时快速理解浏览方式和维护原则。</p>
     <div class="tb-tile__chips">
       <span>站点使命</span>
       <span>浏览建议</span>
       <span>维护规则</span>
     </div>
     <div class="tb-tile__footer">
-      <strong>进入站点导览</strong>
+      <strong>进入导览</strong>
       <span>About & Structure</span>
     </div>
   </a>
@@ -79,7 +79,7 @@
       <span>1 ZIP</span>
     </div>
     <div class="tb-tile__footer">
-      <strong>打开全站索引</strong>
+      <strong>打开索引</strong>
       <span>Everything Listed</span>
     </div>
   </a>
@@ -87,7 +87,7 @@
   <a class="tb-tile tb-tile--math" href="math/">
     <span class="tb-tile__eyebrow">Math</span>
     <h3>线性代数与信息科学数学</h3>
-    <p>完整版与早期简版并存，适合复习与对照阅读。</p>
+    <p>完整与早期简版并存，适合复习与对照阅读。</p>
     <div class="tb-tile__footer">
       <strong>进入数学栏目</strong>
       <span>Abstract & Formal</span>
@@ -114,7 +114,7 @@
   <a class="tb-tile tb-tile--practice" href="practice/">
     <span class="tb-tile__eyebrow">Tools</span>
     <h3>把工具链变成熟悉的工作流</h3>
-    <p>Git、Vim、Yara 这些偏“立即能用”的内容从这里进入。</p>
+    <p>Git、Vim、Yara 这些偏“立即能用”的内容在这里。</p>
     <div class="tb-tile__footer">
       <strong>进入工具实践</strong>
       <span>Workflow Boost</span>
