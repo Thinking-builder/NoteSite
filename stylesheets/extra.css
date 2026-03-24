@@ -146,6 +146,7 @@
   position: relative;
   min-height: 21rem;
   z-index: 1;
+  margin-top: 1.6rem;
 }
 
 .tb-orbit {
@@ -508,6 +509,7 @@
 
   .tb-hero__art {
     min-height: 17rem;
+    margin-top: 1.2rem;
   }
 
   .tb-hero-actions {
@@ -542,6 +544,7 @@
 
   .tb-hero__art {
     min-height: 14rem;
+    margin-top: 1rem;
   }
 
   .tb-signal {
