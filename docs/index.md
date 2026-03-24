@@ -5,7 +5,7 @@
 <p class="tb-eyebrow">Knowledge Base · Notes Site · Long-term Maintenance</p>
 <p
   class="tb-typewriter"
-  data-typewriter='["把零散课程笔记整理成一个可以持续扩展的知识网站","让课程总结、技术笔记和经验分享拥有清晰入口","用 MkDocs Material 把内容组织成长期维护的知识系统"]'
+  data-typewriter='["一个可以持续扩展的知识网站","课程、技术、经验有清晰入口","基于 MkDocs Material 的知识系统"]'
   aria-label="把零散课程笔记整理成一个可以持续扩展的知识网站"
 >
   <span class="tb-typewriter__text">把零散课程笔记整理成一个可以持续扩展的知识网站</span><span class="tb-typewriter__caret" aria-hidden="true"></span>
@@ -21,8 +21,8 @@
   <span>长期增量维护</span>
 </div>
 <div class="tb-hero-actions">
-  <a class="md-button md-button--primary" href="content_catalog/">立即浏览全部内容</a>
-  <a class="md-button" href="repository_map/">查看仓库结构</a>
+  <a class="md-button md-button--primary tb-hero-actions__left" href="content_catalog/">立即浏览全部内容</a>
+  <a class="md-button tb-hero-actions__right" href="repository_map/">查看仓库结构</a>
 </div>
 </div>
 
@@ -47,54 +47,94 @@
 </div>
 </div>
 
-<div class="grid cards" markdown>
+<div class="tb-section-head" markdown>
+<p class="tb-section-head__eyebrow">Explore The Site</p>
+<h2>选择一条进入知识库的路径</h2>
+<p>不是简单的栏目平铺，而是把不同阅读意图拆成不同入口：先理解、再索引、再按主题深入。</p>
+</div>
 
--   ## 先看这里
+<div class="tb-mosaic">
+  <a class="tb-tile tb-tile--intro" href="Introduction/">
+    <span class="tb-tile__eyebrow">Start Here</span>
+    <h3>先建立地图，再开始阅读</h3>
+    <p>适合第一次进入网站时快速理解使命、浏览方式和维护原则。</p>
+    <div class="tb-tile__chips">
+      <span>站点使命</span>
+      <span>浏览建议</span>
+      <span>维护规则</span>
+    </div>
+    <div class="tb-tile__footer">
+      <strong>进入站点导览</strong>
+      <span>About & Structure</span>
+    </div>
+  </a>
 
-    ---
+  <a class="tb-tile tb-tile--catalog" href="content_catalog/">
+    <span class="tb-tile__eyebrow">Catalog</span>
+    <h3>直接看全量内容</h3>
+    <p>如果你关心“这个站到底有什么”，这里是最快的入口。</p>
+    <div class="tb-tile__metrics">
+      <span>68 Markdown</span>
+      <span>11 PDF</span>
+      <span>1 ZIP</span>
+    </div>
+    <div class="tb-tile__footer">
+      <strong>打开全站索引</strong>
+      <span>Everything Listed</span>
+    </div>
+  </a>
 
-    了解站点的使命、浏览方式以及维护原则。
+  <a class="tb-tile tb-tile--math" href="math/">
+    <span class="tb-tile__eyebrow">Math</span>
+    <h3>线性代数与信息科学数学</h3>
+    <p>完整版与早期简版并存，适合复习与对照阅读。</p>
+    <div class="tb-tile__footer">
+      <strong>进入数学栏目</strong>
+      <span>Abstract & Formal</span>
+    </div>
+  </a>
 
-    [站点使命](Introduction.md)
+  <a class="tb-tile tb-tile--tech" href="tech/">
+    <span class="tb-tile__eyebrow">Tech & AI</span>
+    <h3>从 CS 基础一路走到 AI、SQL、C++、Assembly 与逆向</h3>
+    <p>这是当前内容最密集的主区，适合系统浏览技术主题。</p>
+    <div class="tb-tile__chips">
+      <span>AI Intro</span>
+      <span>Deep Learning</span>
+      <span>SQL</span>
+      <span>C++</span>
+      <span>Assembly</span>
+    </div>
+    <div class="tb-tile__footer">
+      <strong>进入技术主区</strong>
+      <span>Core Technical Notes</span>
+    </div>
+  </a>
 
-    [仓库结构与文件归属](repository_map.md)
+  <a class="tb-tile tb-tile--practice" href="practice/">
+    <span class="tb-tile__eyebrow">Tools</span>
+    <h3>把工具链变成熟悉的工作流</h3>
+    <p>Git、Vim、Yara 这些偏“立即能用”的内容从这里进入。</p>
+    <div class="tb-tile__footer">
+      <strong>进入工具实践</strong>
+      <span>Workflow Boost</span>
+    </div>
+  </a>
 
--   ## 全站总览
-
-    ---
-
-    所有已发布内容都在这里集中收录，适合快速检索与巡检。
-
-    [查看内容总览](content_catalog.md)
-
-    [查看资料附件](resources/index.md)
-
--   ## 数学与形式化
-
-    ---
-
-    线性代数完整版与早期简版、信息科学数学笔记都已归档到统一入口。
-
-    [进入数学栏目](math/index.md)
-
--   ## 计算机与 AI
-
-    ---
-
-    覆盖 CS 基础、AI 导论、深度学习、SQL、C++、Qt、Shell 与 Assembly。
-
-    [进入技术栏目](tech/index.md)
-
--   ## 工具与经验
-
-    ---
-
-    包括 Git、Vim、Yara、课程经验以及交流项目记录。
-
-    [查看工具实践](practice/index.md)
-
-    [查看课程经验](experience/index.md)
-
+  <a class="tb-tile tb-tile--experience" href="experience/">
+    <span class="tb-tile__eyebrow">Experience</span>
+    <h3>课程经验、交流记录与资料附件</h3>
+    <p>适合面向考试、课程规划和资料下载的读者。</p>
+    <div class="tb-tile__chips">
+      <span>大一课程</span>
+      <span>交流项目</span>
+      <span>资料附件</span>
+    </div>
+    <div class="tb-tile__footer">
+      <strong>进入经验区</strong>
+      <span>Learn & Download</span>
+    </div>
+  </a>
 </div>
 
 ## 本次整理重点
