@@ -6,7 +6,7 @@
 <p
   class="tb-typewriter"
   data-typewriter='["一个可以持续扩展的知识网站","课程、技术、经验有清晰入口","基于 MkDocs Material 构建"]'
-  aria-label="把零散课程笔记整理成一个可以持续扩展的知识网站"
+  aria-label="一个持续扩展的知识网站"
 >
   <span class="tb-typewriter__text">把零散课程笔记整理成一个可以持续扩展的知识网站</span><span class="tb-typewriter__caret" aria-hidden="true"></span>
 </p>
